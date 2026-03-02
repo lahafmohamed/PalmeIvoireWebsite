@@ -1,10 +1,14 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
+import { UnheadProvider } from '@unhead/react/client'
+import './i18n'
 import './index.css'
 import App from './App.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <App />
+    <UnheadProvider>
+      <App />
+    </UnheadProvider>
   </StrictMode>,
 )

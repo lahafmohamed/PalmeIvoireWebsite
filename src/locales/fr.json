@@ -1,0 +1,31 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "about": "À propos",
+    "services": "Services",
+    "gallery": "Galerie",
+    "contact": "Contact"
+  },
+  "footer": {
+    "tagline": "L'excellence agricole au cœur de la Côte d'Ivoire.",
+    "quickLinks": "Liens rapides",
+    "contactUs": "Nous contacter",
+    "address": "Abidjan, Côte d'Ivoire",
+    "rights": "Tous droits réservés."
+  },
+  "pages": {
+    "home": {
+      "title": "Accueil — Palme Ivoire",
+      "welcome": "Bienvenue chez Palme Ivoire",
+      "subtitle": "Palme Ivoire est un acteur majeur de l’industrie agro-industrielle en Côte d’Ivoire, spécialisé dans la production et la transformation de l’huile de palme.\n\nDepuis sa création, notre mission est de contribuer au développement durable du secteur palmier à huile tout en créant de la valeur pour nos partenaires, nos producteurs et nos communautés.\n\nGrâce à notre expertise, à nos infrastructures modernes et à notre engagement envers la qualité, nous garantissons des produits conformes aux standards nationaux et internationaux. Nous plaçons la responsabilité sociale, la performance industrielle et le respect de l’environnement au cœur de nos actions.",
+      "cta": "Découvrir nos services"
+    },
+    "about": { "title": "À propos — Palme Ivoire" },
+    "services": { "title": "Services — Palme Ivoire",
+    "subtitle": "Découvrez nos services de production et de transformation d'huile de palme, notre engagement envers la durabilité et notre impact positif sur les communautés locales." 
+  
+  },
+    "gallery": { "title": "Galerie — Palme Ivoire" },
+    "contact": { "title": "Contact — Palme Ivoire" }
+  }
+}

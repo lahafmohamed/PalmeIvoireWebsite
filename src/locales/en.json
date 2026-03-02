@@ -1,0 +1,28 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About Us",
+    "services": "Services",
+    "gallery": "Gallery",
+    "contact": "Contact"
+  },
+  "footer": {
+    "tagline": "Agricultural excellence at the heart of Ivory Coast.",
+    "quickLinks": "Quick Links",
+    "contactUs": "Contact Us",
+    "address": "Abidjan, Ivory Coast",
+    "rights": "All rights reserved."
+  },
+  "pages": {
+    "home": {
+      "title": "Home — Palme Ivoire",
+      "welcome": "Welcome to Palme Ivoire",
+      "subtitle": "A leading agro-industry player in Ivory Coast, we cultivate excellence and sustainability in service of our land.",
+      "cta": "Discover our services"
+    },
+    "about": { "title": "About Us — Palme Ivoire" },
+    "services": { "title": "Services — Palme Ivoire" },
+    "gallery": { "title": "Gallery — Palme Ivoire" },
+    "contact": { "title": "Contact — Palme Ivoire" }
+  }
+}
