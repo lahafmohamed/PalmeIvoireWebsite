@@ -99,9 +99,25 @@
   color: #9ecb9f;
 }
 
+/* ── Tablet (768px) ── */
 @media (max-width: 768px) {
   .footer__inner {
-    grid-template-columns: 1fr;
-    gap: var(--space-8);
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-6);
+    padding: var(--space-10) var(--space-6);
   }
+  .footer__inner > :first-child {
+    grid-column: 1 / -1;
+  }
+  .footer__tagline { max-width: 100%; }
+}
+
+/* ── Mobile (480px) ── */
+@media (max-width: 480px) {
+  .footer__inner {
+    grid-template-columns: 1fr;
+    gap: var(--space-6);
+    padding: var(--space-8) var(--space-4);
+  }
+  .footer__bottom { padding: var(--space-4); }
 }

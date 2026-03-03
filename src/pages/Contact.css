@@ -1,0 +1,162 @@
+/* ═══════════════════════════════════════
+   CONTACT PAGE
+═══════════════════════════════════════ */
+
+/* ─── Hero header ─── */
+
+.contact-hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 220px;
+  background: linear-gradient(160deg, #f5f0e8 0%, #e8f0e9 60%, #d4e8d5 100%);
+  text-align: center;
+  padding: var(--space-12) var(--space-4);
+}
+
+.contact-hero h1 {
+  font-family: var(--font-display);
+  font-size: var(--font-size-4xl);
+  color: var(--color-primary-dark);
+}
+
+/* ─── Map placeholder ─── */
+
+.contact-map-placeholder {
+  width: 100%;
+  height: 400px;
+  background: var(--color-border);
+}
+
+/* ─── Form section ─── */
+
+.contact-section {
+  padding: var(--space-16) var(--space-4);
+  background: var(--color-bg);
+}
+
+.contact-form {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: var(--space-12) var(--space-8);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+}
+
+.contact-form h2 {
+  font-family: var(--font-display);
+  font-size: var(--font-size-3xl);
+  color: var(--color-primary-dark);
+  margin-bottom: var(--space-8);
+  text-align: center;
+}
+
+/* ─── Form elements ─── */
+
+.formElement {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  margin-bottom: var(--space-6);
+}
+
+.formElement label {
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  color: var(--color-text);
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.formElement input,
+.formElement textarea,
+.formElement select {
+  width: 100%;
+  box-sizing: border-box;
+  padding: var(--space-3) var(--space-4);
+  font-family: var(--font-sans);
+  font-size: var(--font-size-base);
+  color: var(--color-text);
+  background: var(--color-bg);
+  border: 1.5px solid var(--color-border);
+  border-radius: var(--radius);
+  outline: none;
+  transition: border-color var(--transition), box-shadow var(--transition);
+  resize: none;
+}
+
+.formElement select {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%232d6a2f' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right var(--space-4) center;
+  cursor: pointer;
+}
+
+.formElement input::placeholder,
+.formElement textarea::placeholder {
+  color: var(--color-text-muted);
+}
+
+.formElement input:focus,
+.formElement textarea:focus,
+.formElement select:focus {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(45, 106, 47, 0.12);
+}
+
+/* ─── Submit button ─── */
+
+.formButton {
+  display: block;
+  width: 100%;
+  padding: var(--space-4) var(--space-6);
+  margin-top: var(--space-4);
+  font-family: var(--font-sans);
+  font-size: var(--font-size-base);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--color-surface);
+  background: var(--color-primary);
+  border: none;
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: background var(--transition), transform var(--transition);
+}
+
+.formButton:hover {
+  background: var(--color-primary-dark);
+  transform: translateY(-1px);
+}
+
+.formButton:active {
+  transform: translateY(0);
+}
+
+/* ─── Responsive ─── */
+
+/* ── Tablet (768px) ── */
+@media (max-width: 768px) {
+  .contact-hero { min-height: 180px; padding: var(--space-10) var(--space-6); }
+  .contact-hero h1 { font-size: var(--font-size-3xl); }
+  .contact-map-placeholder { height: 280px; }
+  .contact-section { padding: var(--space-12) var(--space-6); }
+  .contact-form { padding: var(--space-10) var(--space-6); }
+}
+
+/* ── Mobile (480px) ── */
+@media (max-width: 480px) {
+  .contact-hero { padding: var(--space-8) var(--space-4); }
+  .contact-hero h1 { font-size: var(--font-size-2xl); }
+  .contact-map-placeholder { height: 200px; }
+  .contact-section { padding: var(--space-10) var(--space-4); }
+  .contact-form { padding: var(--space-8) var(--space-4); margin-inline: 0; border-radius: var(--radius); }
+  .contact-form h2 { font-size: var(--font-size-2xl); margin-bottom: var(--space-6); }
+  .formElement { margin-bottom: var(--space-4); }
+  .formElement input,
+  .formElement textarea,
+  .formElement select { font-size: var(--font-size-base); padding: var(--space-3); }
+}

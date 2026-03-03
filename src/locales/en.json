@@ -17,12 +17,85 @@
     "home": {
       "title": "Home — Palme Ivoire",
       "welcome": "Welcome to Palme Ivoire",
-      "subtitle": "A leading agro-industry player in Ivory Coast, we cultivate excellence and sustainability in service of our land.",
-      "cta": "Discover our services"
+      "subtitle": "Palme Ivoire is a leading agro-industrial company in Côte d'Ivoire, specializing in palm oil production and processing.\n\nSince its establishment, our mission has been to contribute to the sustainable development of the palm oil sector while creating value for our partners, producers, and communities.\n\nThrough our expertise, modern facilities, and strong commitment to quality, we deliver products that meet both national and international standards. Social responsibility, industrial performance, and environmental sustainability are at the core of everything we do.",
+      "cta": "Discover our services",
+      "stats": {
+        "label": "Palme Ivoire by the numbers",
+        "items": [
+          { "num": 5,    "suffix": "+",  "label": "Years of experience" },
+          { "num": 200,   "suffix": "+",  "label": "Employees" },
+          { "num": 10000, "suffix": "+",  "label": "Hectares of plantation" },
+          { "num": 50000, "suffix": "+",  "label": "Tons produced / year" }
+        ]
+      },
+      "services": {
+        "label": "Our areas of activity",
+        "subtitle": "From plantation to processing, we master the entire palm oil value chain.",
+        "items": [
+          
+          {
+            "icon": "🏭",
+            "title": "Industrial processing",
+            "desc": "Extraction and refining of crude palm oil in our modern processing units."
+          },
+          {
+            "icon": "🤝",
+            "title": "Producer partnership",
+            "desc": "Support and guidance for local producers to strengthen the palm oil sector."
+          },
+          {
+            "icon": "🌱",
+            "title": "Sustainable development",
+            "desc": "Commitment to responsible practices to preserve the environment and support communities."
+          }
+        ],
+        "cta": "See all our services"
+      },
+      "about": {
+        "label": "Who we are",
+        "title": "A company rooted in the Ivorian land",
+        "body": "Founded with the vision of unlocking Ivory Coast's agricultural potential, Palme Ivoire has established itself as a key player in the palm oil sector. We combine ancestral know-how with modern technology to produce excellence in every drop, while caring for our environment and our communities.",
+        "cta": "Learn more"
+      },
+      "values": {
+        "label": "What guides us",
+        "items": [
+          { "icon": "✦", "title": "Excellence", "desc": "Every litre of oil we produce meets the most stringent quality standards, from field to factory." },
+          { "icon": "◈", "title": "Sustainability", "desc": "Our agricultural and industrial practices are designed to preserve ecosystems and nourish future generations." },
+          { "icon": "⬡", "title": "Solidarity", "desc": "We invest in local communities, supporting partner producers and rural economies across the region." }
+        ]
+      },
+      "contact": {
+        "label": "Let's work together",
+        "subtitle": "Have a project or a question? Our team is here to help.",
+        "cta": "Contact us",
+        "contactus": "Let's talk, Contact Us"
+      }
     },
     "about": { "title": "About Us — Palme Ivoire" },
     "services": { "title": "Services — Palme Ivoire" },
-    "gallery": { "title": "Gallery — Palme Ivoire" },
-    "contact": { "title": "Contact — Palme Ivoire" }
+    "gallery": { "title": "Gallery — Palme Ivoire", "subtitle": "A glimpse into our plantations, processing facilities, and the communities we work with." },
+    "contact": {
+      "title": "Contact — Palme Ivoire",
+      "contactus": "Let's talk, Contact Us",
+      "name": "Name",
+      "namePlaceholder": "Your name..",
+      "email": "E-mail",
+      "emailPlaceholder": "Your email..",
+      "phone": "Phone",
+      "phonePlaceholder": "+225 00 00 00 00 00",
+      "subject": "Subject",
+      "subjectPlaceholder": "Select a subject",
+      "subjectOptions": {
+        "general_inquiry": "General Inquiry",
+        "partnership": "Business Partnership",
+        "job_application": "Job Application",
+        "supplier_request": "Supplier Request",
+        "customer_support": "Customer Support"
+      },
+      "message": "Message",
+      "messagePlaceholder": "Your message..",
+      "submit": "Submit"
+    }
   }
 }

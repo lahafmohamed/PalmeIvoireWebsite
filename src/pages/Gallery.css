@@ -1,0 +1,171 @@
+/* ═══════════════════════════════════════
+   GALLERY PAGE
+═══════════════════════════════════════ */
+
+/* ─── Hero ─── */
+
+.gallery-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 220px;
+  background: linear-gradient(160deg, #f5f0e8 0%, #e8f0e9 60%, #d4e8d5 100%);
+  text-align: center;
+  padding: var(--space-12) var(--space-4);
+  gap: var(--space-4);
+}
+
+.gallery-hero h1 {
+  font-family: var(--font-display);
+  font-size: var(--font-size-4xl);
+  color: var(--color-primary-dark);
+}
+
+.gallery-hero__subtitle {
+  font-size: var(--font-size-lg);
+  color: var(--color-text-muted);
+  max-width: 580px;
+  line-height: 1.6;
+}
+
+/* ─── Grid section ─── */
+
+.gallery-section {
+  padding: var(--space-16) var(--space-6);
+  background: var(--color-bg);
+}
+
+.gallery-grid {
+  columns: 4;
+  column-gap: var(--space-4);
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+/* ─── Grid items ─── */
+
+.gallery-item {
+  display: block;
+  width: 100%;
+  break-inside: avoid;
+  margin-bottom: var(--space-4);
+  border: none;
+  padding: 0;
+  background: none;
+  cursor: zoom-in;
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: var(--radius);
+  transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1),
+              filter 0.4s ease;
+  filter: brightness(0.96);
+}
+
+.gallery-item:hover img {
+  transform: scale(1.03);
+  filter: brightness(1.04);
+}
+
+/* ─── Lightbox ─── */
+
+.lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  background: rgba(0, 0, 0, 0.92);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: zoom-out;
+}
+
+.lightbox img {
+  max-width: 90vw;
+  max-height: 88vh;
+  object-fit: contain;
+  border-radius: var(--radius);
+  cursor: default;
+  box-shadow: 0 8px 48px rgba(0, 0, 0, 0.6);
+}
+
+.lightbox__close,
+.lightbox__prev,
+.lightbox__next {
+  position: fixed;
+  background: rgba(255, 255, 255, 0.12);
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background var(--transition);
+  z-index: 1001;
+}
+
+.lightbox__close {
+  top: var(--space-6);
+  right: var(--space-6);
+  width: 44px;
+  height: 44px;
+  font-size: 1.1rem;
+}
+
+.lightbox__prev,
+.lightbox__next {
+  top: 50%;
+  transform: translateY(-50%);
+  width: 52px;
+  height: 52px;
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.lightbox__prev { left: var(--space-6); }
+.lightbox__next { right: var(--space-6); }
+
+.lightbox__close:hover,
+.lightbox__prev:hover,
+.lightbox__next:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+/* ─── Responsive ─── */
+
+/* ── Laptop (1024px) ── */
+@media (max-width: 1024px) {
+  .gallery-grid { columns: 3; }
+}
+
+/* ── Tablet (768px) ── */
+@media (max-width: 768px) {
+  .gallery-hero { min-height: 180px; padding: var(--space-10) var(--space-6); }
+  .gallery-hero h1 { font-size: var(--font-size-3xl); }
+  .gallery-hero__subtitle { font-size: var(--font-size-base); }
+  .gallery-section { padding: var(--space-12) var(--space-6); }
+  .gallery-grid { columns: 2; column-gap: var(--space-3); }
+  .gallery-item { margin-bottom: var(--space-3); }
+  .lightbox__prev, .lightbox__next { width: 44px; height: 44px; font-size: 1.6rem; }
+}
+
+/* ── Mobile (480px) ── */
+@media (max-width: 480px) {
+  .gallery-hero { padding: var(--space-8) var(--space-4); }
+  .gallery-hero h1 { font-size: var(--font-size-2xl); }
+  .gallery-section { padding: var(--space-10) var(--space-4); }
+  .gallery-grid { columns: 2; column-gap: var(--space-2); }
+  .gallery-item { margin-bottom: var(--space-2); }
+  .lightbox__prev { left: var(--space-2); }
+  .lightbox__next { right: var(--space-2); }
+  .lightbox__prev, .lightbox__next { width: 36px; height: 36px; font-size: 1.4rem; }
+  .lightbox__close { top: var(--space-3); right: var(--space-3); width: 36px; height: 36px; }
+  .lightbox img { max-width: 96vw; max-height: 80vh; }
+}

@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls c:/Users/Mohamed/Desktop/palmeIvoireSite2026/public/gallery*.jpeg)"
+    ]
+  }
+}
