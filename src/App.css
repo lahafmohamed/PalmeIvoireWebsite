@@ -13,3 +13,16 @@
   margin: 0 auto;
   padding: var(--space-12) var(--space-6);
 }
+
+/* Mobile optimization */
+@media (max-width: 768px) {
+  .page {
+    padding: var(--space-10) var(--space-6);
+  }
+}
+
+@media (max-width: 480px) {
+  .page {
+    padding: var(--space-8) var(--space-4);
+  }
+}

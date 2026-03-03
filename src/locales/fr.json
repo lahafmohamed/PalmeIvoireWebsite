@@ -16,58 +16,97 @@
   "pages": {
     "home": {
       "title": "Accueil — Palme Ivoire",
-      "welcome": "Bienvenue chez Palme Ivoire",
-      "subtitle": "Palme Ivoire est un acteur majeur de l’industrie agro-industrielle en Côte d’Ivoire, spécialisé dans la production et la transformation de l’huile de palme.\n\nDepuis sa création, notre mission est de contribuer au développement durable du secteur palmier à huile tout en créant de la valeur pour nos partenaires, nos producteurs et nos communautés.\n\nGrâce à notre expertise, à nos infrastructures modernes et à notre engagement envers la qualité, nous garantissons des produits conformes aux standards nationaux et internationaux. Nous plaçons la responsabilité sociale, la performance industrielle et le respect de l’environnement au cœur de nos actions.",
+      "welcome": "Producteur & Transformateur Premium d'Huiles de Palme en Côte d'Ivoire",
+      "subtitle": "De la plantation à l'exportation, nous produisons une huile de palme brute (CPO) et une huile de palmiste (PKO) de classe mondiale — alliant expertise malaisienne, durabilité et engagement envers nos communautés.",
       "cta": "Découvrir nos services",
       "stats": {
-        "label": "Palme Ivoire en chiffres",
+        "label": "PALME IVOIRE en chiffres",
         "items": [
-          { "num": 5,    "suffix": "+",  "label": "Années d'expérience" },
-          { "num": 200,   "suffix": "+",  "label": "Employés" },
-          { "num": 10000, "suffix": "+",  "label": "Hectares de plantation" },
-          { "num": 50000, "suffix": "+",  "label": "Tonnes produites / an" }
+          { "num": 2,     "suffix": "+",  "label": "Années d'expérience" },
+          { "num": 150,   "suffix": "+",  "label": "Employés qualifiés" },
+          { "num": 1500,  "suffix": "+",  "label": "Producteurs partenaires" },
+          { "num": 50000, "suffix": "+",  "label": "Tonnes CPO/PKO / an" }
         ]
       },
       "services": {
-        "label": "Nos domaines d'activité",
-        "subtitle": "De la plantation à la transformation, nous maîtrisons toute la chaîne de valeur de l'huile de palme.",
+        "label": "Nos produits et services",
+        "subtitle": "De l'approvisionnement responsable à la transformation de haute qualité, nous maîtrisons toute la chaîne de valeur.",
         "items": [
-          
+          {
+            "icon": "🌾",
+            "title": "Huile de Palme Brute (CPO) Premium",
+            "desc": "Extraction et traitement d'huile de palme brute de qualité supérieure, conforme aux standards internationaux. Processus de traitement écologique avec récupération naturelle des fluides."
+          },
           {
             "icon": "🏭",
-            "title": "Transformation industrielle",
-            "desc": "Extraction et raffinage de l'huile de palme brute dans nos unités de traitement modernes."
+            "title": "Huile de Palmiste (PKO)",
+            "desc": "Huile de palmiste de classe mondiale pour applications alimentaires, cosmétiques et pharmaceutiques. Qualité exceptionnelle reconnue internationalement."
           },
           {
             "icon": "🤝",
-            "title": "Partenariat producteurs",
-            "desc": "Accompagnement et encadrement des producteurs locaux pour renforcer la filière palmier."
+            "title": "Partenariat avec producteurs locaux",
+            "desc": "Accompagnement et support technique pour les producteurs de la région. Nous achetons leur récolte, les guidons et les aidons à améliorer leurs rendements et leurs pratiques."
           },
           {
             "icon": "🌱",
-            "title": "Développement durable",
-            "desc": "Engagement envers des pratiques responsables pour préserver l'environnement et soutenir les communautés."
+            "title": "Pratiques durables & traitement responsable",
+            "desc": "Engagement envers la durabilité environnementale. Nos fluides de traitement sont traités naturellement et nos procédés protègent la biodiversité."
           }
         ],
-        "cta": "Voir tous nos services"
+        "cta": "En savoir plus sur nos produits"
       },
       "about": {
         "label": "Qui sommes-nous",
-        "title": "Une entreprise enracinée dans la terre ivoirienne",
-        "body": "Fondée avec la vision de valoriser le potentiel agricole de la Côte d'Ivoire, Palme Ivoire s'est imposée comme un acteur incontournable de la filière palmier à huile. Nous conjuguons savoir-faire ancestral et technologie moderne pour produire une huile d'excellence, tout en prenant soin de notre environnement et de nos communautés.",
+        "title": "PALME IVOIRE - Excellence dans la transformation d'huiles de palme",
+        "body": "PALME IVOIRE est un producteur et transformateur d'huile de palme brute (CPO) et d'huile de palmiste (PKO) établi au cœur de la Côte d'Ivoire. Bénéficiant d'une expertise acquise auprès des géants malaisiens de l'industrie, nous appliquons des technologies innovantes pour garantir l'efficacité et la cohérence de nos opérations. Nous travaillons en partenariat étroit avec les producteurs locaux, créant une chaîne de valeur durable qui profite à nos communautés.",
         "cta": "En savoir plus"
       },
       "values": {
         "label": "Ce qui nous guide",
+        "title": "Nos valeurs fondamentales",
         "items": [
-          { "icon": "✦", "title": "Excellence", "desc": "Chaque litre d'huile que nous produisons répond aux standards de qualité les plus rigoureux, du champ à l'usine." },
-          { "icon": "◈", "title": "Durabilité", "desc": "Nos pratiques agricoles et industrielles sont pensées pour préserver les écosystèmes et nourrir les générations futures." },
-          { "icon": "⬡", "title": "Solidarité", "desc": "Nous investissons dans les communautés locales, en soutenant les producteurs partenaires et les économies rurales." }
+          { "icon": "✦", "title": "Qualité Premium", "desc": "Chaque goutte d'huile que nous produisons répond aux standards de qualité les plus rigoureux. Nos processus garantissent une pureté et une excellence inégalées." },
+          { "icon": "◈", "title": "Durabilité & Innovation", "desc": "Nos pratiques de transformation respectent l'environnement. Nos fluides sont traités naturellement et nous appliquons des technologies innovantes pour minimiser notre empreinte carbone." },
+          { "icon": "⬡", "title": "Solidarité & Communauté", "desc": "Nous investissons dans les communautés locales par l'éducation, la santé et les opportunités économiques. Notre succès dépend du bien-être de nos producteurs partenaires." }
+        ]
+      },
+      "certifications": {
+        "label": "Expertise & Reconnaissances",
+        "title": "Ce qui nous distingue",
+        "items": [
+          { "icon": "🌍", "title": "Expertise Malaisienne", "desc": "Technologie et savoir-faire acquis auprès des géants de l'industrie en Malaisie" },
+          { "icon": "✓", "title": "Qualité Premium", "desc": "CPO et PKO conformes aux standards internationaux les plus stricts" },
+          { "icon": "♻️", "title": "Traitement Durable", "desc": "Fluides de traitement traités naturellement dans nos installations" },
+          { "icon": "👥", "title": "Partenariat Local", "desc": "Soutien direct à 1500+ producteurs de palme de la région" }
+        ]
+      },
+      "testimonials": {
+        "label": "Ce que nos partenaires disent",
+        "title": "La confiance de nos partenaires",
+        "items": [
+          {
+            "text": "PALME IVOIRE nous offre les meilleurs prix et support technique. Leur équipe nous aide à améliorer notre production. C'est un vrai partenariat, pas seulement une relation commerciale.",
+            "author": "Kofi Mensah",
+            "role": "Producteur de palme, Région de Gagnoa",
+            "icon": "👨‍🌾"
+          },
+          {
+            "text": "La qualité de leur CPO et PKO est exceptionnelle. Nos clients internationaux sont très satisfaits. PALME IVOIRE est devenue notre fournisseur de confiance.",
+            "author": "Sophie Bernard",
+            "role": "Directrice achats, Groupe cosmétique français",
+            "icon": "👩‍💼"
+          },
+          {
+            "text": "Leur engagement envers la durabilité et le traitement responsable des fluides est touchant. C'est rare de trouver en Afrique une entreprise qui prend vraiment soin de l'environnement.",
+            "author": "Dr. Amara Sow",
+            "role": "Directrice, ONG environnementale",
+            "icon": "👩‍🔬"
+          }
         ]
       },
       "contact": {
         "label": "Travaillons ensemble",
-        "subtitle": "Vous avez un projet ou une question ? Notre équipe est à votre écoute.",
+        "subtitle": "Connectez-vous avec nous pour en savoir plus sur nos produits CPO/PKO et nos initiatives de développement communautaire.",
         "cta": "Nous contacter",
         "contactus": "Parlons-en, Contactez-nous"
       }
@@ -81,12 +120,16 @@
     "contact": {
       "title": "Contact — Palme Ivoire",
       "contactus": "Parlons-en, Contactez-nous",
+      "getInTouch": "Prenez contact avec nous",
       "name": "Nom",
       "namePlaceholder": "Votre nom..",
       "email": "E-mail",
       "emailPlaceholder": "Votre e-mail..",
       "phone": "Téléphone",
       "phonePlaceholder": "+225 00 00 00 00 00",
+      "address": "Adresse",
+      "hours": "Horaires",
+      "hoursText": "Lun-Ven: 8h-17h",
       "subject": "Sujet",
       "subjectPlaceholder": "Sélectionnez un sujet",
       "subjectOptions": {
@@ -98,7 +141,10 @@
       },
       "message": "Message",
       "messagePlaceholder": "Votre message..",
-      "submit": "Envoyer"
+      "submit": "Envoyer",
+      "sending": "Envoi...",
+      "successMessage": "Merci! Votre message a été envoyé avec succès. Nous vous répondrons dans les 24h.",
+      "errorMessage": "Oups! Une erreur s'est produite. Veuillez réessayer."
     }
   }
 }

@@ -167,13 +167,21 @@
     background: var(--color-surface);
     border-bottom: 1px solid var(--color-border);
     padding: var(--space-4) var(--space-6);
-    gap: var(--space-1);
+    gap: var(--space-2);
     box-shadow: var(--shadow-md);
     animation: navSlideDown 0.25s ease both;
     z-index: 99;
+    max-height: calc(100vh - var(--navbar-height));
+    overflow-y: auto;
   }
   .navbar__nav--open { display: flex; }
-  .navbar__link { padding: var(--space-3) var(--space-4); font-size: var(--font-size-base); }
+  .navbar__link {
+    padding: var(--space-4) var(--space-4);
+    font-size: var(--font-size-base);
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+  }
   .navbar__link::after { bottom: 4px; left: var(--space-4); }
 }
 
@@ -181,5 +189,16 @@
 @media (max-width: 480px) {
   .navbar__inner { padding: 0 var(--space-4); gap: var(--space-3); }
   .navbar__logo-img { height: 56px; }
-  .navbar__nav { padding: var(--space-3) var(--space-4); }
+  .navbar__nav { padding: var(--space-3) var(--space-4); gap: var(--space-2); }
+  .navbar__link { padding: var(--space-4) var(--space-3); min-height: 44px; }
+  .navbar__lang {
+    padding: var(--space-2) var(--space-3);
+    font-size: var(--font-size-sm);
+    min-height: 36px;
+  }
+  .navbar__burger {
+    width: 32px;
+    height: 32px;
+    gap: 4px;
+  }
 }
