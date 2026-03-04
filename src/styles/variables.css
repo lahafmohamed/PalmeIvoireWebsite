@@ -1,19 +1,27 @@
 :root {
-  /* Colors */
-  --color-primary: #2d6a2f;
-  --color-primary-light: #4a9e4d;
-  --color-primary-dark: #1e4a20;
-  --color-accent: #c9a227;
-  --color-accent-light: #e0b83a;
-  --color-bg: #f5f0e8;
-  --color-surface: #ffffff;
-  --color-text: #1a1a1a;
-  --color-text-muted: #6b7280;
-  --color-border: #e0d9cc;
+  /* Colors — Palette "Harvest Warmth" (Brand-Grounded, Consumer-Focused) */
+  /* Tied to employee uniforms, facility colors, and Ivorian landscape */
+  --color-primary: #E25E16;        /* Harvest Terracotta — exact match to work shirts & storage tanks */
+  --color-primary-light: #ED7C38;  /* Harvest Terracotta lighter variant */
+  --color-primary-dark: #C94F0F;   /* Harvest Terracotta darker variant (hover state) */
+  --color-secondary: #5A7247;      /* Mature Palm Olive — muted green from plantation foliage */
+  --color-accent: #F2A922;         /* Sunlit Amber — matches uniform yellow, safety railings, refined oil */
+  --color-accent-light: #F9B840;   /* Sunlit Amber lighter variant */
+  --color-bg: #FFFBF7;             /* Warm Ivory Off-White — subtle ivory tint, less harsh than pure white */
+  --color-surface: #FFFFFF;        /* Pure White — cards, form inputs, table rows */
+  --color-text: #1E1B18;           /* Warm Off-Black — headlines, body copy, navigation */
+  --color-text-muted: #645E58;     /* Warm Medium Greige — supporting text, captions */
+  --color-border: #F0E6DE;         /* Warm Light Beige — borders, dividers, input borders */
+  --color-tertiary: #C47650;       /* Red Clay — subtle decorative accents from Ivorian soil */
+  --color-muted: #D9D0C7;          /* Muted — placeholder text, disabled states */
+  --color-link: #5A7247;           /* Link color — Mature Palm Olive */
+  --color-success: #477D38;        /* Muted Forest Green — status indicator */
+  --color-warning: #F2A922;        /* Sunlit Amber — warning state (matches accent) */
+  --color-error: #C1382E;          /* Warm Earth Red — error state, no neon */
 
   /* Typography */
-  --font-sans: 'Plus Jakarta Sans', system-ui, sans-serif;
-  --font-display: 'Fraunces', Georgia, serif;
+  --font-sans: 'Syne', system-ui, sans-serif;
+  --font-display: 'Cormorant Garamond', Georgia, serif;
   --font-size-sm: 0.875rem;
   --font-size-base: 1rem;
   --font-size-lg: 1.125rem;

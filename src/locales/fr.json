@@ -7,7 +7,7 @@
     "contact": "Contact"
   },
   "footer": {
-    "tagline": "L'excellence agricole au cœur de la Côte d'Ivoire.",
+    "tagline": "Transformateur d'huile de palme au cœur de la Côte d'Ivoire.",
     "quickLinks": "Liens rapides",
     "contactUs": "Nous contacter",
     "address": "Abidjan, Côte d'Ivoire",
@@ -16,58 +16,81 @@
   "pages": {
     "home": {
       "title": "Accueil — Palme Ivoire",
-      "welcome": "Producteur & Transformateur Premium d'Huiles de Palme en Côte d'Ivoire",
-      "subtitle": "De la plantation à l'exportation, nous produisons une huile de palme brute (CPO) et une huile de palmiste (PKO) de classe mondiale — alliant expertise malaisienne, durabilité et engagement envers nos communautés.",
+      "heroSlider": {
+        "slides": [
+          {
+            "eyebrow": "Palme Ivoire",
+            "title": "Transformateur d'Huile de Palme en Côte d'Ivoire",
+            "subtitle": "Nous rachetons les régimes de palme aux agriculteurs locaux et les transformons en CPO & PKO de qualité premium pour l'exportation.",
+            "cta": "Nos produits",
+            "ctaGhost": "Qui sommes-nous"
+          },
+          {
+            "eyebrow": "Capacité Industrielle",
+            "title": "50 000+ Tonnes Transformées par An",
+            "subtitle": "Notre usine moderne transforme les régimes de palme en huile de qualité supérieure grâce aux technologies malaisiennes.",
+            "cta": "Notre usine"
+          },
+          {
+            "eyebrow": "Achat Local",
+            "title": "Nous Rachetons la Récolte de 1 500+ Agriculteurs",
+            "subtitle": "Prix équitables, paiement rapide et accompagnement technique pour nos fournisseurs partenaires.",
+            "cta": "Devenir fournisseur"
+          }
+        ]
+      },
+      "welcome": "Transformateur d'Huile de Palme en Côte d'Ivoire",
+      "subtitle": "Nous rachetons les régimes de palme aux agriculteurs ivoiriens et les transformons en huile de palme brute (CPO) et huile de palmiste (PKO) de qualité premium pour l'exportation.",
       "cta": "Découvrir nos services",
       "stats": {
         "label": "PALME IVOIRE en chiffres",
         "items": [
           { "num": 2,     "suffix": "+",  "label": "Années d'expérience" },
           { "num": 150,   "suffix": "+",  "label": "Employés qualifiés" },
-          { "num": 1500,  "suffix": "+",  "label": "Producteurs partenaires" },
-          { "num": 50000, "suffix": "+",  "label": "Tonnes CPO/PKO / an" }
+          { "num": 1500,  "suffix": "+",  "label": "Agriculteurs fournisseurs" },
+          { "num": 50000, "suffix": "+",  "label": "Tonnes transformées / an" }
         ]
       },
       "services": {
         "label": "Nos produits et services",
-        "subtitle": "De l'approvisionnement responsable à la transformation de haute qualité, nous maîtrisons toute la chaîne de valeur.",
+        "subtitle": "De l'achat des régimes de palme à la transformation et la vente d'huile de qualité premium.",
         "items": [
           {
             "icon": "🌾",
-            "title": "Huile de Palme Brute (CPO) Premium",
-            "desc": "Extraction et traitement d'huile de palme brute de qualité supérieure, conforme aux standards internationaux. Processus de traitement écologique avec récupération naturelle des fluides."
+            "title": "Achat de Régimes de Palme",
+            "desc": "Nous rachetons les régimes de palme aux agriculteurs locaux à des prix équitables. Paiement rapide et partenariat de confiance."
           },
           {
             "icon": "🏭",
-            "title": "Huile de Palmiste (PKO)",
-            "desc": "Huile de palmiste de classe mondiale pour applications alimentaires, cosmétiques et pharmaceutiques. Qualité exceptionnelle reconnue internationalement."
+            "title": "Transformation CPO & PKO",
+            "desc": "Notre usine moderne transforme les régimes en huile de palme brute (CPO) et huile de palmiste (PKO) de qualité export."
+          },
+          {
+            "icon": "📦",
+            "title": "Vente & Exportation",
+            "desc": "Nous vendons notre huile transformée aux marchés locaux et internationaux. Qualité certifiée et livraison fiable."
           },
           {
             "icon": "🤝",
-            "title": "Partenariat avec producteurs locaux",
-            "desc": "Accompagnement et support technique pour les producteurs de la région. Nous achetons leur récolte, les guidons et les aidons à améliorer leurs rendements et leurs pratiques."
-          },
-          {
-            "icon": "🌱",
-            "title": "Pratiques durables & traitement responsable",
-            "desc": "Engagement envers la durabilité environnementale. Nos fluides de traitement sont traités naturellement et nos procédés protègent la biodiversité."
+            "title": "Accompagnement Agriculteurs",
+            "desc": "Support technique et conseils pour améliorer les rendements de nos fournisseurs. Partenariat gagnant-gagnant."
           }
         ],
         "cta": "En savoir plus sur nos produits"
       },
       "about": {
         "label": "Qui sommes-nous",
-        "title": "PALME IVOIRE - Excellence dans la transformation d'huiles de palme",
-        "body": "PALME IVOIRE est un producteur et transformateur d'huile de palme brute (CPO) et d'huile de palmiste (PKO) établi au cœur de la Côte d'Ivoire. Bénéficiant d'une expertise acquise auprès des géants malaisiens de l'industrie, nous appliquons des technologies innovantes pour garantir l'efficacité et la cohérence de nos opérations. Nous travaillons en partenariat étroit avec les producteurs locaux, créant une chaîne de valeur durable qui profite à nos communautés.",
+        "title": "PALME IVOIRE - Spécialiste de la Transformation d'Huile de Palme",
+        "body": "PALME IVOIRE est un transformateur d'huile de palme établi au cœur de la Côte d'Ivoire. Nous rachetons les régimes de palme aux agriculteurs locaux et les transformons en huile de palme brute (CPO) et huile de palmiste (PKO) de qualité premium. Grâce à notre expertise acquise auprès des leaders malaisiens, nous garantissons une qualité exceptionnelle pour l'exportation et le marché local.",
         "cta": "En savoir plus"
       },
       "values": {
         "label": "Ce qui nous guide",
         "title": "Nos valeurs fondamentales",
         "items": [
-          { "icon": "✦", "title": "Qualité Premium", "desc": "Chaque goutte d'huile que nous produisons répond aux standards de qualité les plus rigoureux. Nos processus garantissent une pureté et une excellence inégalées." },
-          { "icon": "◈", "title": "Durabilité & Innovation", "desc": "Nos pratiques de transformation respectent l'environnement. Nos fluides sont traités naturellement et nous appliquons des technologies innovantes pour minimiser notre empreinte carbone." },
-          { "icon": "⬡", "title": "Solidarité & Communauté", "desc": "Nous investissons dans les communautés locales par l'éducation, la santé et les opportunités économiques. Notre succès dépend du bien-être de nos producteurs partenaires." }
+          { "icon": "✦", "title": "Qualité Premium", "desc": "Chaque goutte d'huile que nous transformons répond aux standards de qualité les plus rigoureux. Notre processus garantit une pureté et une excellence inégalées." },
+          { "icon": "◈", "title": "Prix Équitables", "desc": "Nous offrons des prix justes à nos agriculteurs fournisseurs avec un paiement rapide et transparent. Leur succès est notre succès." },
+          { "icon": "⬡", "title": "Partenariat Durable", "desc": "Nous accompagnons nos fournisseurs avec un support technique pour améliorer leurs rendements. Ensemble, nous construisons une filière forte." }
         ]
       },
       "certifications": {

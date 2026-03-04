@@ -7,7 +7,7 @@
     "contact": "Contact"
   },
   "footer": {
-    "tagline": "Agricultural excellence at the heart of Ivory Coast.",
+    "tagline": "Palm oil processor at the heart of Ivory Coast.",
     "quickLinks": "Quick Links",
     "contactUs": "Contact Us",
     "address": "Abidjan, Ivory Coast",
@@ -16,58 +16,81 @@
   "pages": {
     "home": {
       "title": "Home — Palme Ivoire",
-      "welcome": "Premium Crude Palm Oil & Palm Kernel Oil Producer in Ivory Coast",
-      "subtitle": "From plantation to export, we produce world-class crude palm oil (CPO) and palm kernel oil (PKO) — combining Malaysian expertise, environmental sustainability, and a lasting commitment to local communities.",
+      "heroSlider": {
+        "slides": [
+          {
+            "eyebrow": "Palme Ivoire",
+            "title": "Palm Oil Processor in Ivory Coast",
+            "subtitle": "We buy palm fruit bunches from local farmers and transform them into premium CPO & PKO for export.",
+            "cta": "Our Products",
+            "ctaGhost": "About Us"
+          },
+          {
+            "eyebrow": "Industrial Capacity",
+            "title": "50,000+ Tons Processed Annually",
+            "subtitle": "Our modern facility transforms palm fruit bunches into premium quality oil using Malaysian technology.",
+            "cta": "Our Facility"
+          },
+          {
+            "eyebrow": "Local Sourcing",
+            "title": "We Buy From 1,500+ Farmers",
+            "subtitle": "Fair prices, fast payment, and technical support for our partner suppliers.",
+            "cta": "Become a Supplier"
+          }
+        ]
+      },
+      "welcome": "Palm Oil Processor in Ivory Coast",
+      "subtitle": "We buy palm fruit bunches from Ivorian farmers and transform them into premium crude palm oil (CPO) and palm kernel oil (PKO) for export.",
       "cta": "Discover our services",
       "stats": {
         "label": "PALME IVOIRE by the numbers",
         "items": [
           { "num": 2,     "suffix": "+",  "label": "Years of experience" },
           { "num": 150,   "suffix": "+",  "label": "Skilled employees" },
-          { "num": 1500,  "suffix": "+",  "label": "Partner producers" },
-          { "num": 50000, "suffix": "+",  "label": "Tons CPO/PKO / year" }
+          { "num": 1500,  "suffix": "+",  "label": "Supplier farmers" },
+          { "num": 50000, "suffix": "+",  "label": "Tons processed / year" }
         ]
       },
       "services": {
         "label": "Our products and services",
-        "subtitle": "From responsible sourcing to high-quality processing, we master the entire value chain.",
+        "subtitle": "From buying palm fruit bunches to processing and selling premium quality oil.",
         "items": [
           {
             "icon": "🌾",
-            "title": "Premium Crude Palm Oil (CPO)",
-            "desc": "Extraction and processing of high-quality crude palm oil, compliant with international standards. Ecological treatment process with natural fluid recovery."
+            "title": "Palm Fruit Bunch Purchasing",
+            "desc": "We buy palm fruit bunches from local farmers at fair prices. Fast payment and trusted partnership."
           },
           {
             "icon": "🏭",
-            "title": "Palm Kernel Oil (PKO)",
-            "desc": "World-class palm kernel oil for food, cosmetic, and pharmaceutical applications. Exceptional quality recognized internationally."
+            "title": "CPO & PKO Processing",
+            "desc": "Our modern facility transforms palm bunches into export-quality crude palm oil (CPO) and palm kernel oil (PKO)."
+          },
+          {
+            "icon": "📦",
+            "title": "Sales & Export",
+            "desc": "We sell our processed oil to local and international markets. Certified quality and reliable delivery."
           },
           {
             "icon": "🤝",
-            "title": "Partnership with local producers",
-            "desc": "Support and technical guidance for regional producers. We purchase their harvest, guide them, and help them improve yields and practices."
-          },
-          {
-            "icon": "🌱",
-            "title": "Sustainable practices & responsible processing",
-            "desc": "Committed to environmental sustainability. Our treatment fluids are naturally processed and our processes protect biodiversity."
+            "title": "Farmer Support",
+            "desc": "Technical support and advice to improve yields for our suppliers. Win-win partnership."
           }
         ],
         "cta": "Learn more about our products"
       },
       "about": {
         "label": "Who we are",
-        "title": "PALME IVOIRE - Excellence in Palm Oil Processing",
-        "body": "PALME IVOIRE is a processor and producer of crude palm oil (CPO) and palm kernel oil (PKO) based in the heart of Ivory Coast. Benefiting from expertise acquired from Malaysian industry leaders, we apply innovative technologies to ensure efficiency and consistency in our operations. We work in close partnership with local producers, creating a sustainable value chain that benefits our communities.",
+        "title": "PALME IVOIRE - Palm Oil Processing Specialist",
+        "body": "PALME IVOIRE is a palm oil processor based in the heart of Ivory Coast. We buy palm fruit bunches from local farmers and transform them into premium crude palm oil (CPO) and palm kernel oil (PKO). Thanks to our expertise acquired from Malaysian industry leaders, we guarantee exceptional quality for export and local markets.",
         "cta": "Learn more"
       },
       "values": {
         "label": "What guides us",
         "title": "Our Core Values",
         "items": [
-          { "icon": "✦", "title": "Premium Quality", "desc": "Every drop of oil we produce meets the most stringent quality standards. Our processes guarantee unmatched purity and excellence." },
-          { "icon": "◈", "title": "Sustainability & Innovation", "desc": "Our processing practices respect the environment. We naturally process our fluids and apply innovative technologies to minimize our carbon footprint." },
-          { "icon": "⬡", "title": "Solidarity & Community", "desc": "We invest in local communities through education, healthcare, and economic opportunities. Our success depends on the well-being of our partner producers." }
+          { "icon": "✦", "title": "Premium Quality", "desc": "Every drop of oil we process meets the most stringent quality standards. Our process guarantees unmatched purity and excellence." },
+          { "icon": "◈", "title": "Fair Prices", "desc": "We offer fair prices to our supplier farmers with fast and transparent payment. Their success is our success." },
+          { "icon": "⬡", "title": "Lasting Partnership", "desc": "We support our suppliers with technical assistance to improve their yields. Together, we build a strong supply chain." }
         ]
       },
       "certifications": {

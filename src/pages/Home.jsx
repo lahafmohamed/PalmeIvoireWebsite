@@ -1,9 +1,109 @@
+import { useState, useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
 import { useHead } from '@unhead/react'
 import { Link } from 'react-router-dom'
 import { useIntersection } from '../hooks/useIntersection'
 import { useCountUp } from '../hooks/useCountUp'
 import './Home.css'
+
+/* ── Slide metadata: images + route links (text comes from i18n) ── */
+const SLIDE_META = [
+  {
+    image: '/slide/photo1.jpeg',
+    ctaLink: '/services',
+    ctaGhostLink: '/about',
+  },
+  {
+    image: '/slide/slider2.jpeg',
+    ctaLink: '/about',
+  },
+  {
+    image: '/slide/slider3.png',
+    ctaLink: '/contact',
+  },
+]
+
+/* ── Hero Slider ── */
+function HeroSlider({ slides }) {
+  const [current, setCurrent] = useState(0)
+  const [paused,  setPaused]  = useState(false)
+
+  useEffect(() => {
+    if (paused) return
+    const id = setInterval(() => setCurrent(c => (c + 1) % slides.length), 5000)
+    return () => clearInterval(id)
+  }, [paused, slides.length])
+
+  const prev = () => setCurrent(c => (c - 1 + slides.length) % slides.length)
+  const next = () => setCurrent(c => (c + 1) % slides.length)
+
+  return (
+    <section
+      className="hero-slider"
+      onMouseEnter={() => setPaused(true)}
+      onMouseLeave={() => setPaused(false)}
+    >
+      <div className="hero__decoration" aria-hidden="true">
+        <span className="hero__orb hero__orb--1" />
+        <span className="hero__orb hero__orb--2" />
+        <span className="hero__orb hero__orb--3" />
+      </div>
+
+      {slides.map((slide, i) => {
+        const meta = SLIDE_META[i] || SLIDE_META[0]
+        return (
+          <div key={i} className={`hero-slide${i === current ? ' is-active' : ''}`}>
+            <div className="hero__content">
+              <p className="hero__eyebrow">{slide.eyebrow}</p>
+              <h1 className="hero__title">{slide.title}</h1>
+              <p className="hero__subtitle">{slide.subtitle}</p>
+              <div className="hero__actions">
+                <Link to={meta.ctaLink} className="hero__cta">{slide.cta}</Link>
+                {slide.ctaGhost && meta.ctaGhostLink && (
+                  <Link to={meta.ctaGhostLink} className="hero__cta hero__cta--ghost">
+                    {slide.ctaGhost} →
+                  </Link>
+                )}
+              </div>
+            </div>
+            <div className="hero__image-wrap">
+              <img
+                src={meta.image}
+                alt={slide.title}
+                className="hero__image"
+                loading={i === 0 ? 'eager' : 'lazy'}
+              />
+            </div>
+          </div>
+        )
+      })}
+
+      <button
+        className="hero-slider__arrow hero-slider__arrow--prev"
+        onClick={prev}
+        aria-label="Slide précédent"
+      >&#8249;</button>
+      <button
+        className="hero-slider__arrow hero-slider__arrow--next"
+        onClick={next}
+        aria-label="Slide suivant"
+      >&#8250;</button>
+
+      <div className="hero-slider__dots" role="tablist">
+        {slides.map((_, i) => (
+          <button
+            key={i}
+            role="tab"
+            aria-selected={i === current}
+            className={`hero-slider__dot${i === current ? ' is-active' : ''}`}
+            onClick={() => setCurrent(i)}
+            aria-label={`Slide ${i + 1}`}
+          />
+        ))}
+      </div>
+    </section>
+  )
+}
 
 /* ── Animated stat card ── */
 function StatCard({ num, suffix, label, isActive, locale }) {
@@ -21,6 +121,7 @@ export default function Home() {
   const { t, i18n } = useTranslation()
   useHead({ title: t('pages.home.title') })
 
+  const heroSlides   = t('pages.home.heroSlider.slides', { returnObjects: true })
   const stats    = t('pages.home.stats.items',    { returnObjects: true })
   const services = t('pages.home.services.items', { returnObjects: true })
   const values   = t('pages.home.values.items',   { returnObjects: true })
@@ -38,34 +139,8 @@ export default function Home() {
   return (
     <div className="home">
 
-      {/* ── Hero ── */}
-      <section className="hero">
-        <div className="hero__decoration" aria-hidden="true">
-          <span className="hero__orb hero__orb--1" />
-          <span className="hero__orb hero__orb--2" />
-          <span className="hero__orb hero__orb--3" />
-        </div>
-        <div className="hero__content">
-          <p className="hero__eyebrow">Palme Ivoire</p>
-          <h1 className="hero__title">{t('pages.home.welcome')}</h1>
-          <p className="hero__subtitle">{t('pages.home.subtitle')}</p>
-          <div className="hero__actions">
-            <Link to="/services" className="hero__cta">
-              {t('pages.home.cta')}
-            </Link>
-            <Link to="/about" className="hero__cta hero__cta--ghost">
-              {t('pages.home.about.cta')} →
-            </Link>
-          </div>
-        </div>
-        <div className="hero__image-wrap">
-          <img
-            src="https://images.pexels.com/photos/2950868/pexels-photo-2950868.jpeg?auto=compress&cs=tinysrgb&w=1600"
-            alt="Plantation de palmiers à huile — Palme Ivoire"
-            className="hero__image"
-          />
-        </div>
-      </section>
+      {/* ── Hero Slider ── */}
+      <HeroSlider slides={heroSlides} />
 
       {/* ── Chiffres clés ── */}
       <section className="stats" ref={statsRef}>
