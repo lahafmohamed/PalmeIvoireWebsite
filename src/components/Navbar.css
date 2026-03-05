@@ -7,7 +7,7 @@
 .navbar {
   position: sticky;
   top: 0;
-  z-index: 100;
+  z-index: 9999;
   height: var(--navbar-height);
   background: var(--color-surface);
   border-bottom: 1px solid var(--color-border);
@@ -34,9 +34,6 @@
 }
 
 /* Logo */
-.navbar {
-  overflow: hidden;
-}
 
 .navbar__logo {
   display: flex;
