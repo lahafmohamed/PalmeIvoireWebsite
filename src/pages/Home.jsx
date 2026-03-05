@@ -4,6 +4,7 @@ import { useHead } from '@unhead/react'
 import { Link } from 'react-router-dom'
 import { useIntersection } from '../hooks/useIntersection'
 import { useCountUp } from '../hooks/useCountUp'
+import { Icon } from '../components/Icon'
 import './Home.css'
 
 /* ── Slide metadata: images + route links (text comes from i18n) ── */
@@ -58,7 +59,7 @@ function HeroSlider({ slides }) {
               <h1 className="hero__title">{slide.title}</h1>
               <p className="hero__subtitle">{slide.subtitle}</p>
               <div className="hero__actions">
-                <Link to={meta.ctaLink} className="hero__cta">{slide.cta}</Link>
+                <Link to={meta.ctaLink} className="hero__cta hero__cta--white">{slide.cta}</Link>
                 {slide.ctaGhost && meta.ctaGhostLink && (
                   <Link to={meta.ctaGhostLink} className="hero__cta hero__cta--ghost">
                     {slide.ctaGhost} →
@@ -124,12 +125,14 @@ export default function Home() {
   const heroSlides   = t('pages.home.heroSlider.slides', { returnObjects: true })
   const stats    = t('pages.home.stats.items',    { returnObjects: true })
   const services = t('pages.home.services.items', { returnObjects: true })
+  const products = t('pages.home.productCategories.items', { returnObjects: true })
   const values   = t('pages.home.values.items',   { returnObjects: true })
   const certs    = t('pages.home.certifications.items', { returnObjects: true })
   const testimonials = t('pages.home.testimonials.items', { returnObjects: true })
 
   const [statsRef,    statsVisible]    = useIntersection(0.2)
   const [aboutRef,    aboutVisible]    = useIntersection(0.15)
+  const [productsRef, productsVisible] = useIntersection(0.1)
   const [valuesRef,   valuesVisible]   = useIntersection(0.1)
   const [servicesRef, servicesVisible] = useIntersection(0.1)
   const [certsRef,    certsVisible]    = useIntersection(0.1)
@@ -170,7 +173,7 @@ export default function Home() {
       <section className="home-about" ref={aboutRef}>
         <div className={`home-about__image-wrap reveal reveal--left ${aboutVisible ? 'is-visible' : ''}`}>
           <img
-            src="https://images.pexels.com/photos/1382102/pexels-photo-1382102.jpeg?auto=compress&cs=tinysrgb&w=1200"
+            src="/cpoPhoto.png"
             alt="Transformation d'huile de palme — Palme Ivoire"
             className="home-about__image"
           />
@@ -184,6 +187,35 @@ export default function Home() {
           <h2 className="home-about__title">{t('pages.home.about.title')}</h2>
           <p className="home-about__body">{t('pages.home.about.body')}</p>
           <Link to="/about" className="home-about__cta">{t('pages.home.about.cta')} →</Link>
+        </div>
+      </section>
+
+      {/* ── Produits ── */}
+      <section className="home-products" ref={productsRef}>
+        <p className={`section__label reveal reveal--up ${productsVisible ? 'is-visible' : ''}`}>
+          {t('pages.home.productCategories.label')}
+        </p>
+        <h2 className={`section__heading reveal reveal--up ${productsVisible ? 'is-visible' : ''}`}
+          style={{ transitionDelay: '0.08s' }}>
+          {t('pages.home.productCategories.title')}
+        </h2>
+        <p className={`section__subtitle reveal reveal--up ${productsVisible ? 'is-visible' : ''}`}
+          style={{ transitionDelay: '0.12s' }}>
+          {t('pages.home.productCategories.subtitle')}
+        </p>
+        <div className="home-products__grid">
+          {products.map((p, i) => (
+            <div
+              key={i}
+              className={`product-card reveal reveal--up ${productsVisible ? 'is-visible' : ''}`}
+              style={{ transitionDelay: `${0.1 + i * 0.15}s` }}
+            >
+              <span className="product-card__icon"><Icon name={p.icon} size={32} /></span>
+              <h3 className="product-card__title">{p.title}</h3>
+              <p className="product-card__desc">{p.desc}</p>
+              <p className="product-card__specs">{p.specs}</p>
+            </div>
+          ))}
         </div>
       </section>
 
@@ -203,7 +235,7 @@ export default function Home() {
               className={`value-card reveal reveal--up ${valuesVisible ? 'is-visible' : ''}`}
               style={{ transitionDelay: `${0.1 + i * 0.15}s` }}
             >
-              <span className="value-card__icon">{v.icon}</span>
+              <span className="value-card__icon"><Icon name={v.icon} size={28} /></span>
               <h3 className="value-card__title">{v.title}</h3>
               <p className="value-card__desc">{v.desc}</p>
             </div>
@@ -224,7 +256,7 @@ export default function Home() {
               className={`service-card reveal reveal--up ${servicesVisible ? 'is-visible' : ''}`}
               style={{ transitionDelay: `${0.1 + i * 0.12}s` }}
             >
-              <span className="service-card__icon">{s.icon}</span>
+              <span className="service-card__icon"><Icon name={s.icon} size={32} /></span>
               <h3 className="service-card__title">{s.title}</h3>
               <p className="service-card__desc">{s.desc}</p>
             </div>
@@ -254,7 +286,7 @@ export default function Home() {
               className={`cert-card reveal reveal--up ${certsVisible ? 'is-visible' : ''}`}
               style={{ transitionDelay: `${0.1 + i * 0.15}s` }}
             >
-              <span className="cert-card__icon">{c.icon}</span>
+              <span className="cert-card__icon"><Icon name={c.icon} size={28} /></span>
               <h3 className="cert-card__title">{c.title}</h3>
               <p className="cert-card__desc">{c.desc}</p>
             </div>
@@ -280,7 +312,7 @@ export default function Home() {
             >
               <p className="testimonial-card__text">"{test.text}"</p>
               <div className="testimonial-card__author">
-                <span className="testimonial-card__avatar">{test.icon}</span>
+                <span className="testimonial-card__avatar"><Icon name={test.icon} size={24} /></span>
                 <div>
                   <p className="testimonial-card__name">{test.author}</p>
                   <p className="testimonial-card__role">{test.role}</p>

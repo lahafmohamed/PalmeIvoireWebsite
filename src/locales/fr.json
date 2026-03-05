@@ -3,7 +3,9 @@
     "home": "Accueil",
     "about": "À propos",
     "services": "Services",
+    "products": "Produits",
     "gallery": "Galerie",
+    "locations": "Nos Sites",
     "contact": "Contact"
   },
   "footer": {
@@ -11,7 +13,17 @@
     "quickLinks": "Liens rapides",
     "contactUs": "Nous contacter",
     "address": "Abidjan, Côte d'Ivoire",
-    "rights": "Tous droits réservés."
+    "rights": "Tous droits réservés.",
+    "locations": {
+      "title": "Nos Sites",
+      "warehouse": "Entrepôt",
+      "warehouseAddress": "Yopougon, Abidjan",
+      "factory": "Usine",
+      "factoryAddress": "Guitry",
+      "factoryUpcoming": "Nouvelle usine",
+      "factoryUpcomingAddress": "Lakota",
+      "viewAll": "Voir tous les sites"
+    }
   },
   "pages": {
     "home": {
@@ -56,22 +68,22 @@
         "subtitle": "De l'achat des régimes de palme à la transformation et la vente d'huile de qualité premium.",
         "items": [
           {
-            "icon": "🌾",
+            "icon": "wheat",
             "title": "Achat de Régimes de Palme",
             "desc": "Nous rachetons les régimes de palme aux agriculteurs locaux à des prix équitables. Paiement rapide et partenariat de confiance."
           },
           {
-            "icon": "🏭",
+            "icon": "factory",
             "title": "Transformation CPO & PKO",
             "desc": "Notre usine moderne transforme les régimes en huile de palme brute (CPO) et huile de palmiste (PKO) de qualité export."
           },
           {
-            "icon": "📦",
+            "icon": "package",
             "title": "Vente & Exportation",
             "desc": "Nous vendons notre huile transformée aux marchés locaux et internationaux. Qualité certifiée et livraison fiable."
           },
           {
-            "icon": "🤝",
+            "icon": "handshake",
             "title": "Accompagnement Agriculteurs",
             "desc": "Support technique et conseils pour améliorer les rendements de nos fournisseurs. Partenariat gagnant-gagnant."
           }
@@ -84,23 +96,50 @@
         "body": "PALME IVOIRE est un transformateur d'huile de palme établi au cœur de la Côte d'Ivoire. Nous rachetons les régimes de palme aux agriculteurs locaux et les transformons en huile de palme brute (CPO) et huile de palmiste (PKO) de qualité premium. Grâce à notre expertise acquise auprès des leaders malaisiens, nous garantissons une qualité exceptionnelle pour l'exportation et le marché local.",
         "cta": "En savoir plus"
       },
+      "productCategories": {
+        "label": "Nos Produits",
+        "title": "Gamme Complète de Produits d'Huile de Palme",
+        "subtitle": "Des solutions d'huile de palme adaptées à tous vos besoins industriels et commerciaux.",
+        "items": [
+          {
+            "icon": "star",
+            "title": "CPO Premium Export",
+            "desc": "Huile de palme brute de qualité supérieure pour l'exportation. Acidité faible (< 2%), couleur claire. Idéale pour cosmétiques et industries premium.",
+            "specs": "Qualité Export | Capacité: 500+ tonnes/mois"
+          },
+          {
+            "icon": "settings",
+            "title": "PKO Standard",
+            "desc": "Huile de palmiste transformée aux normes internationales. Profil d'acides gras optimal pour applications industrielles et alimentaires.",
+            "specs": " Production: 200+ tonnes/mois"
+          },
+          {
+            "icon": "utensils",
+            "title": "CPO Foodgrade",
+            "desc": "Huile de palme adaptée à l'usage alimentaire. Traitement sanitaire certifié et conformité aux standards FSSC 22000.",
+            "specs": "Certification Alimentaire | Disponibilité: Sur demande"
+          }
+        ]
+      },
       "values": {
         "label": "Ce qui nous guide",
         "title": "Nos valeurs fondamentales",
         "items": [
-          { "icon": "✦", "title": "Qualité Premium", "desc": "Chaque goutte d'huile que nous transformons répond aux standards de qualité les plus rigoureux. Notre processus garantit une pureté et une excellence inégalées." },
-          { "icon": "◈", "title": "Prix Équitables", "desc": "Nous offrons des prix justes à nos agriculteurs fournisseurs avec un paiement rapide et transparent. Leur succès est notre succès." },
-          { "icon": "⬡", "title": "Partenariat Durable", "desc": "Nous accompagnons nos fournisseurs avec un support technique pour améliorer leurs rendements. Ensemble, nous construisons une filière forte." }
+          { "icon": "award", "title": "Qualité Premium", "desc": "Chaque goutte d'huile que nous transformons répond aux standards de qualité les plus rigoureux. Notre processus garantit une pureté et une excellence inégalées." },
+          { "icon": "gem", "title": "Prix Équitables", "desc": "Nous offrons des prix justes à nos agriculteurs fournisseurs avec un paiement rapide et transparent. Leur succès est notre succès." },
+          { "icon": "hexagon", "title": "Partenariat Durable", "desc": "Nous accompagnons nos fournisseurs avec un support technique pour améliorer leurs rendements. Ensemble, nous construisons une filière forte." }
         ]
       },
       "certifications": {
         "label": "Expertise & Reconnaissances",
         "title": "Ce qui nous distingue",
         "items": [
-          { "icon": "🌍", "title": "Expertise Malaisienne", "desc": "Technologie et savoir-faire acquis auprès des géants de l'industrie en Malaisie" },
-          { "icon": "✓", "title": "Qualité Premium", "desc": "CPO et PKO conformes aux standards internationaux les plus stricts" },
-          { "icon": "♻️", "title": "Traitement Durable", "desc": "Fluides de traitement traités naturellement dans nos installations" },
-          { "icon": "👥", "title": "Partenariat Local", "desc": "Soutien direct à 1500+ producteurs de palme de la région" }
+          { "icon": "globe", "title": "Expertise Malaisienne", "desc": "Technologie et savoir-faire acquis auprès des géants de l'industrie en Malaisie" },
+          { "icon": "checkCircle", "title": "Qualité Premium", "desc": "CPO et PKO conformes aux standards internationaux les plus stricts" },
+          { "icon": "recycle", "title": "Traitement Durable", "desc": "Fluides de traitement traités naturellement dans nos installations" },
+          { "icon": "users", "title": "Partenariat Local", "desc": "Soutien direct à 1500+ producteurs de palme de la région" },
+          { "icon": "trophy", "title": "Certification CHPH", "desc": "Certification officielle de transformateur de palme - notre première certification majeure" },
+          { "icon": "shieldCheck", "title": "Traçabilité Complète", "desc": "Système de traçabilité de bout en bout garantissant la qualité et l'authenticité de nos produits" }
         ]
       },
       "testimonials": {
@@ -111,19 +150,19 @@
             "text": "PALME IVOIRE nous offre les meilleurs prix et support technique. Leur équipe nous aide à améliorer notre production. C'est un vrai partenariat, pas seulement une relation commerciale.",
             "author": "Kofi Mensah",
             "role": "Producteur de palme, Région de Gagnoa",
-            "icon": "👨‍🌾"
+            "icon": "hardHat"
           },
           {
             "text": "La qualité de leur CPO et PKO est exceptionnelle. Nos clients internationaux sont très satisfaits. PALME IVOIRE est devenue notre fournisseur de confiance.",
             "author": "Sophie Bernard",
             "role": "Directrice achats, Groupe cosmétique français",
-            "icon": "👩‍💼"
+            "icon": "briefcase"
           },
           {
             "text": "Leur engagement envers la durabilité et le traitement responsable des fluides est touchant. C'est rare de trouver en Afrique une entreprise qui prend vraiment soin de l'environnement.",
             "author": "Dr. Amara Sow",
             "role": "Directrice, ONG environnementale",
-            "icon": "👩‍🔬"
+            "icon": "flask"
           }
         ]
       },
@@ -134,40 +173,620 @@
         "contactus": "Parlons-en, Contactez-nous"
       }
     },
-    "about": { "title": "À propos — Palme Ivoire" },
-    "services": { "title": "Services — Palme Ivoire",
-    "subtitle": "Découvrez nos services de production et de transformation d'huile de palme, notre engagement envers la durabilité et notre impact positif sur les communautés locales." 
-  
-  },
-    "gallery": { "title": "Galerie — Palme Ivoire", "subtitle": "Un aperçu de nos plantations, de nos installations de transformation et des communautés avec lesquelles nous travaillons." },
+    "about": { 
+      "title": "À propos — Palme Ivoire",
+      "hero": {
+        "eyebrow": "Notre Histoire",
+        "title": "PALME IVOIRE : Transformateur d'Excellence en Côte d'Ivoire",
+        "subtitle": "Depuis 2024, nous connectons les agriculteurs locaux aux marchés internationaux en transformant les régimes de palme en huiles premium."
+      },
+      "mission": {
+        "label": "Notre Mission",
+        "title": "Transformer avec Excellence, Impacter Positivement",
+        "body": "PALME IVOIRE est née d'une vision claire : créer une chaîne de valeur du palmier qui bénéficie à tous. En rachetant directement les régimes de palme aux agriculteurs ivoiriens, en les transformant avec les standards les plus stricts, et en les exportant vers les marchés mondiaux, nous construisons une économie plus juste et plus soutenable."
+      },
+      "story": {
+        "label": "Notre Parcours",
+        "title": "D'une Ambition à une Réalité Industrielle",
+        "highlights": [
+          {
+            "year": "2024",
+            "title": "La Fondation",
+            "desc": "Création de PALME IVOIRE avec vision d'être le transformateur de référence en Côte d'Ivoire, en utilisant l'expertise malaisienne."
+          },
+          {
+            "year": "2024",
+            "title": "Construction et Certification",
+            "desc": "Installation d'une usine ultramoderne à Abidjan équipée de technologies de transformation dernier cri. Obtention des certifications CHPH et conformité aux standards internationaux."
+          },
+          {
+            "year": "2025",
+            "title": "Partenariats Stratégiques",
+            "desc": "Mise en place de contrats avec 1 500+ producteurs locaux. Premières exportations vers les marchés français, suisse et asiatiques."
+          },
+          {
+            "year": "2026",
+            "title": "Croissance et Impact",
+            "desc": "Atteinte de 50 000+ tonnes transformées annuellement. Expansion du portefeuille de produits : CPO Premium, PKO Standard, CPO Foodgrade."
+          }
+        ]
+      },
+      "expertise": {
+        "label": "Notre Expertise",
+        "title": "Savoir-Faire Malaisien, Cœur Ivoirien",
+        "items": [
+          {
+            "icon": "factory",
+            "title": "Technologie de Pointe",
+            "desc": "Équipements de transformation dernière génération importés de Malaisie, leader mondial du traitement du palmier. Processus optimisé pour une qualité constante et une efficacité énergétique."
+          },
+          {
+            "icon": "users",
+            "title": "Équipe Expérimentée",
+            "desc": "150+ techniciens, ingénieurs et managers formés aux standards internationaux. Nos équipes combinent expertise malaisienne et connaissance du terrain ivoirien."
+          },
+          {
+            "icon": "testTube",
+            "title": "Contrôle Qualité Rigoureux",
+            "desc": "Laboratoire de contrôle moderne avec tests à chaque étape. Traçabilité complète du régime de palme jusqu'au produit fini exporté."
+          },
+          {
+            "icon": "recycle",
+            "title": "Durabilité Intégrée",
+            "desc": "Traitement écologique des fluides résiduels, récupération de l'énergie, minimisation des déchets. Certification de transformation durable et responsable."
+          }
+        ]
+      },
+      "process": {
+        "label": "Notre Processus",
+        "title": "Du Régime de Palme à l'Huile Exportée",
+        "steps": [
+          {
+            "num": "1",
+            "icon": "wheat",
+            "title": "Achat Local",
+            "desc": "Source directe de 1 500+ producteurs de palme. Prix justes et paiement rapide. Support technique gratuit pour améliorer la qualité des récoltes."
+          },
+          {
+            "num": "2",
+            "icon": "truck",
+            "title": "Réception et Tri",
+            "desc": "Inspection des régimes à réception. Évaluation de la qualité et du taux d'humidité. Stockage en conditions optimales."
+          },
+          {
+            "num": "3",
+            "icon": "flame",
+            "title": "Stérilisation",
+            "desc": "Traitement thermique des régimes pour optimiser le rendement. Dénaturation des enzymes pour conserver la qualité de l'huile."
+          },
+          {
+            "num": "4",
+            "icon": "settings",
+            "title": "Écrasement et Extraction",
+            "desc": "Séparation de l'huile des noyaux. Récupération à la fois du CPO (huile de palme brute) et de la noix pour PKO (huile de palmiste)."
+          },
+          {
+            "num": "5",
+            "icon": "dna",
+            "title": "Purification",
+            "desc": "Filtration et centrifugation pour éliminer les impuretés. Ajustement des paramètres : acidité, couleur, odeur selon normes export."
+          },
+          {
+            "num": "6",
+            "icon": "package",
+            "title": "Conditionnement et Export",
+            "desc": "Remplissage en citernes ou fûts selon les commandes. Tests finaux de conformité. Expédition sécurisée vers marchés mondiaux."
+          }
+        ]
+      },
+      "impact": {
+        "label": "Notre Impact",
+        "title": "Création de Valeur pour Tous",
+        "stats": [
+          { "num": "1500", "label": "Agriculteurs soutenus", "desc": "Revenus réguliers et prix justes pour les producteurs locaux" },
+          { "num": "150", "label": "Emplois créés", "desc": "Postes directs et indirects dans la région d'Abidjan" },
+          { "num": "50000", "label": "Tonnes/an", "desc": "Capacité de transformation pour servir marchés mondiaux" },
+          { "num": "15", "label": "Pays clients", "desc": "Export vers cosmétique, agroalimentaire et industries chimiques" }
+        ]
+      },
+      "values": {
+        "label": "Nos Valeurs",
+        "title": "Les Principes qui Nous Guident",
+        "items": [
+          {
+            "icon": "award",
+            "title": "Excellence Qualité",
+            "desc": "Zéro compromis sur la qualité. Chaque goutte d'huile doit dépasser les attentes des clients les plus exigeants du monde."
+          },
+          {
+            "icon": "gem",
+            "title": "Équité Économique",
+            "desc": "Prix justes, transparence totale, paiement rapide. Les agriculteurs sont nos partenaires, pas nos fournisseurs."
+          },
+          {
+            "icon": "globe",
+            "title": "Responsabilité Environnementale",
+            "desc": "Zéro déchet, traitement écologique des résidus, préservation des ressources. Un secteur palmier durable pour les générations futures."
+          },
+          {
+            "icon": "zap",
+            "title": "Contribution Locale",
+            "desc": "Embauche locale, formation continue, partenariats avec ONG. Notre succès doit bénéficier aux communautés ivoiriennes."
+          }
+        ]
+      },
+      "cta": {
+        "label": "Prêt à Travailler avec Nous?",
+        "subtitle": "Que vous soyez producteur de palme, acheteur B2B ou partenaire potentiel, nous serions ravis d'explorer les opportunités ensemble.",
+        "ctaButton": "Nous Contacter",
+        "ctaLink": "/contact"
+      }
+    },
+    "services": { 
+      "title": "Services — Palme Ivoire",
+      "subtitle": "Découvrez nos services de production et de transformation d'huile de palme, notre engagement envers la durabilité et notre impact positif sur les communautés locales.",
+      "hero": {
+        "eyebrow": "Nos Services",
+        "title": "Une Chaîne Complète de Transformation d'Huile de Palme",
+        "subtitle": "Du sourcing responsable des régimes de palme à l'exportation d'huiles premium certifiées."
+      },
+      "mainServices": {
+        "label": "Services Principaux",
+        "title": "Ce Que Nous Offrons",
+        "items": [
+          {
+            "icon": "wheat",
+            "title": "Sourcing de Régimes de Palme",
+            "desc": "Achat direct et responsable auprès de 1 500+ producteurs locaux. Nos agents sont sur le terrain pour identifier les meilleures récoltes et assurer la qualité dès la source."
+          },
+          {
+            "icon": "factory",
+            "title": "Transformation d'Huile",
+            "desc": "Traitement des régimes avec nos installations ultramodernes. Technologie malaisienne de pointe pour extraire CPO et PKO avec rendement et qualité optimaux."
+          },
+          {
+            "icon": "package",
+            "title": "Contrôle Qualité et Certifications",
+            "desc": "Tests rigoureux en laboratoire aux normes internationales. Certifications CHPH et traçabilité complète pour nos clients les plus exigeants."
+          },
+          {
+            "icon": "ship",
+            "title": "Logistique et Export",
+            "desc": "Gestion complète de la logistique: conditionnement, transport, douanes et expédition sécurisée vers marchés mondiaux. Délais respectés, qualité garantie."
+          },
+          {
+            "icon": "handshake",
+            "title": "Support Agricoles aux Producteurs",
+            "desc": "Formation technique gratuite sur les bonnes pratiques agricoles. Assistance agronominales, fourniture d'intrants sélectionnés, accompagnement pour augmenter rendements."
+          },
+          {
+            "icon": "lightbulb",
+            "title": "Consulting en Transformation",
+            "desc": "Conseils techniques pour optimiser le traitement du palmier. Solutions sur mesure pour améliorer rendements, qualité et rentabilité de votre production."
+          }
+        ]
+      },
+      "process": {
+        "label": "Notre Approche",
+        "title": "Processus de Service Intégré",
+        "description": "Chaque projet suit une méthodologie éprouvée qui garantit transparence, qualité et respect des délais.",
+        "steps": [
+          { "num": "1", "title": "Évaluation", "desc": "Audit initial de vos besoins, standards actuels et objectifs." },
+          { "num": "2", "title": "Planification", "desc": "Conception d'un plan détaillé adapté à votre contexte." },
+          { "num": "3", "title": "Exécution", "desc": "Mise en œuvre avec nos équipes expertes et suivi continu." },
+          { "num": "4", "title": "Contrôle", "desc": "Vérifications qualité régulières et ajustements si nécessaire." },
+          { "num": "5", "title": "Livraison", "desc": "Remise du produit conforme aux standards convenus." },
+          { "num": "6", "title": "Support", "desc": "Assistance post-livraison et amélioration continue." }
+        ]
+      },
+      "advantages": {
+        "label": "Pourquoi Choisir PALME IVOIRE",
+        "title": "Nos Avantages Compétitifs",
+        "items": [
+          {
+            "icon": "globe",
+            "title": "Expertise Combinée",
+            "desc": "Maîtrise technique malaisienne + connaissance du terrain ivoirien = solution optimale"
+          },
+          {
+            "icon": "gem",
+            "title": "Prix Compétitifs",
+            "desc": "Sourcing direct et absence d'intermédiaires nous permettent d'offrir les meilleurs prix du marché"
+          },
+          {
+            "icon": "award",
+            "title": "Qualité Premium",
+            "desc": "Standards de qualité strictement maintenus: CPO < 2% acidité, traçabilité 100%"
+          },
+          {
+            "icon": "shieldCheck",
+            "title": "Certification Complète",
+            "desc": "CHPH, standards internationaux - vos clients les plus exigeants seront satisfaits"
+          },
+          {
+            "icon": "settings",
+            "title": "Flexibilité",
+            "desc": "Volumes variables, délais adaptés, formats de livraison sur mesure selon vos besoins"
+          },
+          {
+            "icon": "users",
+            "title": "Responsabilité Sociale",
+            "desc": "Impact positif garanti sur les agriculteurs et les communautés locales ivoiriennes"
+          }
+        ]
+      },
+      "cta": {
+        "label": "Besoin d'un Service Spécifique?",
+        "subtitle": "Pas de solution standard chez nous. Parlons de vos besoins exacts et nous trouverons ensemble la meilleure approche.",
+        "ctaButton": "Nous Contacter",
+        "ctaLink": "/contact"
+      }
+    },
+    "products": {
+      "title": "Produits — Palme Ivoire",
+      "hero": {
+        "eyebrow": "Nos Produits",
+        "title": "Gamme Complète de Produits du Palmier",
+        "subtitle": "Huiles, sous-produits et co-produits issus de notre filière palmier — qualité certifiée, disponibilité garantie."
+      },
+      "mainProducts": {
+        "label": "Gamme de Produits",
+        "title": "Tous Nos Produits",
+        "description": "De l'huile brute aux co-produits industriels, chaque produit de notre chaîne de transformation est disponible à la vente.",
+        "specsTitle": "Spécifications Techniques",
+        "applicationsTitle": "Applications",
+        "showMore": "+ Plus de détails",
+        "showLess": "− Moins de détails",
+        "items": [
+          {
+            "icon": "palm",
+            "title": "Régimes de Palme",
+            "subtitle": "Fresh Fruit Bunches (FFB)",
+            "features": [
+              "Taux d'extraction d'huile: 18-22%",
+              "Teneur en humidité: < 35%",
+              "Maturité optimale: régimes rouges-oranges",
+              "Délai de traitement: < 24h après récolte"
+            ],
+            "applications": [
+              "Alimentation des huileries de palme",
+              "Extraction de CPO et CPKO",
+              "Revente à d'autres transformateurs"
+            ],
+            "specs": "Disponibilité: continue | Conditionnement: vrac | Origine: producteurs locaux",
+            "price": "Prix marché — devis sur demande"
+          },
+          {
+            "icon": "droplets",
+            "title": "CPO — Huile de Palme Brute",
+            "subtitle": "Crude Palm Oil",
+            "features": [
+              "Acidité libre (FFA): < 5%",
+              "Humidité & impuretés: < 0.5%",
+              "Couleur: rouge-orangé naturel",
+              "Indice d'iode: 50-55"
+            ],
+            "applications": [
+              "Raffinage pour huile alimentaire",
+              "Industrie cosmétique et savonnerie",
+              "Production de biodiesel et oléochimie"
+            ],
+            "specs": "Capacité: 500+ tonnes/mois | Citernes 20-24 MT | Certification CHPH",
+            "price": "Prix compétitif — tarification selon volume"
+          },
+          {
+            "icon": "wheat",
+            "title": "Noix de Palmiste",
+            "subtitle": "Palm Kernel Nuts",
+            "features": [
+              "Teneur en huile: 46-53%",
+              "Humidité: < 7%",
+              "Impuretés: < 5%",
+              "Coquilles brisées: < 10%"
+            ],
+            "applications": [
+              "Extraction d'huile de palmiste (CPKO)",
+              "Alimentation animale directe",
+              "Revente à des huileries de palmiste"
+            ],
+            "specs": "Production: 120+ tonnes/mois | Sacs ou vrac | Disponible toute l'année",
+            "price": "Tarif selon qualité et volume"
+          },
+          {
+            "icon": "flask",
+            "title": "CPKO — Huile de Palmiste",
+            "subtitle": "Crude Palm Kernel Oil",
+            "features": [
+              "Acidité libre (FFA): < 5%",
+              "Point de fusion: 24-26°C",
+              "Humidité: < 0.3%",
+              "Profil laurique: 46-52%"
+            ],
+            "applications": [
+              "Cosmétiques et savonnerie (base laurique)",
+              "Confiserie, chocolaterie et boulangerie",
+              "Industrie pharmaceutique et nutraceutique"
+            ],
+            "specs": "200+ tonnes/mois | Fûts 200L ou citernes | Certification CHPH",
+            "price": "Tarifs préférentiels par volume"
+          },
+          {
+            "icon": "package",
+            "title": "Coques de Palme",
+            "subtitle": "Palm Shell",
+            "features": [
+              "Humidité: < 15%",
+              "Pouvoir calorifique: 17-19 MJ/kg",
+              "Teneur en cendres: 2-4%",
+              "Granulométrie homogène"
+            ],
+            "applications": [
+              "Combustible industriel (chaudières, fours)",
+              "Production de charbon actif",
+              "Paillis agricole et amendement de sol"
+            ],
+            "specs": "Disponibilité: continue | Conditionnement: vrac ou big-bags | Faible taux de cendres",
+            "price": "Prix compétitif — tarif à la tonne"
+          },
+          {
+            "icon": "sprout",
+            "title": "Tourteaux de Palmiste",
+            "subtitle": "Palm Kernel Expeller (PKE)",
+            "features": [
+              "Protéines brutes: 16-18%",
+              "Matières grasses résiduelles: 6-8%",
+              "Fibres brutes: 14-16%",
+              "Humidité: < 12%"
+            ],
+            "applications": [
+              "Alimentation des ruminants (bovins, ovins)",
+              "Compléments alimentaires pour élevage porcin",
+              "Amendement organique et compostage"
+            ],
+            "specs": "Production: selon extraction | Granulés ou en vrac | Haute valeur nutritive",
+            "price": "Tarif selon teneur résiduelle en huile"
+          },
+          {
+            "icon": "settings",
+            "title": "Heavy Palm Cake (HPC)",
+            "subtitle": "Fibre et Tourteaux Pressés",
+            "features": [
+              "Teneur en huile résiduelle: 5-8%",
+              "Fibres: 60-70%",
+              "Humidité: 35-45%",
+              "Pouvoir calorifique: 7-9 MJ/kg"
+            ],
+            "applications": [
+              "Combustible de chaudière en usine",
+              "Compostage et amendement agricole",
+              "Substrat pour culture de champignons"
+            ],
+            "specs": "Co-produit continu | Livraison vrac | Idéal pour valorisation énergétique",
+            "price": "Tarif préférentiel — co-produit de transformation"
+          },
+          {
+            "icon": "recycle",
+            "title": "Effluent de Bassin",
+            "subtitle": "Palm Oil Mill Effluent (POME)",
+            "features": [
+              "pH: 3.5-5.0",
+              "Teneur en huile résiduelle: 0.5-1%",
+              "Traitement naturel en bassin",
+              "Zéro rejet polluant — process certifié"
+            ],
+            "applications": [
+              "Production de biogaz (méthane)",
+              "Engrais liquide après traitement",
+              "Irrigation agricole contrôlée"
+            ],
+            "specs": "Gestion sur site | Système de bassins en série | Conformité environnementale",
+            "price": "Disponible pour partenariats biogaz — nous contacter"
+          },
+          {
+            "icon": "leaf",
+            "title": "Résidu Boue de Palmiste",
+            "subtitle": "Palm Kernel Oil Sludge",
+            "features": [
+              "Teneur en huile: 50-60%",
+              "Matière sèche: 30-40%",
+              "Richesse en acides gras lauriques",
+              "Origine 100% naturelle"
+            ],
+            "applications": [
+              "Savonnerie artisanale et industrielle",
+              "Recyclage et extraction d'huile résiduelle",
+              "Alimentation animale (complémentation)"
+            ],
+            "specs": "Production: en continu | Conditionnement: fûts ou vrac | Selon disponibilité",
+            "price": "Sur devis — tarification selon teneur en huile"
+          }
+        ]
+      },
+      "certifications": {
+        "label": "Certifications & Standards",
+        "title": "Certification & Engagements Qualité",
+        "items": [
+          {
+            "icon": "trophy",
+            "name": "Certification CHPH",
+            "desc": "Confédération Horticole de Palme — Transformateur responsable certifié"
+          },
+          {
+            "icon": "shieldCheck",
+            "name": "Traçabilité 100%",
+            "desc": "De la plantation au client final — chaque lot documenté et authentifié"
+          },
+          {
+            "icon": "testTube",
+            "name": "Contrôles Qualité",
+            "desc": "Tests en laboratoire à chaque étape de la transformation selon normes internationales"
+          }
+        ]
+      },
+      "orders": {
+        "label": "Commandes",
+        "title": "Comment Passer Commande",
+        "steps": [
+          {
+            "num": "1",
+            "title": "Spécifier Votre Besoin",
+            "desc": "Produit, volume, application, délai requis, certifications spéciales"
+          },
+          {
+            "num": "2",
+            "title": "Recevoir un Devis",
+            "desc": "Tarification transparente basée sur volume, délai, services additionnels"
+          },
+          {
+            "num": "3",
+            "title": "Confirmer et Planifier",
+            "desc": "Accord sur conditions. Nous planifions production et logistique."
+          },
+          {
+            "num": "4",
+            "title": "Production et QC",
+            "desc": "Fabrication selon standards + contrôle qualité rigoureux"
+          },
+          {
+            "num": "5",
+            "title": "Livraison",
+            "desc": "Expédition sécurisée avec suivi. Assistance douanière si nécessaire."
+          }
+        ]
+      },
+      "cta": {
+        "label": "Intéressé par Nos Produits?",
+        "subtitle": "Demandez un échantillon ou un devis pour découvrir la qualité PALME IVOIRE.",
+        "ctaButton": "Nous Contacter",
+        "ctaLink": "/contact"
+      }
+    },
+    "gallery": {
+      "title": "Galerie — Palme Ivoire",
+      "subtitle": "Un aperçu de nos plantations, de nos installations de transformation et des communautés avec lesquelles nous travaillons.",
+      "photos": "photos",
+      "allPhotos": "Tous les photos",
+      "production": "Production",
+      "installations": "Installations",
+      "team": "Équipe",
+      "products": "Produits"
+    },
     "contact": {
       "title": "Contact — Palme Ivoire",
-      "contactus": "Parlons-en, Contactez-nous",
-      "getInTouch": "Prenez contact avec nous",
-      "name": "Nom",
-      "namePlaceholder": "Votre nom..",
-      "email": "E-mail",
-      "emailPlaceholder": "Votre e-mail..",
+      "heroSubtitle": "Une question, un partenariat ou une demande ? Nous sommes à votre écoute.",
+      "contactus": "Envoyez-nous un message",
+      "getInTouch": "Nos coordonnées",
+      "quickContact": "Contact rapide",
+      "quickContactDesc": "Choisissez le moyen le plus pratique pour nous joindre",
+      "callUs": "Appelez-nous",
+      "emailUs": "Envoyez un email",
+      "whatsapp": "WhatsApp",
+      "responseTime": "Réponse sous 24h",
+      "name": "Nom complet",
+      "namePlaceholder": "Votre nom complet",
+      "email": "Adresse e-mail",
+      "emailPlaceholder": "votre@email.com",
       "phone": "Téléphone",
-      "phonePlaceholder": "+225 00 00 00 00 00",
+      "phonePlaceholder": "+225 07 00 00 00 00",
+      "company": "Entreprise",
+      "companyPlaceholder": "Nom de votre entreprise (optionnel)",
       "address": "Adresse",
-      "hours": "Horaires",
-      "hoursText": "Lun-Ven: 8h-17h",
-      "subject": "Sujet",
+      "addressValue": "Yopougon Zone Industrielle, Abidjan",
+      "hours": "Horaires d'ouverture",
+      "hoursText": "Lundi - Vendredi: 8h00 - 17h00",
+      "hoursWeekend": "Samedi: 8h00 - 12h00",
+      "subject": "Sujet de votre demande",
       "subjectPlaceholder": "Sélectionnez un sujet",
       "subjectOptions": {
-        "general_inquiry": "Renseignement général",
-        "partnership": "Partenariat commercial",
-        "job_application": "Candidature",
-        "supplier_request": "Demande fournisseur",
-        "customer_support": "Support client"
+        "general_inquiry": "💬 Renseignement général",
+        "partnership": "🤝 Partenariat commercial",
+        "job_application": "💼 Candidature / Emploi",
+        "supplier_request": "🌱 Devenir fournisseur de régimes",
+        "customer_support": "📦 Commande & Livraison"
       },
-      "message": "Message",
-      "messagePlaceholder": "Votre message..",
-      "submit": "Envoyer",
-      "sending": "Envoi...",
-      "successMessage": "Merci! Votre message a été envoyé avec succès. Nous vous répondrons dans les 24h.",
-      "errorMessage": "Oups! Une erreur s'est produite. Veuillez réessayer."
+      "message": "Votre message",
+      "messagePlaceholder": "Décrivez votre demande en détail...",
+      "submit": "Envoyer le message",
+      "sending": "Envoi en cours...",
+      "successMessage": "✅ Merci ! Votre message a été envoyé avec succès. Nous vous répondrons dans les 24 heures.",
+      "errorMessage": "❌ Une erreur s'est produite. Veuillez réessayer ou nous contacter par téléphone.",
+      "faq": {
+        "title": "Questions fréquentes",
+        "items": [
+          {
+            "q": "Comment devenir fournisseur de régimes de palme ?",
+            "a": "Contactez-nous via le formulaire en sélectionnant 'Devenir fournisseur'. Notre équipe vous recontactera pour discuter des conditions de partenariat."
+          },
+          {
+            "q": "Quelles sont vos quantités minimales de commande ?",
+            "a": "Nous acceptons les commandes à partir de 20 tonnes pour le CPO et 10 tonnes pour le PKO. Contactez-nous pour des besoins spécifiques."
+          },
+          {
+            "q": "Livrez-vous à l'international ?",
+            "a": ""
+          }
+        ]
+      }
+    },
+    "locations": {
+      "title": "Nos Sites — Palme Ivoire",
+      "meta": "Découvrez nos usines et entrepôts en Côte d'Ivoire : Guitry, Yopougon, et bientôt Lakota.",
+      "heading": "Nos Usines & Entrepôts",
+      "subtitle": "Découvrez nos sites de production et de stockage stratégiquement situés en Côte d'Ivoire.",
+      "comingSoon": "Bientôt",
+      "mapOf": "Carte de",
+      "sites": [
+        {
+          "name": "Usine de Guitry",
+          "type": "Usine de transformation",
+          "address": "Guitry, Région de la Nawa, Côte d'Ivoire",
+          "description": "Notre usine principale de transformation d'huile de palme. Équipée de technologies modernes malaisiennes, elle traite plus de 50 000 tonnes de régimes de palme par an.",
+          "image": "https://images.unsplash.com/photo-1513828583688-c52646db42da?w=800&q=80",
+          "status": "active",
+          "features": [
+            "Capacité: 50 000+ tonnes/an",
+            "Technologie malaisienne",
+            "Production CPO & PKO",
+            "Certifié qualité export"
+          ],
+          "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127066.36!2d-5.2!3d5.55!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNcKwMzMnMDAuMCJOIDXCsDEyJzAwLjAiVw!5e0!3m2!1sfr!2sci!4v1"
+        },
+        {
+          "name": "Entrepôt de Yopougon",
+          "type": "Entrepôt",
+          "address": "Yopougon Zone Industrielle, Abidjan, Côte d'Ivoire",
+          "description": "Notre entrepôt principal situé à Yopougon, Abidjan. Point stratégique pour le stockage et la distribution de notre huile de palme vers le port d'Abidjan.",
+          "image": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&q=80",
+          "status": "active",
+          "features": [
+            "Proximité du port",
+            "Stockage sécurisé",
+            "Accès logistique optimal",
+            "Capacité large volume"
+          ],
+          "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127066.36!2d-4.1!3d5.35!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNcKwMjEnMDAuMCJOIDTCsDA2JzAwLjAiVw!5e0!3m2!1sfr!2sci!4v1"
+        },
+        {
+          "name": "Usine de Lakota",
+          "type": "Nouvelle usine",
+          "address": "Lakota, Région de la Nawa, Côte d'Ivoire",
+          "description": "Notre nouvelle usine en cours de construction à Lakota. Cette expansion nous permettra d'augmenter notre capacité de production et de mieux servir les agriculteurs de la région.",
+          "image": "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=80",
+          "status": "upcoming",
+          "features": [
+            "Ouverture prévue 2027",
+            "Technologies de pointe",
+            "Capacité accrue",
+            "Création d'emplois locaux"
+          ],
+          "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127066.36!2d-5.7!3d5.85!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNcKwNTEnMDAuMCJOIDXCsDQyJzAwLjAiVw!5e0!3m2!1sfr!2sci!4v1"
+        }
+      ],
+      "cta": {
+        "title": "Vous souhaitez nous rendre visite ?",
+        "subtitle": "Contactez-nous pour organiser une visite de nos installations.",
+        "button": "Nous contacter"
+      }
     }
   }
 }

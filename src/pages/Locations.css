@@ -1,0 +1,368 @@
+/* ═══════════════════════════════════════════════════════════════════════════
+   LOCATIONS PAGE STYLES
+   
+   Table of Contents:
+   1. Hero Section
+   2. Sites Grid
+   3. Location Cards
+   4. Card Image
+   5. Card Content
+   6. Card Features
+   7. Card Map
+   8. CTA Section
+   9. Responsive Styles
+═══════════════════════════════════════════════════════════════════════════ */
+
+/* ═══════════════════════════════════════
+   1. HERO SECTION
+═══════════════════════════════════════ */
+.locations-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 220px;
+  background: linear-gradient(160deg, #FFFBF7 0%, #FDF7F0 55%, #FCF4EC 100%);
+  text-align: center;
+  padding: var(--space-12) var(--space-4);
+  gap: var(--space-4);
+}
+
+.locations-hero h1 {
+  font-family: var(--font-display);
+  font-size: var(--font-size-4xl);
+  color: var(--color-text);
+  position: relative;
+  padding-left: 28px;
+}
+
+.locations-hero h1::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: var(--color-primary);
+  border-radius: 2px;
+}
+
+.locations-hero__subtitle {
+  font-size: var(--font-size-lg);
+  color: var(--color-text-muted);
+  max-width: 600px;
+  line-height: 1.6;
+}
+
+/* ═══════════════════════════════════════
+   2. SITES GRID
+═══════════════════════════════════════ */
+.locations-grid {
+  padding: var(--space-16) var(--space-6);
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-10);
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+/* ═══════════════════════════════════════
+   3. LOCATION CARDS
+═══════════════════════════════════════ */
+.location-card {
+  background: var(--color-surface);
+  border: 2px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.location-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--color-primary);
+}
+
+.location-card--upcoming {
+  border-style: dashed;
+  opacity: 0.9;
+}
+
+.location-card--upcoming:hover {
+  border-color: var(--color-accent);
+}
+
+/* ═══════════════════════════════════════
+   4. CARD IMAGE
+═══════════════════════════════════════ */
+.location-card__image-wrap {
+  position: relative;
+  height: 280px;
+  overflow: hidden;
+}
+
+.location-card__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.location-card:hover .location-card__image {
+  transform: scale(1.05);
+}
+
+.location-card__badge {
+  position: absolute;
+  top: var(--space-4);
+  right: var(--space-4);
+  background: var(--color-accent);
+  color: #fff;
+  font-size: var(--font-size-sm);
+  font-weight: 700;
+  padding: var(--space-2) var(--space-4);
+  border-radius: var(--radius);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+/* ═══════════════════════════════════════
+   5. CARD CONTENT
+═══════════════════════════════════════ */
+.location-card__content {
+  padding: var(--space-8) var(--space-6);
+}
+
+.location-card__type {
+  display: inline-block;
+  font-size: var(--font-size-xs);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-primary);
+  background: rgba(226, 94, 22, 0.08);
+  padding: var(--space-1) var(--space-3);
+  border-radius: var(--radius-sm);
+  margin-bottom: var(--space-3);
+}
+
+.location-card__name {
+  font-size: var(--font-size-2xl);
+  font-weight: 700;
+  color: var(--color-primary-dark);
+  margin-bottom: var(--space-3);
+}
+
+.location-card__address {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--font-size-base);
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-4);
+}
+
+.location-card__icon {
+  font-size: 1.2rem;
+}
+
+.location-card__desc {
+  font-size: var(--font-size-base);
+  color: var(--color-text-muted);
+  line-height: 1.7;
+  margin-bottom: var(--space-6);
+}
+
+/* ═══════════════════════════════════════
+   6. CARD FEATURES
+═══════════════════════════════════════ */
+.location-card__features {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-2);
+}
+
+.location-card__features li {
+  font-size: var(--font-size-sm);
+  color: var(--color-text);
+  padding: var(--space-2) 0;
+  padding-left: var(--space-6);
+  position: relative;
+}
+
+.location-card__features li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--color-primary);
+  font-weight: 700;
+}
+
+/* ═══════════════════════════════════════
+   7. CARD MAP
+═══════════════════════════════════════ */
+.location-card__map {
+  border-top: 1px solid var(--color-border);
+}
+
+.location-card__map iframe {
+  display: block;
+}
+
+/* ═══════════════════════════════════════
+   8. CTA SECTION
+═══════════════════════════════════════ */
+.locations-cta {
+  position: relative;
+  background: linear-gradient(135deg, var(--color-primary) 0%, rgba(226, 94, 22, 0.9) 100%);
+  padding: var(--space-16) var(--space-6);
+  text-align: center;
+  color: #fff;
+  overflow: hidden;
+}
+
+.locations-cta__bg {
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    -45deg,
+    transparent 0px,
+    transparent 60px,
+    rgba(255, 255, 255, 0.05) 60px,
+    rgba(255, 255, 255, 0.05) 61px
+  );
+  pointer-events: none;
+}
+
+.locations-cta__title {
+  position: relative;
+  font-size: clamp(1.8rem, 3vw, 2.6rem);
+  font-weight: 700;
+  margin-bottom: var(--space-3);
+  color: #fff;
+}
+
+.locations-cta__subtitle {
+  position: relative;
+  font-size: var(--font-size-lg);
+  color: rgba(255, 255, 255, 0.9);
+  max-width: 500px;
+  margin: 0 auto var(--space-6);
+}
+
+.locations-cta__btn {
+  position: relative;
+  display: inline-block;
+  padding: var(--space-3) var(--space-10);
+  background: transparent;
+  color: #fff;
+  font-size: var(--font-size-base);
+  font-weight: 700;
+  border: 2px solid #fff;
+  border-radius: var(--radius);
+  text-decoration: none;
+  transition: transform 0.2s ease, background 0.2s ease, color 0.2s ease;
+}
+
+.locations-cta__btn:hover {
+  background: #fff;
+  color: var(--color-primary);
+  transform: translateY(-3px);
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   9. RESPONSIVE STYLES
+═══════════════════════════════════════════════════════════════════════════ */
+
+/* ─────────────────────────────────────
+   TABLET (max-width: 768px)
+───────────────────────────────────── */
+@media (max-width: 768px) {
+  .locations-hero {
+    min-height: 180px;
+    padding: var(--space-10) var(--space-6);
+  }
+  .locations-hero h1 {
+    font-size: var(--font-size-3xl);
+  }
+  .locations-hero__subtitle {
+    font-size: var(--font-size-base);
+  }
+
+  .locations-grid {
+    padding: var(--space-12) var(--space-6);
+    gap: var(--space-8);
+  }
+
+  .location-card__image-wrap {
+    height: 220px;
+  }
+
+  .location-card__content {
+    padding: var(--space-6) var(--space-4);
+  }
+
+  .location-card__name {
+    font-size: var(--font-size-xl);
+  }
+
+  .location-card__features {
+    grid-template-columns: 1fr;
+  }
+
+  .locations-cta {
+    padding: var(--space-12) var(--space-6);
+  }
+}
+
+/* ─────────────────────────────────────
+   MOBILE (max-width: 480px)
+───────────────────────────────────── */
+@media (max-width: 480px) {
+  .locations-hero {
+    padding: var(--space-8) var(--space-4);
+    min-height: 160px;
+  }
+  .locations-hero h1 {
+    font-size: var(--font-size-xl);
+  }
+  .locations-hero__subtitle {
+    font-size: 0.9rem;
+  }
+
+  .locations-grid {
+    padding: var(--space-10) var(--space-4);
+    gap: var(--space-6);
+  }
+
+  .location-card__image-wrap {
+    height: 180px;
+  }
+
+  .location-card__content {
+    padding: var(--space-5) var(--space-4);
+  }
+
+  .location-card__name {
+    font-size: var(--font-size-lg);
+  }
+
+  .location-card__desc {
+    font-size: var(--font-size-sm);
+  }
+
+  .location-card__map iframe {
+    height: 200px;
+  }
+
+  .locations-cta {
+    padding: var(--space-10) var(--space-4);
+  }
+
+  .locations-cta__subtitle {
+    font-size: var(--font-size-base);
+  }
+}

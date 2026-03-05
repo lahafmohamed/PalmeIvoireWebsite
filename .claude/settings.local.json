@@ -2,7 +2,10 @@
   "permissions": {
     "allow": [
       "Bash(ls c:/Users/Mohamed/Desktop/palmeIvoireSite2026/public/gallery*.jpeg)",
-      "WebFetch(domain:www.palmci.ci)"
+      "WebFetch(domain:www.palmci.ci)",
+      "Bash(npm run build)",
+      "Bash(sed -i 's/  background: var\\(--color-accent\\);/  background: #fff;/' /c/Users/Mohamed/Desktop/palmeIvoireSite2026/src/pages/Home.css)",
+      "Bash(sed -i 's/  box-shadow: 0 4px 18px rgba\\(242, 169, 34, 0.35\\);/  box-shadow: 0 4px 18px rgba\\(0, 0, 0, 0.2\\);/' /c/Users/Mohamed/Desktop/palmeIvoireSite2026/src/pages/Home.css)"
     ]
   }
 }

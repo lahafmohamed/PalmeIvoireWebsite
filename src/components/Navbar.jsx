@@ -23,51 +23,51 @@ export default function Navbar() {
   }
 
   const links = [
-    { to: '/',         label: t('nav.home') },
-    { to: '/about',    label: t('nav.about') },
-    { to: '/services', label: t('nav.services') },
-    { to: '/gallery',  label: t('nav.gallery') },
-    { to: '/contact',  label: t('nav.contact') },
+    { to: '/',          label: t('nav.home') },
+    { to: '/about',     label: t('nav.about') },
+    { to: '/services',  label: t('nav.services') },
+    { to: '/products',  label: t('nav.products') },
+    { to: '/gallery',   label: t('nav.gallery') },
+    { to: '/locations', label: t('nav.locations') },
+    { to: '/contact',   label: t('nav.contact') },
   ]
 
   return (
-    <header className={`navbar${scrolled ? ' navbar--scrolled' : ''}`}>
+    <nav className={`navbar${scrolled ? ' navbar--scrolled' : ''}`}>
       <div className="navbar__inner">
-        <NavLink to="/" className="navbar__logo" onClick={() => setMenuOpen(false)}>
+        <NavLink to="/" className="navbar__logo">
           <img src="/logo.svg" alt="Palme Ivoire" className="navbar__logo-img" />
         </NavLink>
 
-        <nav className={`navbar__nav${menuOpen ? ' navbar__nav--open' : ''}`}>
+        <div className={`navbar__nav${menuOpen ? ' navbar__nav--open' : ''}`}>
           {links.map(({ to, label }) => (
             <NavLink
               key={to}
               to={to}
               end={to === '/'}
               className={({ isActive }) =>
-                'navbar__link' + (isActive ? ' navbar__link--active' : '')
+                `navbar__link${isActive ? ' navbar__link--active' : ''}`
               }
               onClick={() => setMenuOpen(false)}
             >
               {label}
             </NavLink>
           ))}
-        </nav>
+        </div>
 
         <div className="navbar__actions">
           <button className="navbar__lang" onClick={toggleLang}>
-            {i18n.language === 'fr' ? 'FR' : 'EN'}
+            {i18n.language === 'fr' ? 'EN' : 'FR'}
           </button>
           <button
             className={`navbar__burger${menuOpen ? ' navbar__burger--open' : ''}`}
             onClick={() => setMenuOpen(o => !o)}
             aria-label="Menu"
           >
-            <span />
-            <span />
-            <span />
+            <span /><span /><span />
           </button>
         </div>
       </div>
-    </header>
+    </nav>
   )
 }

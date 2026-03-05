@@ -1,0 +1,190 @@
+/* ═══════════════════════════════════════
+   SHARED UTILITIES — used across all pages
+   Import this via index.css only.
+═══════════════════════════════════════ */
+
+/* ── Container ── */
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--space-6);
+}
+
+/* ── Scroll-reveal animation ── */
+.reveal {
+  opacity: 0;
+  transition: opacity 0.75s cubic-bezier(0.22, 1, 0.36, 1),
+              transform 0.75s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.reveal--up    { transform: translateY(40px); }
+.reveal--left  { transform: translateX(-50px); }
+.reveal--right { transform: translateX(50px); }
+.reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* ── Section labels & headings (inner pages) ── */
+.section__label {
+  display: inline-block;
+  font-size: var(--font-size-xs);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--color-accent);
+  margin-bottom: var(--space-4);
+}
+
+.section__heading {
+  font-size: var(--font-size-3xl);
+  font-weight: 700;
+  color: var(--color-primary-dark);
+  margin-bottom: var(--space-8);
+  line-height: 1.3;
+}
+
+.section__subtitle {
+  font-size: var(--font-size-lg);
+  color: var(--color-text-muted);
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+  text-align: center;
+}
+
+/* ═══════════════════════════════════════
+   PAGE HERO — About / Services / Products
+   (not the Home slider hero)
+═══════════════════════════════════════ */
+
+.page-hero {
+  position: relative;
+  padding: var(--space-16) var(--space-6);
+  background: linear-gradient(160deg, #FFFBF7 0%, #FDF7F0 55%, #FCF4EC 100%);
+  text-align: center;
+  overflow: hidden;
+}
+
+.page-hero__content {
+  max-width: 900px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.page-hero__title {
+  font-size: var(--font-size-4xl);
+  font-weight: 800;
+  color: var(--color-primary-dark);
+  margin-bottom: var(--space-4);
+  line-height: 1.2;
+}
+
+.page-hero__subtitle {
+  font-size: var(--font-size-lg);
+  color: var(--color-text-muted);
+  line-height: 1.8;
+  margin-bottom: 0;
+}
+
+.page-hero__decoration {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.page-hero__orb {
+  position: absolute;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(242, 169, 34, 0.15), transparent);
+}
+
+.page-hero__orb--1 {
+  width: 300px;
+  height: 300px;
+  top: -100px;
+  right: -100px;
+  background: radial-gradient(circle, rgba(226, 94, 22, 0.08), transparent);
+}
+
+.page-hero__orb--2 {
+  width: 200px;
+  height: 200px;
+  bottom: -50px;
+  left: -50px;
+}
+
+@media (max-width: 768px) {
+  .page-hero {
+    padding: var(--space-12) var(--space-6);
+  }
+  .page-hero__title {
+    font-size: var(--font-size-2xl);
+  }
+  .page-hero__subtitle {
+    font-size: var(--font-size-base);
+  }
+}
+
+/* ═══════════════════════════════════════
+   PAGE CTA — About / Services / Products
+═══════════════════════════════════════ */
+
+.page-cta {
+  position: relative;
+  padding: var(--space-16) var(--space-6);
+  text-align: center;
+  overflow: hidden;
+}
+
+.page-cta__bg {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+  z-index: 1;
+}
+
+.page-cta__title {
+  position: relative;
+  z-index: 2;
+  font-size: var(--font-size-3xl);
+  font-weight: 800;
+  color: white;
+  margin-bottom: var(--space-4);
+}
+
+.page-cta__subtitle {
+  position: relative;
+  z-index: 2;
+  font-size: var(--font-size-lg);
+  color: rgba(255, 255, 255, 0.9);
+  max-width: 600px;
+  margin: 0 auto var(--space-8);
+  line-height: 1.8;
+}
+
+.page-cta .hero__cta {
+  position: relative;
+  z-index: 2;
+  background: white;
+  color: var(--color-primary);
+  border: 2px solid white;
+}
+
+.page-cta .hero__cta:hover {
+  background: transparent;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .page-cta {
+    padding: var(--space-12) var(--space-6);
+  }
+  .page-cta__title {
+    font-size: var(--font-size-2xl);
+  }
+  .page-cta__subtitle {
+    font-size: var(--font-size-base);
+  }
+}
