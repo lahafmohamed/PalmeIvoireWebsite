@@ -128,7 +128,6 @@ export default function Home() {
   const products = t('pages.home.productCategories.items', { returnObjects: true })
   const values   = t('pages.home.values.items',   { returnObjects: true })
   const certs    = t('pages.home.certifications.items', { returnObjects: true })
-  const testimonials = t('pages.home.testimonials.items', { returnObjects: true })
 
   const [statsRef,    statsVisible]    = useIntersection(0.2)
   const [aboutRef,    aboutVisible]    = useIntersection(0.15)
@@ -136,7 +135,6 @@ export default function Home() {
   const [valuesRef,   valuesVisible]   = useIntersection(0.1)
   const [servicesRef, servicesVisible] = useIntersection(0.1)
   const [certsRef,    certsVisible]    = useIntersection(0.1)
-  const [testiRef,    testiVisible]    = useIntersection(0.1)
   const [contactRef,  contactVisible]  = useIntersection(0.2)
 
   return (
@@ -289,35 +287,6 @@ export default function Home() {
               <span className="cert-card__icon"><Icon name={c.icon} size={28} /></span>
               <h3 className="cert-card__title">{c.title}</h3>
               <p className="cert-card__desc">{c.desc}</p>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* ── Testimonials ── */}
-      <section className="home-testimonials" ref={testiRef}>
-        <p className={`section__label reveal reveal--up ${testiVisible ? 'is-visible' : ''}`}>
-          {t('pages.home.testimonials.label')}
-        </p>
-        <h2 className={`section__heading reveal reveal--up ${testiVisible ? 'is-visible' : ''}`}
-          style={{ transitionDelay: '0.08s' }}>
-          {t('pages.home.testimonials.title')}
-        </h2>
-        <div className="testimonials__grid">
-          {testimonials.map((test, i) => (
-            <div
-              key={i}
-              className={`testimonial-card reveal reveal--up ${testiVisible ? 'is-visible' : ''}`}
-              style={{ transitionDelay: `${0.1 + i * 0.15}s` }}
-            >
-              <p className="testimonial-card__text">"{test.text}"</p>
-              <div className="testimonial-card__author">
-                <span className="testimonial-card__avatar"><Icon name={test.icon} size={24} /></span>
-                <div>
-                  <p className="testimonial-card__name">{test.author}</p>
-                  <p className="testimonial-card__role">{test.role}</p>
-                </div>
-              </div>
             </div>
           ))}
         </div>

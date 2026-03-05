@@ -396,16 +396,19 @@
 ───────────────────────────────────── */
 @media (max-width: 480px) {
   .gallery-hero {
-    min-height: 200px;
-    padding: var(--space-10) var(--space-4);
+    min-height: 140px;
+    padding: var(--space-6) var(--space-3);
+    margin-top: 0;
+  }
   }
   
   .gallery-hero h1 {
-    font-size: var(--font-size-2xl);
+    font-size: var(--font-size-xl);
   }
   
   .gallery-hero__subtitle {
-    font-size: 0.95rem;
+    font-size: var(--font-size-sm);
+    margin-bottom: var(--space-3);
   }
   
   .gallery-hero__counter {
