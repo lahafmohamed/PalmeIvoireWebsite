@@ -800,5 +800,14 @@
         "button": "Contact Us"
       }
     }
+  },
+  "notFound": {
+    "eyebrow": "Error 404",
+    "title": "Page not found",
+    "subtitle": "This page doesn't exist or has been moved.",
+    "redirect": "Redirecting in {{seconds}}s",
+    "goHome": "Back to Home",
+    "goContact": "Contact Us",
+    "explore": "Quick access"
   }
 }

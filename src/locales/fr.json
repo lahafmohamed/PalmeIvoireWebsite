@@ -794,5 +794,14 @@
         "button": "Nous contacter"
       }
     }
+  },
+  "notFound": {
+    "eyebrow": "Erreur 404",
+    "title": "Page introuvable",
+    "subtitle": "Cette page n'existe pas ou a été déplacée.",
+    "redirect": "Redirection dans {{seconds}}s",
+    "goHome": "Retour à l'accueil",
+    "goContact": "Nous contacter",
+    "explore": "Accès rapide"
   }
 }

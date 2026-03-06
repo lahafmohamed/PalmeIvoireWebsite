@@ -1,0 +1,343 @@
+/* ═══════════════════════════════════════
+   404 NOT FOUND — Creative palm-themed page
+═══════════════════════════════════════ */
+
+.notfound {
+  position: relative;
+  min-height: calc(100vh - var(--navbar-height));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-16) var(--space-6);
+  background: linear-gradient(160deg, #FFFBF7 0%, #FDF7F0 55%, #FCF4EC 100%);
+  overflow: hidden;
+  text-align: center;
+}
+
+/* ── Decorative orbs ── */
+.notfound__decoration {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.notfound__orb {
+  position: absolute;
+  border-radius: 50%;
+}
+
+.notfound__orb--1 {
+  width: 350px;
+  height: 350px;
+  top: -80px;
+  right: -100px;
+  background: radial-gradient(circle, rgba(242, 169, 34, 0.12), transparent);
+  animation: notfound-float 8s ease-in-out infinite;
+}
+
+.notfound__orb--2 {
+  width: 250px;
+  height: 250px;
+  bottom: -60px;
+  left: -80px;
+  background: radial-gradient(circle, rgba(226, 94, 22, 0.10), transparent);
+  animation: notfound-float 10s ease-in-out infinite reverse;
+}
+
+@keyframes notfound-float {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33%      { transform: translate(15px, -20px) scale(1.05); }
+  66%      { transform: translate(-10px, 15px) scale(0.95); }
+}
+
+/* ── Falling leaves (CSS shapes) ── */
+.notfound__leaf {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border-radius: 0 50%;
+  background: var(--color-secondary);
+  opacity: 0.12;
+  animation: notfound-fall linear infinite;
+}
+
+.notfound__leaf--1 {
+  left: 12%;
+  animation-duration: 14s;
+  animation-delay: 0s;
+}
+.notfound__leaf--2 {
+  left: 50%;
+  width: 9px;
+  height: 9px;
+  animation-duration: 18s;
+  animation-delay: 3s;
+}
+.notfound__leaf--3 {
+  left: 82%;
+  animation-duration: 16s;
+  animation-delay: 6s;
+}
+
+@keyframes notfound-fall {
+  0% {
+    transform: translateY(-60px) rotate(0deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.25;
+  }
+  90% {
+    opacity: 0.25;
+  }
+  100% {
+    transform: translateY(100vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+/* ── Content ── */
+.notfound__content {
+  position: relative;
+  z-index: 2;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* ── Hero: 404 code ── */
+.notfound__hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: var(--space-6);
+}
+
+.notfound__code {
+  font-family: var(--font-display);
+  font-size: 8rem;
+  font-weight: 800;
+  color: var(--color-primary);
+  line-height: 1;
+  letter-spacing: -4px;
+  text-shadow: 0 4px 30px rgba(226, 94, 22, 0.2);
+  user-select: none;
+}
+
+.notfound__zero {
+  display: inline-block;
+  color: var(--color-accent);
+  animation: notfound-pulse 2s ease-in-out infinite;
+}
+
+@keyframes notfound-pulse {
+  0%, 100% { transform: scale(1); }
+  50%      { transform: scale(1.1); }
+}
+
+/* ── Text ── */
+.notfound__eyebrow {
+  display: inline-block;
+  font-size: var(--font-size-xs);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--color-secondary);
+  margin-bottom: var(--space-3);
+}
+
+.notfound__title {
+  font-family: var(--font-display);
+  font-size: var(--font-size-3xl);
+  font-weight: 700;
+  color: var(--color-primary-dark);
+  line-height: 1.3;
+  margin-bottom: var(--space-4);
+}
+
+.notfound__subtitle {
+  font-size: var(--font-size-lg);
+  color: var(--color-text-muted);
+  line-height: 1.7;
+  margin-bottom: var(--space-8);
+}
+
+/* ── Countdown ring ── */
+.notfound__countdown {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-3);
+  margin-bottom: var(--space-8);
+}
+
+.notfound__countdown-ring {
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+
+.notfound__countdown-svg {
+  width: 100%;
+  height: 100%;
+  transform: rotate(-90deg);
+}
+
+.notfound__countdown-track {
+  fill: none;
+  stroke: var(--color-border);
+  stroke-width: 4;
+}
+
+.notfound__countdown-progress {
+  fill: none;
+  stroke: var(--color-primary);
+  stroke-width: 4;
+  stroke-linecap: round;
+  transition: stroke-dashoffset 1s linear;
+}
+
+.notfound__countdown-number {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-size: var(--font-size-2xl);
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+.notfound__countdown-label {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+}
+
+/* ── Action buttons ── */
+.notfound__actions {
+  display: flex;
+  gap: var(--space-4);
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: var(--space-10);
+}
+
+.notfound__btn {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-3) var(--space-6);
+  border-radius: var(--radius);
+  font-size: var(--font-size-base);
+  font-weight: 600;
+  text-decoration: none;
+  transition: all var(--transition);
+  cursor: pointer;
+}
+
+.notfound__btn--primary {
+  background: var(--color-primary);
+  color: #fff;
+  box-shadow: 0 4px 16px rgba(226, 94, 22, 0.3);
+}
+
+.notfound__btn--primary:hover {
+  background: var(--color-primary-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 24px rgba(226, 94, 22, 0.4);
+}
+
+.notfound__btn--ghost {
+  background: transparent;
+  color: var(--color-primary);
+  border: 2px solid var(--color-primary);
+}
+
+.notfound__btn--ghost:hover {
+  background: var(--color-primary);
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+/* ── Quick links ── */
+.notfound__quicklinks {
+  padding-top: var(--space-6);
+  border-top: 1px solid var(--color-border);
+}
+
+.notfound__quicklinks-label {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+  margin-bottom: var(--space-4);
+}
+
+.notfound__quicklinks-grid {
+  display: flex;
+  gap: var(--space-3);
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.notfound__quicklink {
+  padding: var(--space-2) var(--space-4);
+  border-radius: 999px;
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+  color: var(--color-secondary);
+  background: rgba(90, 114, 71, 0.08);
+  text-decoration: none;
+  transition: all var(--transition);
+}
+
+.notfound__quicklink:hover {
+  background: var(--color-secondary);
+  color: #fff;
+  transform: translateY(-1px);
+}
+
+/* ═══════════════════════════════════════
+   RESPONSIVE
+═══════════════════════════════════════ */
+
+@media (max-width: 768px) {
+  .notfound {
+    padding: var(--space-10) var(--space-4);
+  }
+
+  .notfound__code {
+    font-size: 5.5rem;
+    letter-spacing: -2px;
+  }
+
+  .notfound__title {
+    font-size: var(--font-size-2xl);
+  }
+}
+
+@media (max-width: 480px) {
+  .notfound__code {
+    font-size: 4rem;
+  }
+
+  .notfound__hero {
+    gap: var(--space-2);
+  }
+
+  .notfound__title {
+    font-size: var(--font-size-xl);
+  }
+
+  .notfound__actions {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .notfound__btn {
+    width: 100%;
+    justify-content: center;
+  }
+}

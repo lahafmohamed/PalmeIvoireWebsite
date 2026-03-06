@@ -11,6 +11,7 @@ const Products  = lazy(() => import('./pages/Products'))
 const Gallery   = lazy(() => import('./pages/Gallery'))
 const Locations = lazy(() => import('./pages/Locations'))
 const Contact   = lazy(() => import('./pages/Contact'))
+const NotFound  = lazy(() => import('./pages/NotFound'))
 
 function PageLoader() {
   return <div style={{ minHeight: '60vh' }} aria-label="Chargement…" />
@@ -31,6 +32,7 @@ export default function App() {
               <Route path="/gallery"   element={<Gallery />} />
               <Route path="/locations" element={<Locations />} />
               <Route path="/contact"   element={<Contact />} />
+              <Route path="*"         element={<NotFound />} />
             </Routes>
           </Suspense>
         </main>
