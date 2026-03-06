@@ -1,82 +1,22 @@
 /* ═══════════════════════════════════════════════════════════════════════════
-   SERVICES PAGE STYLES
-   
-   Shared utilities (container, reveal, section__label/heading,
-   page-hero, page-cta) live in src/styles/shared.css
-   
-   Table of Contents:
-   1. Page Container
-   2. Main Services Section
-   3. Process Section
-   4. Advantages Section
-   5. Responsive Styles
+   SERVICES PAGE — page-specific styles only.
+   Shared: .card, .card--hover, .card--thin, .grid-3, .step-badge → shared.css
 ═══════════════════════════════════════════════════════════════════════════ */
 
-/* ═══════════════════════════════════════
-   1. PAGE CONTAINER
-═══════════════════════════════════════ */
-.services-page {
-  background: var(--color-bg);
-}
+.services-page { background: var(--color-bg); }
 
-/* ═══════════════════════════════════════
-   2. MAIN SERVICES SECTION
-═══════════════════════════════════════ */
-.services-main {
-  padding: var(--space-16) var(--space-6);
-}
+/* ── Main Services ── */
+/* .services-grid → .grid-3  |  .service-card → .card.card--hover */
+.services-main { padding: var(--space-16) var(--space-6); }
+.service-card { text-align: center; }
 
-.services-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: var(--space-6);
-}
-
-.service-card {
-  background: var(--color-surface);
-  border: 2px solid var(--color-border);
-  border-radius: var(--radius-lg);
-  padding: var(--space-8) var(--space-6);
-  text-align: center;
-  transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1),
-              box-shadow 0.3s ease,
-              border-color 0.3s ease;
-}
-
-.service-card:hover {
-  transform: translateY(-8px);
-  box-shadow: var(--shadow-md);
-  border-color: var(--color-primary);
-}
-
-.service-card__icon {
-  font-size: 3rem;
-  display: block;
-  margin-bottom: var(--space-4);
-}
-
-.service-card__title {
-  font-size: var(--font-size-lg);
-  font-weight: 700;
-  color: var(--color-primary-dark);
-  margin-bottom: var(--space-3);
-}
-
-.service-card__desc {
-  font-size: var(--font-size-sm);
-  color: var(--color-text-muted);
-  line-height: 1.7;
-}
-
-/* ═══════════════════════════════════════
-   3. PROCESS SECTION
-═══════════════════════════════════════ */
+/* ── Process ── */
+/* .process-flow → .grid-3  |  .process-item → .card--thin  |  .process-item__number → .step-badge */
 .services-process {
   padding: var(--space-16) var(--space-6);
   background: linear-gradient(180deg, #FFFBF7 0%, #FFFFFF 100%);
   text-align: center;
 }
-
 .services-process__desc {
   max-width: 600px;
   margin: 0 auto var(--space-12);
@@ -84,152 +24,33 @@
   color: var(--color-text-muted);
   line-height: 1.8;
 }
-
-.process-flow {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: var(--space-6);
-  max-width: var(--max-width);
-  margin: 0 auto;
-}
-
 .process-item {
-  background: var(--color-surface);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-lg);
-  padding: var(--space-8);
   position: relative;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
-.process-item:hover {
-  transform: translateY(-4px);
-  box-shadow: var(--shadow-sm);
-}
-
-.process-item__number {
-  position: absolute;
-  top: -16px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 40px;
-  height: 40px;
-  background: var(--color-primary);
-  color: white;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 700;
-  font-size: var(--font-size-lg);
-}
-
+.process-item:hover { transform: translateY(-4px); box-shadow: var(--shadow-sm); }
 .process-item__title {
   font-size: var(--font-size-base);
   font-weight: 700;
   color: var(--color-primary-dark);
   margin: var(--space-4) 0 var(--space-3);
 }
+.process-item__desc { font-size: var(--font-size-sm); color: var(--color-text-muted); line-height: 1.6; }
 
-.process-item__desc {
-  font-size: var(--font-size-sm);
-  color: var(--color-text-muted);
-  line-height: 1.6;
-}
+/* ── Advantages ── */
+/* .advantages-grid → .grid-3  |  .advantage-card → .card.card--hover */
+.services-advantages { padding: var(--space-16) var(--space-6); text-align: center; }
+.advantage-card:hover { border-color: var(--color-accent); }
 
 /* ═══════════════════════════════════════
-   4. ADVANTAGES SECTION
+   RESPONSIVE
 ═══════════════════════════════════════ */
-.services-advantages {
-  padding: var(--space-16) var(--space-6);
-  text-align: center;
-}
-
-.advantages-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: var(--space-6);
-  max-width: var(--max-width);
-  margin: 0 auto;
-}
-
-.advantage-card {
-  background: var(--color-surface);
-  border: 2px solid var(--color-border);
-  border-radius: var(--radius-lg);
-  padding: var(--space-8) var(--space-6);
-  transition: transform 0.3s ease, border-color 0.3s ease;
-}
-
-.advantage-card:hover {
-  transform: translateY(-8px);
-  border-color: var(--color-accent);
-}
-
-.advantage-card__icon {
-  font-size: 2.4rem;
-  display: inline-block;
-  margin-bottom: var(--space-4);
-}
-
-.advantage-card__title {
-  font-size: var(--font-size-base);
-  font-weight: 700;
-  color: var(--color-primary-dark);
-  margin-bottom: var(--space-3);
-}
-
-.advantage-card__desc {
-  font-size: var(--font-size-sm);
-  color: var(--color-text-muted);
-  line-height: 1.7;
-}
-
-/* ═══════════════════════════════════════════════════════════════════════════
-   5. RESPONSIVE STYLES
-═══════════════════════════════════════════════════════════════════════════ */
-
-/* ─────────────────────────────────────
-   TABLET (max-width: 768px)
-───────────────────────────────────── */
 @media (max-width: 768px) {
-  .services-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: var(--space-4);
-  }
-
-  .services-process {
-    padding: var(--space-12) var(--space-6);
-  }
-
-  .process-flow {
-    grid-template-columns: repeat(2, 1fr);
-    gap: var(--space-4);
-  }
-
-  .advantages-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: var(--space-4);
-  }
+  .services-main, .services-process, .services-advantages { padding: var(--space-12) var(--space-6); }
+  .services-grid { grid-template-columns: repeat(2, 1fr); }
+  .process-flow, .advantages-grid { grid-template-columns: repeat(2, 1fr); }
 }
-
-/* ─────────────────────────────────────
-   MOBILE (max-width: 480px)
-───────────────────────────────────── */
 @media (max-width: 480px) {
-  .services-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .service-card {
-    padding: var(--space-6) var(--space-4);
-  }
-
-  .process-flow {
-    grid-template-columns: 1fr;
-  }
-
-  .advantages-grid {
-    grid-template-columns: 1fr;
-  }
+  .services-grid, .process-flow, .advantages-grid { grid-template-columns: 1fr; }
+  .service-card { padding: var(--space-6) var(--space-4); }
 }

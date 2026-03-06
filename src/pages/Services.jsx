@@ -1,13 +1,13 @@
 import { useTranslation } from 'react-i18next'
-import { useHead } from '@unhead/react'
+import { usePageSeo } from '../hooks/useSeo'
 import { Link } from 'react-router-dom'
 import { useIntersection } from '../hooks/useIntersection'
-import { Icon } from '../components/Icon'
+import { Icon } from '../components/ui/Icon'
 import './Services.css'
 
 export default function Services() {
   const { t } = useTranslation()
-  useHead({ title: t('pages.services.title') })
+  usePageSeo('services', '/services')
 
   const hero = t('pages.services.hero', { returnObjects: true })
   const mainServices = t('pages.services.mainServices', { returnObjects: true })
@@ -46,16 +46,16 @@ export default function Services() {
             style={{ transitionDelay: '0.08s' }}>
             {mainServices.title}
           </h2>
-          <div className="services-grid">
+          <div className="services-grid grid-3">
             {mainServices.items.map((s, i) => (
               <div
                 key={i}
-                className={`service-card reveal reveal--up ${servicesVisible ? 'is-visible' : ''}`}
+                className={`service-card card card--hover reveal reveal--up ${servicesVisible ? 'is-visible' : ''}`}
                 style={{ transitionDelay: `${0.1 + i * 0.12}s` }}
               >
-                <span className="service-card__icon"><Icon name={s.icon} size={36} /></span>
-                <h3 className="service-card__title">{s.title}</h3>
-                <p className="service-card__desc">{s.desc}</p>
+                <span className="card__icon"><Icon name={s.icon} size={36} /></span>
+                <h3 className="card__title">{s.title}</h3>
+                <p className="card__desc">{s.desc}</p>
               </div>
             ))}
           </div>
@@ -76,14 +76,14 @@ export default function Services() {
             style={{ transitionDelay: '0.12s' }}>
             {process.description}
           </p>
-          <div className="process-flow">
+          <div className="process-flow grid-3">
             {process.steps.map((step, i) => (
               <div
                 key={i}
-                className={`process-item reveal reveal--up ${processVisible ? 'is-visible' : ''}`}
+                className={`process-item card--thin reveal reveal--up ${processVisible ? 'is-visible' : ''}`}
                 style={{ transitionDelay: `${0.15 + i * 0.1}s` }}
               >
-                <div className="process-item__number">{step.num}</div>
+                <div className="process-item__number step-badge">{step.num}</div>
                 <h3 className="process-item__title">{step.title}</h3>
                 <p className="process-item__desc">{step.desc}</p>
               </div>
@@ -102,16 +102,16 @@ export default function Services() {
             style={{ transitionDelay: '0.08s' }}>
             {advantages.title}
           </h2>
-          <div className="advantages-grid">
+          <div className="advantages-grid grid-3">
             {advantages.items.map((adv, i) => (
               <div
                 key={i}
-                className={`advantage-card reveal reveal--up ${advantagesVisible ? 'is-visible' : ''}`}
+                className={`advantage-card card card--hover reveal reveal--up ${advantagesVisible ? 'is-visible' : ''}`}
                 style={{ transitionDelay: `${0.1 + i * 0.1}s` }}
               >
-                <span className="advantage-card__icon"><Icon name={adv.icon} size={24} /></span>
-                <h3 className="advantage-card__title">{adv.title}</h3>
-                <p className="advantage-card__desc">{adv.desc}</p>
+                <span className="card__icon"><Icon name={adv.icon} size={24} /></span>
+                <h3 className="card__title">{adv.title}</h3>
+                <p className="card__desc">{adv.desc}</p>
               </div>
             ))}
           </div>

@@ -384,6 +384,7 @@
 .home-about__image-wrap {
   position: relative;
   overflow: hidden;
+  border-radius: 24px;
 }
 
 .home-about__image {

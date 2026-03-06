@@ -1,10 +1,10 @@
 import { useState, useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
-import { useHead } from '@unhead/react'
+import { usePageSeo } from '../hooks/useSeo'
 import { Link } from 'react-router-dom'
 import { useIntersection } from '../hooks/useIntersection'
 import { useCountUp } from '../hooks/useCountUp'
-import { Icon } from '../components/Icon'
+import { Icon } from '../components/ui/Icon'
 import './Home.css'
 
 /* ── Slide metadata: images + route links (text comes from i18n) ── */
@@ -120,7 +120,7 @@ function StatCard({ num, suffix, label, isActive, locale }) {
 
 export default function Home() {
   const { t, i18n } = useTranslation()
-  useHead({ title: t('pages.home.title') })
+  usePageSeo('home', '/')
 
   const heroSlides   = t('pages.home.heroSlider.slides', { returnObjects: true })
   const stats    = t('pages.home.stats.items',    { returnObjects: true })

@@ -1,14 +1,14 @@
 import { useTranslation } from 'react-i18next'
-import { useHead } from '@unhead/react'
+import { usePageSeo } from '../hooks/useSeo'
 import { Link } from 'react-router-dom'
 import { useIntersection } from '../hooks/useIntersection'
 import { useCountUp } from '../hooks/useCountUp'
-import { Icon } from '../components/Icon'
+import { Icon } from '../components/ui/Icon'
 import './About.css'
 
 export default function About() {
   const { t } = useTranslation()
-  useHead({ title: t('pages.about.title') })
+  usePageSeo('about', '/about')
 
   const mission = t('pages.about.mission', { returnObjects: true })
   const story = t('pages.about.story', { returnObjects: true })
@@ -77,8 +77,8 @@ export default function About() {
                 style={{ transitionDelay: `${0.1 + i * 0.15}s` }}
               >
                 <div className="timeline-item__marker" />
-                <div className="timeline-item__content">
-                  <span className="timeline-item__year">{h.year}</span>
+                <div className="timeline-item__content card--thin">
+                  <span className="timeline-item__year tag tag--primary">{h.year}</span>
                   <h3 className="timeline-item__title">{h.title}</h3>
                   <p className="timeline-item__desc">{h.desc}</p>
                 </div>
@@ -98,16 +98,16 @@ export default function About() {
             style={{ transitionDelay: '0.08s' }}>
             {expertise.title}
           </h2>
-          <div className="expertise-grid">
+          <div className="expertise-grid grid-2">
             {expertise.items.map((e, i) => (
               <div
                 key={i}
-                className={`expertise-card reveal reveal--up ${expertiseVisible ? 'is-visible' : ''}`}
+                className={`expertise-card card card--hover reveal reveal--up ${expertiseVisible ? 'is-visible' : ''}`}
                 style={{ transitionDelay: `${0.1 + i * 0.12}s` }}
               >
-                <span className="expertise-card__icon"><Icon name={e.icon} size={32} /></span>
-                <h3 className="expertise-card__title">{e.title}</h3>
-                <p className="expertise-card__desc">{e.desc}</p>
+                <span className="card__icon"><Icon name={e.icon} size={32} /></span>
+                <h3 className="card__title">{e.title}</h3>
+                <p className="card__desc">{e.desc}</p>
               </div>
             ))}
           </div>
@@ -124,14 +124,14 @@ export default function About() {
             style={{ transitionDelay: '0.08s' }}>
             {process.title}
           </h2>
-          <div className="process-steps">
+          <div className="process-steps grid-3">
             {process.steps.map((s, i) => (
               <div
                 key={i}
-                className={`process-step reveal reveal--up ${processVisible ? 'is-visible' : ''}`}
+                className={`process-step card--thin reveal reveal--up ${processVisible ? 'is-visible' : ''}`}
                 style={{ transitionDelay: `${0.1 + i * 0.1}s` }}
               >
-                <div className="process-step__number">{s.num}</div>
+                <div className="process-step__number step-badge">{s.num}</div>
                 <div className="process-step__icon"><Icon name={s.icon} size={28} /></div>
                 <h3 className="process-step__title">{s.title}</h3>
                 <p className="process-step__desc">{s.desc}</p>
@@ -151,7 +151,7 @@ export default function About() {
             style={{ transitionDelay: '0.08s' }}>
             {impact.title}
           </h2>
-          <div className="impact-stats">
+          <div className="impact-stats grid-4">
             {impact.stats.map((stat, i) => (
               <ImpactStatCard
                 key={i}
@@ -176,16 +176,16 @@ export default function About() {
             style={{ transitionDelay: '0.08s' }}>
             {values.title}
           </h2>
-          <div className="values-grid">
+          <div className="values-grid grid-2">
             {values.items.map((v, i) => (
               <div
                 key={i}
-                className={`value-card reveal reveal--up ${valuesVisible ? 'is-visible' : ''}`}
+                className={`value-card card card--hover reveal reveal--up ${valuesVisible ? 'is-visible' : ''}`}
                 style={{ transitionDelay: `${0.1 + i * 0.15}s` }}
               >
-                <span className="value-card__icon"><Icon name={v.icon} size={28} /></span>
-                <h3 className="value-card__title">{v.title}</h3>
-                <p className="value-card__desc">{v.desc}</p>
+                <span className="card__icon"><Icon name={v.icon} size={28} /></span>
+                <h3 className="card__title">{v.title}</h3>
+                <p className="card__desc">{v.desc}</p>
               </div>
             ))}
           </div>
@@ -222,7 +222,7 @@ function ImpactStatCard({ num, label, desc, isActive, index }) {
 
   return (
     <div
-      className={`impact-stat-card reveal reveal--up ${isActive ? 'is-visible' : ''}`}
+      className={`impact-stat-card card card--hover reveal reveal--up ${isActive ? 'is-visible' : ''}`}
       style={{ transitionDelay: `${0.1 + index * 0.15}s` }}
     >
       <div className="impact-stat-card__num">{formatted}+</div>

@@ -27,7 +27,8 @@
   },
   "pages": {
     "home": {
-      "title": "Home — Palme Ivoire",
+      "title": "Palme Ivoire | Palm Oil Producer — Ivory Coast",
+      "meta": "Palme Ivoire processes over 50,000 tonnes of palm fruit bunches per year in Ivory Coast. International-quality CPO, PKO and by-products available for export.",
       "heroSlider": {
         "slides": [
           {
@@ -174,7 +175,8 @@
       }
     },
     "about": { 
-      "title": "About — Palme Ivoire",
+      "title": "About | Palme Ivoire",
+      "meta": "Discover Palme Ivoire's story, mission and team — an Ivorian palm oil processor combining Malaysian expertise with local roots, based in Guitry.",
       "hero": {
         "eyebrow": "Our Story",
         "title": "PALME IVOIRE: Excellence in Palm Oil Transformation",
@@ -323,7 +325,8 @@
       }
     },
     "services": { 
-      "title": "Services — Palme Ivoire",
+      "title": "Services | Palme Ivoire",
+      "meta": "Palm fruit bunch purchasing, CPO & PKO processing, export, and farmer support. Palme Ivoire covers the full palm oil value chain in Ivory Coast.",
       "subtitle": "Discover our palm oil production and processing services, our commitment to sustainability and our positive impact on local communities.",
       "hero": {
         "eyebrow": "Our Services",
@@ -423,7 +426,8 @@
       }
     },
     "products": {
-      "title": "Products — Palme Ivoire",
+      "title": "Products | Palme Ivoire",
+      "meta": "Premium Export CPO, Standard PKO, olein, stearin and industrial by-products. CHPH-certified, fully traceable palm oil products meeting international standards.",
       "hero": {
         "eyebrow": "Our Products",
         "title": "Complete Range of Palm Products",
@@ -668,7 +672,8 @@
       }
     },
     "gallery": {
-      "title": "Gallery — Palme Ivoire",
+      "title": "Gallery | Palme Ivoire",
+      "meta": "Photos of our plantations, processing plants, teams and palm oil products in Ivory Coast. Discover Palme Ivoire through images.",
       "subtitle": "A glimpse into our plantations, processing facilities, and the communities we work with.",
       "photos": "photos",
       "allPhotos": "All Photos",
@@ -678,7 +683,8 @@
       "products": "Products"
     },
     "contact": {
-      "title": "Contact — Palme Ivoire",
+      "title": "Contact | Palme Ivoire",
+      "meta": "Contact Palme Ivoire for a commercial partnership, CPO/PKO price request or any enquiry. Our team responds within 24 hours.",
       "heroSubtitle": "A question, a partnership or a request? We are here to help.",
       "contactus": "Send us a message",
       "getInTouch": "Our contact details",
@@ -735,7 +741,7 @@
       }
     },
     "locations": {
-      "title": "Our Sites — Palme Ivoire",
+      "title": "Our Sites | Palme Ivoire",
       "meta": "Discover our factories and warehouses in Ivory Coast: Guitry, Yopougon, and soon Lakota.",
       "heading": "Our Factories & Warehouses",
       "subtitle": "Discover our production and storage sites strategically located in Ivory Coast.",

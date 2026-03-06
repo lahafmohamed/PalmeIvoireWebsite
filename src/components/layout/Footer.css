@@ -36,13 +36,12 @@
 /* ═══════════════════════════════════════
    3. BRAND SECTION (Logo, Tagline)
 ═══════════════════════════════════════ */
-.footer__logo {
+.footer__logo-img {
   display: block;
-  font-size: var(--font-size-xl);
-  font-weight: 700;
-  color: #fff;
+  height: 200px;
+  width: auto;
   margin-bottom: var(--space-3);
-  transition: color 0.3s ease;
+  filter: brightness(0) invert(1);
 }
 
 .footer__tagline {
@@ -180,12 +179,7 @@
     padding: var(--space-8) var(--space-4);
   }
 
-  .footer__logo {
-    font-size: var(--font-size-lg);
-    margin-bottom: var(--space-2);
-  }
-
-  .footer__tagline {
+.footer__tagline {
     font-size: 0.8rem;
     max-width: 100%;
   }

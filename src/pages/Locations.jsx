@@ -1,14 +1,11 @@
 import { useTranslation } from 'react-i18next'
-import { useHead } from '@unhead/react'
+import { usePageSeo } from '../hooks/useSeo'
 import './Locations.css'
 
 export default function Locations() {
   const { t } = useTranslation()
   
-  useHead({
-    title: t('pages.locations.title'),
-    meta: [{ name: 'description', content: t('pages.locations.meta') }],
-  })
+  usePageSeo('locations', '/locations')
 
   const sites = t('pages.locations.sites', { returnObjects: true })
 
@@ -23,7 +20,7 @@ export default function Locations() {
       {/* Sites Grid */}
       <section className="locations-grid container">
         {sites.map((site, idx) => (
-          <article key={idx} className={`location-card ${site.status === 'upcoming' ? 'location-card--upcoming' : ''}`}>
+          <article key={idx} className={`location-card card--hover-sm ${site.status === 'upcoming' ? 'location-card--upcoming' : ''}`}>
             <div className="location-card__image-wrap">
               <img 
                 src={site.image} 
@@ -36,7 +33,7 @@ export default function Locations() {
               )}
             </div>
             <div className="location-card__content">
-              <span className="location-card__type">{site.type}</span>
+              <span className="location-card__type tag tag--primary">{site.type}</span>
               <h2 className="location-card__name">{site.name}</h2>
               <p className="location-card__address">
                 <span className="location-card__icon">📍</span>
@@ -45,7 +42,7 @@ export default function Locations() {
               <p className="location-card__desc">{site.description}</p>
               
               {site.features && (
-                <ul className="location-card__features">
+                <ul className="location-card__features checklist">
                   {site.features.map((feature, fIdx) => (
                     <li key={fIdx}>{feature}</li>
                   ))}

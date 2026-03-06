@@ -27,7 +27,8 @@
   },
   "pages": {
     "home": {
-      "title": "Accueil — Palme Ivoire",
+      "title": "Palme Ivoire | Huile de Palme Côte d'Ivoire",
+      "meta": "Palme Ivoire transforme plus de 50 000 tonnes de régimes de palme par an en Côte d'Ivoire. CPO, PKO et co-produits de qualité internationale disponibles à l'export.",
       "heroSlider": {
         "slides": [
           {
@@ -174,7 +175,8 @@
       }
     },
     "about": { 
-      "title": "À propos — Palme Ivoire",
+      "title": "À propos | Palme Ivoire",
+      "meta": "Découvrez l'histoire, la mission et l'équipe de Palme Ivoire — transformateur d'huile de palme ivoirien alliant savoir-faire malaisien et ancrage local depuis Guitry.",
       "hero": {
         "eyebrow": "Notre Histoire",
         "title": "PALME IVOIRE : Transformateur d'Excellence en Côte d'Ivoire",
@@ -323,7 +325,8 @@
       }
     },
     "services": { 
-      "title": "Services — Palme Ivoire",
+      "title": "Services | Palme Ivoire",
+      "meta": "Achat de régimes de palme, transformation CPO & PKO, exportation et accompagnement agriculteurs. Palme Ivoire couvre toute la chaîne de valeur de l'huile de palme en Côte d'Ivoire.",
       "subtitle": "Découvrez nos services de production et de transformation d'huile de palme, notre engagement envers la durabilité et notre impact positif sur les communautés locales.",
       "hero": {
         "eyebrow": "Nos Services",
@@ -423,7 +426,8 @@
       }
     },
     "products": {
-      "title": "Produits — Palme Ivoire",
+      "title": "Produits | Palme Ivoire",
+      "meta": "CPO Premium Export, PKO Standard, oléine, stéarine et co-produits industriels. Produits d'huile de palme certifiés CHPH, traçables et conformes aux normes internationales.",
       "hero": {
         "eyebrow": "Nos Produits",
         "title": "Gamme Complète de Produits du Palmier",
@@ -662,7 +666,8 @@
       }
     },
     "gallery": {
-      "title": "Galerie — Palme Ivoire",
+      "title": "Galerie | Palme Ivoire",
+      "meta": "Photos de nos plantations, usines de transformation, équipes et produits d'huile de palme en Côte d'Ivoire. Découvrez Palme Ivoire en images.",
       "subtitle": "Un aperçu de nos plantations, de nos installations de transformation et des communautés avec lesquelles nous travaillons.",
       "photos": "photos",
       "allPhotos": "Tous les photos",
@@ -672,7 +677,8 @@
       "products": "Produits"
     },
     "contact": {
-      "title": "Contact — Palme Ivoire",
+      "title": "Contact | Palme Ivoire",
+      "meta": "Contactez Palme Ivoire pour un partenariat commercial, une demande de prix CPO/PKO ou toute question. Notre équipe répond sous 24 heures.",
       "heroSubtitle": "Une question, un partenariat ou une demande ? Nous sommes à votre écoute.",
       "contactus": "Envoyez-nous un message",
       "getInTouch": "Nos coordonnées",
@@ -729,7 +735,7 @@
       }
     },
     "locations": {
-      "title": "Nos Sites — Palme Ivoire",
+      "title": "Nos Sites | Palme Ivoire",
       "meta": "Découvrez nos usines et entrepôts en Côte d'Ivoire : Guitry, Yopougon, et bientôt Lakota.",
       "heading": "Nos Usines & Entrepôts",
       "subtitle": "Découvrez nos sites de production et de stockage stratégiquement situés en Côte d'Ivoire.",

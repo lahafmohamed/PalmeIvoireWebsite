@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
-import { useHead } from '@unhead/react'
+import { usePageSeo } from '../hooks/useSeo'
 import './Gallery.css'
 
 const images = Array.from({ length: 22 }, (_, i) => ({
@@ -11,7 +11,7 @@ const images = Array.from({ length: 22 }, (_, i) => ({
 
 export default function Gallery() {
   const { t } = useTranslation()
-  useHead({ title: t('pages.gallery.title') })
+  usePageSeo('gallery', '/gallery')
 
   const [lightbox, setLightbox] = useState(null)
   const [selectedCategory, setSelectedCategory] = useState(null)

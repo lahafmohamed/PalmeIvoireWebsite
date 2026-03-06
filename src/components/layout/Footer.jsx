@@ -50,7 +50,7 @@ export default function Footer() {
     <footer className="footer">
       <div className="footer__inner">
         <div className="footer__brand">
-          <span className="footer__logo">Palme Ivoire</span>
+          <img src="/logo.svg" alt="Palme Ivoire" className="footer__logo-img" />
           <p className="footer__tagline">{t('footer.tagline')}</p>
           <div className="footer__social">
             {SOCIAL.map(({ name, href, icon }) => (

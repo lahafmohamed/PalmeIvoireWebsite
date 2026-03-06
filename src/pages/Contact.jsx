@@ -1,11 +1,11 @@
 import { useTranslation } from 'react-i18next'
-import { useHead } from '@unhead/react'
+import { usePageSeo } from '../hooks/useSeo'
 import { useState } from 'react'
 import './Contact.css'
 
 export default function Contact() {
   const { t } = useTranslation()
-  useHead({ title: t('pages.contact.title') })
+  usePageSeo('contact', '/contact')
   
   const [formData, setFormData] = useState({
     from_name: '',

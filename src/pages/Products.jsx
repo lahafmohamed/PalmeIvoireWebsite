@@ -1,9 +1,9 @@
 import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
-import { useHead } from '@unhead/react'
+import { usePageSeo } from '../hooks/useSeo'
 import { Link } from 'react-router-dom'
 import { useIntersection } from '../hooks/useIntersection'
-import { Icon } from '../components/Icon'
+import { Icon } from '../components/ui/Icon'
 import './Products.css'
 
 /* ── Photo associée à chaque produit (non-translatable) ── */
@@ -21,7 +21,7 @@ const PRODUCT_IMAGES = [
 
 export default function Products() {
   const { t } = useTranslation()
-  useHead({ title: t('pages.products.title') })
+  usePageSeo('products', '/products')
 
   const hero = t('pages.products.hero', { returnObjects: true })
   const mainProducts = t('pages.products.mainProducts', { returnObjects: true })
@@ -93,16 +93,16 @@ export default function Products() {
             style={{ transitionDelay: '0.08s' }}>
             {certifications.title}
           </h2>
-          <div className="certifications-grid">
+          <div className="certifications-grid grid-2">
             {certifications.items.map((cert, i) => (
               <div
                 key={i}
-                className={`certification-card reveal reveal--up ${certificationsVisible ? 'is-visible' : ''}`}
+                className={`certification-card card card--hover reveal reveal--up ${certificationsVisible ? 'is-visible' : ''}`}
                 style={{ transitionDelay: `${0.1 + i * 0.12}s` }}
               >
-                <span className="certification-card__icon"><Icon name={cert.icon} size={32} /></span>
-                <h3 className="certification-card__name">{cert.name}</h3>
-                <p className="certification-card__desc">{cert.desc}</p>
+                <span className="card__icon"><Icon name={cert.icon} size={32} /></span>
+                <h3 className="card__title">{cert.name}</h3>
+                <p className="card__desc">{cert.desc}</p>
               </div>
             ))}
           </div>
@@ -123,10 +123,10 @@ export default function Products() {
             {orders.steps.map((step, i) => (
               <div
                 key={i}
-                className={`order-step reveal reveal--up ${ordersVisible ? 'is-visible' : ''}`}
+                className={`order-step card--thin reveal reveal--up ${ordersVisible ? 'is-visible' : ''}`}
                 style={{ transitionDelay: `${0.1 + i * 0.12}s` }}
               >
-                <div className="order-step__number">{step.num}</div>
+                <div className="order-step__number step-badge">{step.num}</div>
                 <h3 className="order-step__title">{step.title}</h3>
                 <p className="order-step__desc">{step.desc}</p>
               </div>
@@ -164,7 +164,7 @@ function ProductCard({ product, index, isVisible, image, specsTitle, application
 
   return (
     <div
-      className={`product-showcase-card reveal reveal--up ${isVisible ? 'is-visible' : ''} ${expanded ? 'is-expanded' : ''}`}
+      className={`product-showcase-card card reveal reveal--up ${isVisible ? 'is-visible' : ''} ${expanded ? 'is-expanded' : ''}`}
       style={{ transitionDelay: `${0.1 + index * 0.15}s` }}
     >
       <div className="product-showcase-card__header">
@@ -190,7 +190,7 @@ function ProductCard({ product, index, isVisible, image, specsTitle, application
           <div className="product-showcase-card__details">
             <div className="product-showcase-card__section">
               <h4>{specsTitle}</h4>
-              <ul className="product-showcase-card__list">
+              <ul className="product-showcase-card__list checklist">
                 {product.features.map((f, i) => (
                   <li key={i}>{f}</li>
                 ))}
@@ -199,7 +199,7 @@ function ProductCard({ product, index, isVisible, image, specsTitle, application
 
             <div className="product-showcase-card__section">
               <h4>{applicationsTitle}</h4>
-              <ul className="product-showcase-card__list">
+              <ul className="product-showcase-card__list checklist">
                 {product.applications.map((a, i) => (
                   <li key={i}>{a}</li>
                 ))}

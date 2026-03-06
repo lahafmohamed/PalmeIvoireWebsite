@@ -5,7 +5,18 @@
       "WebFetch(domain:www.palmci.ci)",
       "Bash(npm run build)",
       "Bash(sed -i 's/  background: var\\(--color-accent\\);/  background: #fff;/' /c/Users/Mohamed/Desktop/palmeIvoireSite2026/src/pages/Home.css)",
-      "Bash(sed -i 's/  box-shadow: 0 4px 18px rgba\\(242, 169, 34, 0.35\\);/  box-shadow: 0 4px 18px rgba\\(0, 0, 0, 0.2\\);/' /c/Users/Mohamed/Desktop/palmeIvoireSite2026/src/pages/Home.css)"
+      "Bash(sed -i 's/  box-shadow: 0 4px 18px rgba\\(242, 169, 34, 0.35\\);/  box-shadow: 0 4px 18px rgba\\(0, 0, 0, 0.2\\);/' /c/Users/Mohamed/Desktop/palmeIvoireSite2026/src/pages/Home.css)",
+      "Bash(mkdir -p src/components/layout src/components/ui src/components/sections src/utils src/assets/images src/assets/icons src/assets/fonts)",
+      "Bash(touch src/components/sections/.gitkeep src/utils/.gitkeep src/assets/images/.gitkeep src/assets/icons/.gitkeep src/assets/fonts/.gitkeep)",
+      "Bash(mv src/components/Navbar.jsx src/components/layout/Navbar.jsx)",
+      "Bash(mv src/components/Navbar.css src/components/layout/Navbar.css)",
+      "Bash(mv src/components/Footer.jsx src/components/layout/Footer.jsx)",
+      "Bash(mv src/components/Footer.css src/components/layout/Footer.css)",
+      "Bash(while read var)",
+      "Bash(do grep -q \"$var:\" src/styles/variables.css)",
+      "Bash(echo \"MISSING: $var\")",
+      "Bash(done)",
+      "Bash(wc -l c:/Users/Mohamed/Desktop/palmeIvoireSite2026/src/pages/*.css c:/Users/Mohamed/Desktop/palmeIvoireSite2026/src/styles/*.css c:/Users/Mohamed/Desktop/palmeIvoireSite2026/src/components/layout/*.css c:/Users/Mohamed/Desktop/palmeIvoireSite2026/src/*.css)"
     ]
   }
 }
