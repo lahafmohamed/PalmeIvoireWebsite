@@ -5,24 +5,9 @@ import { Link } from 'react-router-dom'
 import { useIntersection } from '../hooks/useIntersection'
 import { useCountUp } from '../hooks/useCountUp'
 import { Icon } from '../components/ui/Icon'
+import { OptimizedImage } from '../components/ui/OptimizedImage'
+import { SLIDE_META } from '../data/slides'
 import './Home.css'
-
-/* ── Slide metadata: images + route links (text comes from i18n) ── */
-const SLIDE_META = [
-  {
-    image: '/slide/photo1.jpeg',
-    ctaLink: '/services',
-    ctaGhostLink: '/about',
-  },
-  {
-    image: '/slide/slider2.jpeg',
-    ctaLink: '/about',
-  },
-  {
-    image: '/slide/slider3.png',
-    ctaLink: '/contact',
-  },
-]
 
 /* ── Hero Slider ── */
 function HeroSlider({ slides }) {
@@ -53,7 +38,7 @@ function HeroSlider({ slides }) {
       {slides.map((slide, i) => {
         const meta = SLIDE_META[i] || SLIDE_META[0]
         return (
-          <div key={i} className={`hero-slide${i === current ? ' is-active' : ''}`}>
+          <div key={i} className={`hero-slide${i === current ? ' is-active' : ''}`} aria-hidden={i !== current}>
             <div className="hero__content">
               <p className="hero__eyebrow">{slide.eyebrow}</p>
               <h1 className="hero__title">{slide.title}</h1>
@@ -68,11 +53,14 @@ function HeroSlider({ slides }) {
               </div>
             </div>
             <div className="hero__image-wrap">
-              <img
+              <OptimizedImage
                 src={meta.image}
                 alt={slide.title}
                 className="hero__image"
-                loading={i === 0 ? 'eager' : 'lazy'}
+                width={1200}
+                height={800}
+                sizes="(max-width: 768px) 100vw, 60vw"
+                priority={i === 0}
               />
             </div>
           </div>
@@ -170,10 +158,13 @@ export default function Home() {
       {/* ── À propos teaser ── */}
       <section className="home-about" ref={aboutRef}>
         <div className={`home-about__image-wrap reveal reveal--left ${aboutVisible ? 'is-visible' : ''}`}>
-          <img
+          <OptimizedImage
             src="/cpoPhoto.png"
             alt="Transformation d'huile de palme — Palme Ivoire"
             className="home-about__image"
+            width={600}
+            height={480}
+            sizes="(max-width: 768px) 100vw, 50vw"
           />
           <div className="home-about__image-badge">
             <span className="home-about__badge-value">100%</span>

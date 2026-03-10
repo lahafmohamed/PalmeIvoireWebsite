@@ -1,5 +1,7 @@
 import { useTranslation } from 'react-i18next'
 import { usePageSeo } from '../hooks/useSeo'
+import { OptimizedImage } from '../components/ui/OptimizedImage'
+import { LocationIcon } from '../components/ui/LocationIcon'
 import './Locations.css'
 
 export default function Locations() {
@@ -22,11 +24,13 @@ export default function Locations() {
         {sites.map((site, idx) => (
           <article key={idx} className={`location-card card--hover-sm ${site.status === 'upcoming' ? 'location-card--upcoming' : ''}`}>
             <div className="location-card__image-wrap">
-              <img 
-                src={site.image} 
-                alt={site.name} 
+              <OptimizedImage
+                src={site.image}
+                alt={site.name}
                 className="location-card__image"
-                loading="lazy"
+                width={800}
+                height={450}
+                sizes="(max-width: 768px) 100vw, 50vw"
               />
               {site.status === 'upcoming' && (
                 <span className="location-card__badge">{t('pages.locations.comingSoon')}</span>
@@ -36,7 +40,7 @@ export default function Locations() {
               <span className="location-card__type tag tag--primary">{site.type}</span>
               <h2 className="location-card__name">{site.name}</h2>
               <p className="location-card__address">
-                <span className="location-card__icon">📍</span>
+                <span className="location-card__icon"><LocationIcon size={24} /></span>
                 {site.address}
               </p>
               <p className="location-card__desc">{site.description}</p>

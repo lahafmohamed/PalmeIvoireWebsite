@@ -33,13 +33,17 @@ export default function Navbar() {
   ]
 
   return (
-    <nav className={`navbar${scrolled ? ' navbar--scrolled' : ''}`}>
+    <header className={`navbar${scrolled ? ' navbar--scrolled' : ''}`} role="banner">
       <div className="navbar__inner">
-        <NavLink to="/" className="navbar__logo">
-          <img src="/logo.svg" alt="Palme Ivoire" className="navbar__logo-img" />
+        <NavLink to="/" className="navbar__logo" aria-label="Palme Ivoire — Accueil">
+          <img src="/logo.svg" alt="" className="navbar__logo-img" width={160} height={48} fetchPriority="high" decoding="sync" />
         </NavLink>
 
-        <div className={`navbar__nav${menuOpen ? ' navbar__nav--open' : ''}`}>
+        <nav
+          id="navbar-nav"
+          className={`navbar__nav${menuOpen ? ' navbar__nav--open' : ''}`}
+          aria-label="Navigation principale"
+        >
           {links.map(({ to, label }) => (
             <NavLink
               key={to}
@@ -53,21 +57,27 @@ export default function Navbar() {
               {label}
             </NavLink>
           ))}
-        </div>
+        </nav>
 
         <div className="navbar__actions">
-          <button className="navbar__lang" onClick={toggleLang}>
-            {i18n.language === 'fr' ? 'EN' : 'FR'}
+          <button
+            className="navbar__lang"
+            onClick={toggleLang}
+            aria-label={i18n.language === 'fr' ? 'Switch to English' : 'Passer en français'}
+          >
+            {i18n.language === 'fr' ? 'FR' : 'EN'}
           </button>
           <button
             className={`navbar__burger${menuOpen ? ' navbar__burger--open' : ''}`}
             onClick={() => setMenuOpen(o => !o)}
-            aria-label="Menu"
+            aria-label={menuOpen ? 'Fermer le menu' : 'Ouvrir le menu'}
+            aria-expanded={menuOpen}
+            aria-controls="navbar-nav"
           >
-            <span /><span /><span />
+            <span aria-hidden="true" /><span aria-hidden="true" /><span aria-hidden="true" />
           </button>
         </div>
       </div>
-    </nav>
+    </header>
   )
 }

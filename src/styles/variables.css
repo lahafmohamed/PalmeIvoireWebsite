@@ -5,8 +5,9 @@
   --color-primary-light: #ED7C38;  /* Harvest Terracotta lighter variant */
   --color-primary-dark: #C94F0F;   /* Harvest Terracotta darker variant (hover state) */
   --color-secondary: #5A7247;      /* Mature Palm Olive — muted green from plantation foliage */
-  --color-accent: #F2A922;         /* Sunlit Amber — matches uniform yellow, safety railings, refined oil */
+  --color-accent: #F2A922;         /* Sunlit Amber — decorative use only (borders, fills, icons) */
   --color-accent-light: #F9B840;   /* Sunlit Amber lighter variant */
+  --color-accent-text: #9B6800;    /* Dark Amber — text on light bg; contrast ≥4.5:1 vs #FFFBF7 (WCAG AA) */
   --color-bg: #FFFBF7;             /* Warm Ivory Off-White — subtle ivory tint, less harsh than pure white */
   --color-surface: #FFFFFF;        /* Pure White — cards, form inputs, table rows */
   --color-text: #1E1B18;           /* Warm Off-Black — headlines, body copy, navigation */

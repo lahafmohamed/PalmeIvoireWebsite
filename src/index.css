@@ -48,6 +48,32 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
 }
 
+/* ── Focus indicators — WCAG 2.1 AA ── */
+:focus-visible {
+  outline: 3px solid var(--color-primary);
+  outline-offset: 3px;
+  border-radius: var(--radius-sm);
+}
+
+/* ── Skip to main content ── */
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: var(--space-4);
+  z-index: 9999;
+  padding: var(--space-3) var(--space-6);
+  background: var(--color-primary);
+  color: #fff;
+  font-weight: 700;
+  font-size: var(--font-size-sm);
+  border-radius: var(--radius);
+  text-decoration: none;
+  transition: top 0.15s ease;
+}
+.skip-link:focus {
+  top: var(--space-4);
+}
+
 /* Mobile optimizations */
 @media (max-width: 768px) {
   html {

@@ -3,6 +3,9 @@ import { initReactI18next } from 'react-i18next'
 import fr from './locales/fr.json'
 import en from './locales/en.json'
 
+const initialLang = localStorage.getItem('lang') || 'fr'
+document.documentElement.lang = initialLang
+
 i18n
   .use(initReactI18next)
   .init({
@@ -10,9 +13,13 @@ i18n
       fr: { translation: fr },
       en: { translation: en },
     },
-    lng: localStorage.getItem('lang') || 'fr',
+    lng: initialLang,
     fallbackLng: 'fr',
     interpolation: { escapeValue: false },
   })
+
+i18n.on('languageChanged', lng => {
+  document.documentElement.lang = lng
+})
 
 export default i18n

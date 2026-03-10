@@ -796,12 +796,12 @@
     }
   },
   "notFound": {
-    "eyebrow": "Erreur 404",
-    "title": "Page introuvable",
-    "subtitle": "Cette page n'existe pas ou a été déplacée.",
-    "redirect": "Redirection dans {{seconds}}s",
+    "eyebrow": "Page introuvable",
+    "title": "Cette parcelle n'a pas encore été plantée…",
+    "subtitle": "La page que vous cherchez semble avoir disparu dans la plantation. Pas de panique, nous allons vous ramener sur le bon chemin.",
+    "redirect": "Redirection automatique dans {{seconds}}s",
     "goHome": "Retour à l'accueil",
     "goContact": "Nous contacter",
-    "explore": "Accès rapide"
+    "explore": "Ou explorez nos pages"
   }
 }

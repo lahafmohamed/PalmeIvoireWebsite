@@ -4,20 +4,9 @@ import { usePageSeo } from '../hooks/useSeo'
 import { Link } from 'react-router-dom'
 import { useIntersection } from '../hooks/useIntersection'
 import { Icon } from '../components/ui/Icon'
+import { OptimizedImage } from '../components/ui/OptimizedImage'
+import { PRODUCT_IMAGES } from '../data/products'
 import './Products.css'
-
-/* ── Photo associée à chaque produit (non-translatable) ── */
-const PRODUCT_IMAGES = [
-  '/gallery5.jpeg',     /* Régimes de Palme */
-  '/cpoPhoto.png',      /* CPO — Huile de Palme Brute */
-  '/gallery2.jpeg',     /* Noix de Palmiste */
-  '/gallery3.jpeg',     /* CPKO — Huile de Palmiste */
-  '/gallery4.jpeg',     /* Coques de Palme */
-  '/Products/Tourteaux.png',     /* Tourteaux de Palmiste (PKE) */
-  '/gallery7.jpeg',     /* Heavy Palm Cake (HPC) */
-  '/gallery8.jpeg',     /* Effluent de Bassin (POME) */
-  '/gallery9.jpeg',     /* Résidu Boue de Palmiste */
-]
 
 export default function Products() {
   const { t } = useTranslation()
@@ -179,11 +168,13 @@ function ProductCard({ product, index, isVisible, image, specsTitle, application
         <div className="product-showcase-card__body">
           {image && (
             <div className="product-showcase-card__image-wrap">
-              <img
+              <OptimizedImage
                 src={image}
                 alt={product.title}
                 className="product-showcase-card__image"
-                loading="lazy"
+                width={600}
+                height={400}
+                sizes="(max-width: 768px) 100vw, 50vw"
               />
             </div>
           )}

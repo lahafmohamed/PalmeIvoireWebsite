@@ -802,12 +802,12 @@
     }
   },
   "notFound": {
-    "eyebrow": "Error 404",
-    "title": "Page not found",
-    "subtitle": "This page doesn't exist or has been moved.",
-    "redirect": "Redirecting in {{seconds}}s",
+    "eyebrow": "Page not found",
+    "title": "This plot hasn't been planted yet…",
+    "subtitle": "The page you're looking for seems to have vanished into the plantation. Don't worry, we'll guide you back on track.",
+    "redirect": "Auto-redirect in {{seconds}}s",
     "goHome": "Back to Home",
     "goContact": "Contact Us",
-    "explore": "Quick access"
+    "explore": "Or explore our pages"
   }
 }

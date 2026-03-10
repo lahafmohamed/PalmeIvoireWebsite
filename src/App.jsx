@@ -20,9 +20,10 @@ function PageLoader() {
 export default function App() {
   return (
     <BrowserRouter>
+      <a className="skip-link" href="#main-content">Passer au contenu principal</a>
       <div className="app">
         <Navbar />
-        <main className="main">
+        <main className="main" id="main-content" tabIndex={-1}>
           <Suspense fallback={<PageLoader />}>
             <Routes>
               <Route path="/"          element={<Home />} />

@@ -1,5 +1,7 @@
 import { NavLink } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
+import { FactoryIcon } from '../ui/FactoryIcon'
+import { WarehouseIcon } from '../ui/WarehouseIcon'
 import './Footer.css'
 
 const SOCIAL = [
@@ -50,7 +52,7 @@ export default function Footer() {
     <footer className="footer">
       <div className="footer__inner">
         <div className="footer__brand">
-          <img src="/logo.svg" alt="Palme Ivoire" className="footer__logo-img" />
+          <img src="/logo.svg" alt="Palme Ivoire" className="footer__logo-img" width={160} height={48} loading="lazy" decoding="async" />
           <p className="footer__tagline">{t('footer.tagline')}</p>
           <div className="footer__social">
             {SOCIAL.map(({ name, href, icon }) => (
@@ -93,8 +95,8 @@ export default function Footer() {
         <div className="footer__col">
           <h3 className="footer__heading">{t('footer.locations.title')}</h3>
           <ul className="footer__list footer__list--plain">
-            <li>🏭 {t('footer.locations.factory')} — {t('footer.locations.factoryAddress')}</li>
-            <li>📦 {t('footer.locations.warehouse')} — {t('footer.locations.warehouseAddress')}</li>
+            <li><FactoryIcon size={20} className="footer__location-icon" /> {t('footer.locations.factory')} — {t('footer.locations.factoryAddress')}</li>
+            <li><WarehouseIcon size={20} className="footer__location-icon" /> {t('footer.locations.warehouse')} — {t('footer.locations.warehouseAddress')}</li>
             <li>🚧 {t('footer.locations.factoryUpcoming')} — {t('footer.locations.factoryUpcomingAddress')}</li>
           </ul>
           <NavLink to="/locations" className="footer__link footer__link--cta">

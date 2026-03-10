@@ -1,12 +1,20 @@
 import { useTranslation } from 'react-i18next'
 import { usePageSeo } from '../hooks/useSeo'
-import { useState } from 'react'
+import { useState, useRef } from 'react'
+import emailjs from '@emailjs/browser'
+import { PhoneIcon } from '../components/ui/PhoneIcon'
+import { WhatsAppIcon } from '../components/ui/WhatsAppIcon'
+import { EmailIcon } from '../components/ui/EmailIcon'
+import { LocationIcon } from '../components/ui/LocationIcon'
+import { TimeIcon } from '../components/ui/TimeIcon'
+import { FAQIcon } from '../components/ui/FAQIcon'
 import './Contact.css'
 
 export default function Contact() {
   const { t } = useTranslation()
   usePageSeo('contact', '/contact')
   
+  const formRef = useRef(null)
   const [formData, setFormData] = useState({
     from_name: '',
     from_email: '',
@@ -27,14 +35,30 @@ export default function Contact() {
     e.preventDefault()
     setStatus('loading')
     
+    const templateParams = {
+      to_email: formData.from_email,
+      name: formData.from_name,
+      title: formData.subject,
+      from_name: formData.from_name,
+      from_email: formData.from_email,
+      phone: formData.phone,
+      company: formData.company,
+      subject: formData.subject,
+      message: formData.message,
+    }
+
     try {
-      // TODO: Intégrer EmailJS ou backend
-      console.log('Form data:', formData)
+      await Promise.all([
+        // Auto-reply to the user
+        emailjs.send('service_jxts751', 'template_5opagar', templateParams, 'kDLS1h-cZXEOoloNN'),
+        // Notification to Palme Ivoire
+        emailjs.send('service_jxts751', 'template_uvff2uf', templateParams, 'kDLS1h-cZXEOoloNN'),
+      ])
       setStatus('success')
       setFormData({ from_name: '', from_email: '', phone: '', company: '', subject: '', message: '' })
       setTimeout(() => setStatus(''), 5000)
     } catch (error) {
-      console.error('Error:', error)
+      console.error('EmailJS error:', error)
       setStatus('error')
       setTimeout(() => setStatus(''), 5000)
     }
@@ -61,17 +85,17 @@ export default function Contact() {
           </div>
           <div className="quick-contact__buttons">
             <a href="tel:+2250700000000" className="quick-contact__btn quick-contact__btn--phone">
-              <span className="quick-contact__icon">📞</span>
+              <span className="quick-contact__icon"><PhoneIcon size={24} /></span>
               <span className="quick-contact__label">{t('pages.contact.callUs')}</span>
               <span className="quick-contact__value">+225 07 00 00 00 00</span>
             </a>
             <a href="https://wa.me/2250700000000" target="_blank" rel="noopener noreferrer" className="quick-contact__btn quick-contact__btn--whatsapp">
-              <span className="quick-contact__icon">💬</span>
+              <span className="quick-contact__icon"><WhatsAppIcon size={24} /></span>
               <span className="quick-contact__label">{t('pages.contact.whatsapp')}</span>
               <span className="quick-contact__value">+225 07 00 00 00 00</span>
             </a>
             <a href="mailto:contact@palmeivoire.ci" className="quick-contact__btn quick-contact__btn--email">
-              <span className="quick-contact__icon">📧</span>
+              <span className="quick-contact__icon"><EmailIcon size={24} /></span>
               <span className="quick-contact__label">{t('pages.contact.emailUs')}</span>
               <span className="quick-contact__value">contact@palmeivoire.ci</span>
             </a>
@@ -84,7 +108,7 @@ export default function Contact() {
         <div className="contact-main__inner">
           {/* Left Column - Form */}
           <div className="contact-form-wrap">
-            <form className="contact-form" onSubmit={handleSubmit}>
+            <form ref={formRef} className="contact-form" onSubmit={handleSubmit}>
               <div className="contact-form__header">
                 <h2>{t('pages.contact.contactus')}</h2>
                 <span className="contact-form__response-time">⚡ {t('pages.contact.responseTime')}</span>
@@ -201,7 +225,7 @@ export default function Contact() {
               <h3>{t('pages.contact.getInTouch')}</h3>
               
               <div className="contact-info__card">
-                <span className="contact-info__icon">📍</span>
+                <span className="contact-info__icon"><LocationIcon size={24} /></span>
                 <div>
                   <h4>{t('pages.contact.address')}</h4>
                   <p>{t('pages.contact.addressValue')}</p>
@@ -209,7 +233,7 @@ export default function Contact() {
               </div>
 
               <div className="contact-info__card">
-                <span className="contact-info__icon">🕐</span>
+                <span className="contact-info__icon"><TimeIcon size={24} /></span>
                 <div>
                   <h4>{t('pages.contact.hours')}</h4>
                   <p>{t('pages.contact.hoursText')}</p>
@@ -218,7 +242,7 @@ export default function Contact() {
               </div>
 
               <div className="contact-info__card">
-                <span className="contact-info__icon">📞</span>
+                <span className="contact-info__icon"><PhoneIcon size={24} /></span>
                 <div>
                   <h4>{t('pages.contact.phone')}</h4>
                   <p><a href="tel:+2250700000000">+225 07 00 00 00 00</a></p>
@@ -226,7 +250,7 @@ export default function Contact() {
               </div>
 
               <div className="contact-info__card">
-                <span className="contact-info__icon">📧</span>
+                <span className="contact-info__icon"><EmailIcon size={24} /></span>
                 <div>
                   <h4>{t('pages.contact.email')}</h4>
                   <p><a href="mailto:contact@palmeivoire.ci">contact@palmeivoire.ci</a></p>
@@ -254,8 +278,12 @@ export default function Contact() {
       {/* FAQ Section */}
       <section className="contact-faq">
         <div className="contact-faq__inner">
-          <h2>{t('pages.contact.faq.title')}</h2>
-          <div className="faq-list">
+          <div className="contact-faq__illustration">
+            <FAQIcon />
+          </div>
+          <div className="contact-faq__content">
+            <h2>{t('pages.contact.faq.title')}</h2>
+            <div className="faq-list">
             {faqItems.map((item, idx) => (
               <div 
                 key={idx} 
@@ -276,6 +304,7 @@ export default function Contact() {
                 )}
               </div>
             ))}
+            </div>
           </div>
         </div>
       </section>

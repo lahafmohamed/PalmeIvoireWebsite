@@ -415,8 +415,29 @@
 }
 
 .contact-faq__inner {
-  max-width: 800px;
+  max-width: 1200px;
   margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-8);
+  align-items: start;
+}
+
+.contact-faq__illustration {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-faq__illustration svg {
+  max-width: 100%;
+  height: auto;
+  width: 350px;
+}
+
+.contact-faq__content {
+  display: flex;
+  flex-direction: column;
 }
 
 .contact-faq h2 {
@@ -619,7 +640,16 @@
   .contact-faq {
     padding: var(--space-10) var(--space-4);
   }
-  
+
+  .contact-faq__inner {
+    grid-template-columns: 1fr;
+    gap: var(--space-4);
+  }
+
+  .contact-faq__illustration {
+    display: none;
+  }
+
   .contact-faq h2 {
     font-size: var(--font-size-xl);
     margin-bottom: var(--space-8);

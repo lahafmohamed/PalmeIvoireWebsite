@@ -16,7 +16,8 @@
       "Bash(do grep -q \"$var:\" src/styles/variables.css)",
       "Bash(echo \"MISSING: $var\")",
       "Bash(done)",
-      "Bash(wc -l c:/Users/Mohamed/Desktop/palmeIvoireSite2026/src/pages/*.css c:/Users/Mohamed/Desktop/palmeIvoireSite2026/src/styles/*.css c:/Users/Mohamed/Desktop/palmeIvoireSite2026/src/components/layout/*.css c:/Users/Mohamed/Desktop/palmeIvoireSite2026/src/*.css)"
+      "Bash(wc -l c:/Users/Mohamed/Desktop/palmeIvoireSite2026/src/pages/*.css c:/Users/Mohamed/Desktop/palmeIvoireSite2026/src/styles/*.css c:/Users/Mohamed/Desktop/palmeIvoireSite2026/src/components/layout/*.css c:/Users/Mohamed/Desktop/palmeIvoireSite2026/src/*.css)",
+      "Bash(npm run lint)"
     ]
   }
 }
