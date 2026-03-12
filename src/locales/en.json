@@ -28,19 +28,19 @@
   "pages": {
     "home": {
       "title": "Palme Ivoire | Palm Oil Producer — Ivory Coast",
-      "meta": "Palme Ivoire processes over 50,000 tonnes of palm fruit bunches per year in Ivory Coast. International-quality CPO, PKO and by-products available for export.",
+      "meta": "Palme Ivoire produces over 250,000 tonnes of palm fruit bunches per year in Ivory Coast. International-quality CPO, PKO and by-products.",
       "heroSlider": {
         "slides": [
           {
-            "eyebrow": "Palme Ivoire",
-            "title": "Palm Oil Processor in Ivory Coast",
-            "subtitle": "We buy palm fruit bunches from local farmers and transform them into premium CPO & PKO for export.",
+            "eyebrow": "",
+            "title": "Palm oil producer in Ivory Coast",
+            "subtitle": "We buy palm fruit bunches from local farmers and transform them into premium CPO & PKO.",
             "cta": "Our Products",
             "ctaGhost": "About Us"
           },
           {
             "eyebrow": "Industrial Capacity",
-            "title": "50,000+ Tons Processed Annually",
+            "title": "250,000+ Tons Processed Annually",
             "subtitle": "Our modern facility transforms palm fruit bunches into premium quality oil using Malaysian technology.",
             "cta": "Our Facility"
           },
@@ -53,15 +53,15 @@
         ]
       },
       "welcome": "Palm Oil Processor in Ivory Coast",
-      "subtitle": "We buy palm fruit bunches from Ivorian farmers and transform them into premium crude palm oil (CPO) and palm kernel oil (PKO) for export.",
+      "subtitle": "We buy palm fruit bunches from Ivorian farmers and transform them into premium crude palm oil (CPO) and palm kernel oil (PKO).",
       "cta": "Discover our services",
       "stats": {
         "label": "PALME IVOIRE by the numbers",
         "items": [
-          { "num": 2,     "suffix": "+",  "label": "Years of experience" },
+          { "num": 5,     "suffix": "+",  "label": "Years of experience" },
           { "num": 150,   "suffix": "+",  "label": "Skilled employees" },
           { "num": 1500,  "suffix": "+",  "label": "Supplier farmers" },
-          { "num": 50000, "suffix": "+",  "label": "Tons processed / year" }
+          { "num": 250000, "suffix": "+",  "label": "Tons processed / year" }
         ]
       },
       "services": {
@@ -75,13 +75,13 @@
           },
           {
             "icon": "factory",
-            "title": "CPO & PKO Processing",
-            "desc": "Our modern facility transforms palm bunches into export-quality crude palm oil (CPO) and palm kernel oil (PKO)."
+            "title": "Oil Production",
+            "desc": "Our modern facility produces palm bunches into premium quality crude palm oil (CPO) and palm kernel oil (PKO)."
           },
           {
             "icon": "package",
-            "title": "Sales & Export",
-            "desc": "We sell our processed oil to local and international markets. Certified quality and reliable delivery."
+            "title": "Sales & Distribution",
+            "desc": "We sell our processed oil to local markets. Certified quality and reliable delivery."
           },
           {
             "icon": "handshake",
@@ -94,41 +94,16 @@
       "about": {
         "label": "Who we are",
         "title": "PALME IVOIRE - Palm Oil Processing Specialist",
-        "body": "PALME IVOIRE is a palm oil processor based in the heart of Ivory Coast. We buy palm fruit bunches from local farmers and transform them into premium crude palm oil (CPO) and palm kernel oil (PKO). Thanks to our expertise acquired from Malaysian industry leaders, we guarantee exceptional quality for export and local markets.",
+        "body": "PALME IVOIRE is a palm oil processor based in the heart of Ivory Coast. We buy palm fruit bunches from local farmers and transform them into premium crude palm oil (CPO) and palm kernel oil (PKO). Thanks to our expertise acquired from Malaysian industry leaders, we guarantee exceptional quality for all our clients.",
         "cta": "Learn more"
-      },
-      "productCategories": {
-        "label": "Our Products",
-        "title": "Complete Range of Palm Oil Products",
-        "subtitle": "Palm oil solutions tailored to all your industrial and commercial needs.",
-        "items": [
-          {
-            "icon": "star",
-            "title": "CPO Premium Export",
-            "desc": "Superior quality crude palm oil for export. Low acidity (< 2%), clear color. Ideal for cosmetics and premium industries.",
-            "specs": "Export Quality | Capacity: 500+ tons/month"
-          },
-          {
-            "icon": "settings",
-            "title": "PKO Standard",
-            "desc": "Palm kernel oil processed to international standards. Optimal fatty acid profile for industrial and food applications.",
-            "specs": " Production: 200+ tons/month"
-          },
-          {
-            "icon": "utensils",
-            "title": "CPO Foodgrade",
-            "desc": "Palm oil suitable for food applications. Certified sanitary processing and compliance with FSSC 22000 standards.",
-            "specs": "Food Certification | Availability: On request"
-          }
-        ]
       },
       "values": {
         "label": "What guides us",
         "title": "Our Core Values",
         "items": [
+          { "icon": "hexagon", "title": "Lasting Partnership", "desc": "We support our suppliers with technical assistance to improve their yields. Together, we build a strong supply chain." },
           { "icon": "award", "title": "Premium Quality", "desc": "Every drop of oil we process meets the most stringent quality standards. Our process guarantees unmatched purity and excellence." },
-          { "icon": "gem", "title": "Fair Prices", "desc": "We offer fair prices to our supplier farmers with fast and transparent payment. Their success is our success." },
-          { "icon": "hexagon", "title": "Lasting Partnership", "desc": "We support our suppliers with technical assistance to improve their yields. Together, we build a strong supply chain." }
+          { "icon": "gem", "title": "Fair Prices", "desc": "We offer fair prices to our supplier farmers with fast and transparent payment. Their success is our success." }
         ]
       },
       "certifications": {
@@ -179,37 +154,37 @@
       "meta": "Discover Palme Ivoire's story, mission and team — an Ivorian palm oil processor combining Malaysian expertise with local roots, based in Guitry.",
       "hero": {
         "eyebrow": "Our Story",
-        "title": "PALME IVOIRE: Excellence in Palm Oil Transformation",
-        "subtitle": "Since 2024, we connect local farmers to international markets by transforming palm fruit bunches into premium oils."
+        "title": "PALME IVOIRE: Excellence in Palm Oil Production",
+        "subtitle": "Since 2021, we connect local farmers to international markets by producing premium oils from palm fruit bunches."
       },
       "mission": {
         "label": "Our Mission",
         "title": "Transform with Excellence, Impact Positively",
-        "body": "PALME IVOIRE was born from a clear vision: create a palm value chain that benefits everyone. By purchasing palm fruit bunches directly from Ivorian farmers, transforming them to the highest standards, and exporting them to global markets, we build a fairer and more sustainable economy."
+        "body": "PALME IVOIRE was born from a clear vision: create a palm value chain that benefits everyone. By purchasing palm fruit bunches directly from Ivorian farmers, producing them to the highest standards, we build a fairer and more sustainable economy."
       },
       "story": {
         "label": "Our Journey",
         "title": "From Ambition to Industrial Reality",
         "highlights": [
           {
-            "year": "2024",
+            "year": "2021",
             "title": "The Foundation",
             "desc": "Creation of PALME IVOIRE with the vision to be the leading palm processor in Ivory Coast, using Malaysian expertise."
           },
           {
-            "year": "2024",
+            "year": "2022",
             "title": "Construction & Certification",
-            "desc": "Installation of a state-of-the-art processing facility in Abidjan equipped with cutting-edge transformation technology. Achieved CHPH certification and international standards compliance."
+            "desc": "Installation of a state-of-the-art production facility in Abidjan equipped with cutting-edge production technology. Achieved CHPH certification and international standards compliance."
           },
           {
             "year": "2025",
             "title": "Strategic Partnerships",
-            "desc": "Established contracts with 1,500+ local producers. First exports to French, Swiss and Asian markets."
+            "desc": "Established contracts with 1,500+ local producers. First sales to French, Swiss and Asian markets."
           },
           {
             "year": "2026",
             "title": "Growth & Impact",
-            "desc": "Reached 50,000+ tons processed annually. Expanded product portfolio: Premium CPO, Standard PKO, Foodgrade CPO."
+            "desc": "Reached 250,000+ tons processed annually. Expanded product portfolio: Premium CPO, Standard PKO, Foodgrade CPO."
           }
         ]
       },
@@ -230,7 +205,7 @@
           {
             "icon": "testTube",
             "title": "Rigorous Quality Control",
-            "desc": "Modern control laboratory with testing at every stage. Complete traceability from palm bunch to finished exported product."
+            "desc": "Modern control laboratory with testing at every stage. Complete traceability from palm bunch to finished marketed product."
           },
           {
             "icon": "recycle",
@@ -241,7 +216,7 @@
       },
       "process": {
         "label": "Our Process",
-        "title": "From Palm Bunch to Exported Oil",
+        "title": "From Palm Bunch to Produced Oil",
         "steps": [
           {
             "num": "1",
@@ -271,13 +246,13 @@
             "num": "5",
             "icon": "dna",
             "title": "Purification",
-            "desc": "Filtration and centrifugation to remove impurities. Parameter adjustment: acidity, color, odor per export standards."
+            "desc": "Filtration and centrifugation to remove impurities. Parameter adjustment: acidity, color, odor per our standards."
           },
           {
             "num": "6",
             "icon": "package",
-            "title": "Packaging & Export",
-            "desc": "Filling in tanks or drums per orders. Final compliance testing. Secure shipment to global markets."
+            "title": "Packaging & Delivery",
+            "desc": "Filling in tanks or drums per orders. Final compliance testing. Secure delivery."
           }
         ]
       },
@@ -287,8 +262,8 @@
         "stats": [
           { "num": "1500", "label": "Farmers Supported", "desc": "Regular income and fair prices for local producers" },
           { "num": "150", "label": "Jobs Created", "desc": "Direct and indirect positions in Abidjan region" },
-          { "num": "50000", "label": "Tons/year", "desc": "Processing capacity to serve global markets" },
-          { "num": "15", "label": "Customer Countries", "desc": "Export to cosmetics, food and chemical industries" }
+          { "num": "250000", "label": "Tons/year", "desc": "Processing capacity to serve global markets" },
+          { "num": "15", "label": "Customer Countries", "desc": "Sales to cosmetics, food and chemical industries" }
         ]
       },
       "values": {
@@ -326,12 +301,12 @@
     },
     "services": { 
       "title": "Services | Palme Ivoire",
-      "meta": "Palm fruit bunch purchasing, CPO & PKO processing, export, and farmer support. Palme Ivoire covers the full palm oil value chain in Ivory Coast.",
+      "meta": "Palm fruit bunch purchasing, CPO & PKO production, distribution, and farmer support. Palme Ivoire covers the full palm oil value chain in Ivory Coast.",
       "subtitle": "Discover our palm oil production and processing services, our commitment to sustainability and our positive impact on local communities.",
       "hero": {
         "eyebrow": "Our Services",
-        "title": "A Complete Palm Oil Transformation Chain",
-        "subtitle": "From responsible sourcing of palm fruit bunches to export of certified premium oils."
+        "title": "A Complete Palm Oil Production Chain",
+        "subtitle": "From responsible sourcing of palm fruit bunches to distribution of certified premium oils."
       },
       "mainServices": {
         "label": "Main Services",
@@ -344,7 +319,7 @@
           },
           {
             "icon": "factory",
-            "title": "Oil Transformation",
+            "title": "Oil Production",
             "desc": "Processing bunches with our state-of-the-art facilities. Cutting-edge Malaysian technology to extract CPO and PKO with optimal yield and quality."
           },
           {
@@ -354,8 +329,8 @@
           },
           {
             "icon": "ship",
-            "title": "Logistics and Export",
-            "desc": "Complete logistics management: packaging, transport, customs and secure shipping to global markets. Deadlines met, quality guaranteed."
+            "title": "Logistics and Distribution",
+            "desc": "Complete logistics management: packaging, transport, customs and secure delivery. Deadlines met, quality guaranteed."
           },
           {
             "icon": "handshake",
@@ -364,7 +339,7 @@
           },
           {
             "icon": "lightbulb",
-            "title": "Transformation Consulting",
+            "title": "Production Consulting",
             "desc": "Technical advice to optimize palm processing. Custom solutions to improve yields, quality and profitability of your production."
           }
         ]
@@ -427,7 +402,7 @@
     },
     "products": {
       "title": "Products | Palme Ivoire",
-      "meta": "Premium Export CPO, Standard PKO, olein, stearin and industrial by-products. CHPH-certified, fully traceable palm oil products meeting international standards.",
+      "meta": "Premium CPO, Standard PKO, olein, stearin and industrial by-products. CHPH-certified, fully traceable palm oil products meeting international standards.",
       "hero": {
         "eyebrow": "Our Products",
         "title": "Complete Range of Palm Products",
@@ -752,14 +727,14 @@
           "name": "Guitry Factory",
           "type": "Processing Plant",
           "address": "Guitry, Nawa Region, Ivory Coast",
-          "description": "Our main palm oil processing plant. Equipped with modern Malaysian technology, it processes over 50,000 tons of palm fruit bunches per year.",
+          "description": "Our main palm oil processing plant. Equipped with modern Malaysian technology, it processes over 250,000 tons of palm fruit bunches per year.",
           "image": "https://images.unsplash.com/photo-1513828583688-c52646db42da?w=800&q=80",
           "status": "active",
           "features": [
-            "Capacity: 50,000+ tons/year",
+            "Capacity: 250,000+ tons/year",
             "Malaysian technology",
             "CPO & PKO production",
-            "Export quality certified"
+            "Certified premium quality"
           ],
           "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127066.36!2d-5.2!3d5.55!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNcKwMzMnMDAuMCJOIDXCsDEyJzAwLjAiVw!5e0!3m2!1sen!2sci!4v1"
         },
@@ -799,15 +774,42 @@
         "subtitle": "Contact us to organize a tour of our facilities.",
         "button": "Contact Us"
       }
+    },
+    "notFound": {
+      "eyebrow": "Page not found",
+      "title": "This plot hasn't been planted yet…",
+      "subtitle": "The page you're looking for seems to have vanished into the plantation. Don't worry, we'll guide you back on track.",
+      "redirect": "Auto-redirect in {{seconds}}s",
+      "goHome": "Back to Home",
+      "goContact": "Contact Us",
+      "explore": "Or explore our pages"
     }
   },
-  "notFound": {
-    "eyebrow": "Page not found",
-    "title": "This plot hasn't been planted yet…",
-    "subtitle": "The page you're looking for seems to have vanished into the plantation. Don't worry, we'll guide you back on track.",
-    "redirect": "Auto-redirect in {{seconds}}s",
-    "goHome": "Back to Home",
-    "goContact": "Contact Us",
-    "explore": "Or explore our pages"
+  "_archived": {
+    "productCategories_home": {
+      "label": "Our Products",
+      "title": "Complete Range of Palm Oil Products",
+      "subtitle": "Palm oil solutions tailored to all your industrial and commercial needs.",
+      "items": [
+        {
+          "icon": "star",
+          "title": "CPO Premium",
+          "desc": "Superior quality crude palm oil. Low acidity (< 2%), clear color. Ideal for cosmetics and premium industries.",
+          "specs": "Premium Quality | Capacity: 500+ tons/month"
+        },
+        {
+          "icon": "settings",
+          "title": "PKO Standard",
+          "desc": "Palm kernel oil processed to international standards. Optimal fatty acid profile for industrial and food applications.",
+          "specs": " Production: 200+ tons/month"
+        },
+        {
+          "icon": "utensils",
+          "title": "CPO Foodgrade",
+          "desc": "Palm oil suitable for food applications. Certified sanitary processing and compliance with FSSC 22000 standards.",
+          "specs": "Food Certification | Availability: On request"
+        }
+      ]
+    }
   }
 }

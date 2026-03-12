@@ -113,13 +113,11 @@ export default function Home() {
   const heroSlides   = t('pages.home.heroSlider.slides', { returnObjects: true })
   const stats    = t('pages.home.stats.items',    { returnObjects: true })
   const services = t('pages.home.services.items', { returnObjects: true })
-  const products = t('pages.home.productCategories.items', { returnObjects: true })
   const values   = t('pages.home.values.items',   { returnObjects: true })
   const certs    = t('pages.home.certifications.items', { returnObjects: true })
 
   const [statsRef,    statsVisible]    = useIntersection(0.2)
   const [aboutRef,    aboutVisible]    = useIntersection(0.15)
-  const [productsRef, productsVisible] = useIntersection(0.1)
   const [valuesRef,   valuesVisible]   = useIntersection(0.1)
   const [servicesRef, servicesVisible] = useIntersection(0.1)
   const [certsRef,    certsVisible]    = useIntersection(0.1)
@@ -176,35 +174,6 @@ export default function Home() {
           <h2 className="home-about__title">{t('pages.home.about.title')}</h2>
           <p className="home-about__body">{t('pages.home.about.body')}</p>
           <Link to="/about" className="home-about__cta">{t('pages.home.about.cta')} →</Link>
-        </div>
-      </section>
-
-      {/* ── Produits ── */}
-      <section className="home-products" ref={productsRef}>
-        <p className={`section__label reveal reveal--up ${productsVisible ? 'is-visible' : ''}`}>
-          {t('pages.home.productCategories.label')}
-        </p>
-        <h2 className={`section__heading reveal reveal--up ${productsVisible ? 'is-visible' : ''}`}
-          style={{ transitionDelay: '0.08s' }}>
-          {t('pages.home.productCategories.title')}
-        </h2>
-        <p className={`section__subtitle reveal reveal--up ${productsVisible ? 'is-visible' : ''}`}
-          style={{ transitionDelay: '0.12s' }}>
-          {t('pages.home.productCategories.subtitle')}
-        </p>
-        <div className="home-products__grid">
-          {products.map((p, i) => (
-            <div
-              key={i}
-              className={`product-card reveal reveal--up ${productsVisible ? 'is-visible' : ''}`}
-              style={{ transitionDelay: `${0.1 + i * 0.15}s` }}
-            >
-              <span className="product-card__icon"><Icon name={p.icon} size={32} /></span>
-              <h3 className="product-card__title">{p.title}</h3>
-              <p className="product-card__desc">{p.desc}</p>
-              <p className="product-card__specs">{p.specs}</p>
-            </div>
-          ))}
         </div>
       </section>
 

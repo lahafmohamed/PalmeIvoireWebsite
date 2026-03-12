@@ -9,7 +9,7 @@
     "contact": "Contact"
   },
   "footer": {
-    "tagline": "Transformateur d'huile de palme au cœur de la Côte d'Ivoire.",
+    "tagline": "Producteur d'huile de palme au cœur de la Côte d'Ivoire.",
     "quickLinks": "Liens rapides",
     "contactUs": "Nous contacter",
     "address": "Abidjan, Côte d'Ivoire",
@@ -28,19 +28,19 @@
   "pages": {
     "home": {
       "title": "Palme Ivoire | Huile de Palme Côte d'Ivoire",
-      "meta": "Palme Ivoire transforme plus de 50 000 tonnes de régimes de palme par an en Côte d'Ivoire. CPO, PKO et co-produits de qualité internationale disponibles à l'export.",
+      "meta": "Palme Ivoire transforme plus de 250 000 tonnes de régimes de palme par an en Côte d'Ivoire. CPO, PKO et co-produits de qualité premium.",
       "heroSlider": {
         "slides": [
           {
-            "eyebrow": "Palme Ivoire",
-            "title": "Transformateur d'Huile de Palme en Côte d'Ivoire",
-            "subtitle": "Nous rachetons les régimes de palme aux agriculteurs locaux et les transformons en CPO & PKO de qualité premium pour l'exportation.",
+            "eyebrow": "",
+            "title": "Producteur  d’huile de palme en Côte d’Ivoire",
+            "subtitle": "Nous rachetons les régimes de palme aux agriculteurs locaux et les transformons en CPO & PKO de qualité premium.",
             "cta": "Nos produits",
             "ctaGhost": "Qui sommes-nous"
           },
           {
             "eyebrow": "Capacité Industrielle",
-            "title": "50 000+ Tonnes Transformées par An",
+            "title": "250 000+ Tonnes Transformées par An",
             "subtitle": "Notre usine moderne transforme les régimes de palme en huile de qualité supérieure grâce aux technologies malaisiennes.",
             "cta": "Notre usine"
           },
@@ -52,16 +52,16 @@
           }
         ]
       },
-      "welcome": "Transformateur d'Huile de Palme en Côte d'Ivoire",
-      "subtitle": "Nous rachetons les régimes de palme aux agriculteurs ivoiriens et les transformons en huile de palme brute (CPO) et huile de palmiste (PKO) de qualité premium pour l'exportation.",
+      "welcome": "Producteur d'Huile de Palme en Côte d'Ivoire",
+      "subtitle": "Nous rachetons les régimes de palme aux agriculteurs ivoiriens et les transformons en huile de palme brute (CPO) et huile de palmiste (PKO) de qualité premium.",
       "cta": "Découvrir nos services",
       "stats": {
         "label": "PALME IVOIRE en chiffres",
         "items": [
-          { "num": 2,     "suffix": "+",  "label": "Années d'expérience" },
+          { "num": 5,     "suffix": "+",  "label": "Années d'expérience" },
           { "num": 150,   "suffix": "+",  "label": "Employés qualifiés" },
           { "num": 1500,  "suffix": "+",  "label": "Agriculteurs fournisseurs" },
-          { "num": 50000, "suffix": "+",  "label": "Tonnes transformées / an" }
+          { "num": 250000, "suffix": "+",  "label": "Tonnes transformées / an" }
         ]
       },
       "services": {
@@ -75,13 +75,13 @@
           },
           {
             "icon": "factory",
-            "title": "Transformation CPO & PKO",
-            "desc": "Notre usine moderne transforme les régimes en huile de palme brute (CPO) et huile de palmiste (PKO) de qualité export."
+            "title": "Production CPO & PKO",
+            "desc": "Notre usine moderne transforme les régimes en huile de palme brute (CPO) et huile de palmiste (PKO) de qualité premium."
           },
           {
             "icon": "package",
-            "title": "Vente & Exportation",
-            "desc": "Nous vendons notre huile transformée aux marchés locaux et internationaux. Qualité certifiée et livraison fiable."
+            "title": "Vente & Distribution",
+            "desc": "Nous vendons notre huile transformée aux marchés locaux. Qualité certifiée et livraison fiable."
           },
           {
             "icon": "handshake",
@@ -93,42 +93,17 @@
       },
       "about": {
         "label": "Qui sommes-nous",
-        "title": "PALME IVOIRE - Spécialiste de la Transformation d'Huile de Palme",
-        "body": "PALME IVOIRE est un transformateur d'huile de palme établi au cœur de la Côte d'Ivoire. Nous rachetons les régimes de palme aux agriculteurs locaux et les transformons en huile de palme brute (CPO) et huile de palmiste (PKO) de qualité premium. Grâce à notre expertise acquise auprès des leaders malaisiens, nous garantissons une qualité exceptionnelle pour l'exportation et le marché local.",
+        "title": "PALME IVOIRE - Spécialiste de la Production d'Huile de Palme",
+        "body": "PALME IVOIRE est un producteur d'huile de palme établi au cœur de la Côte d'Ivoire. Nous rachetons les régimes de palme aux agriculteurs locaux et les transformons en huile de palme brute (CPO) et huile de palmiste (PKO) de qualité premium. Grâce à notre expertise acquise auprès des leaders malaisiens, nous garantissons une qualité exceptionnelle pour tous nos clients.",
         "cta": "En savoir plus"
-      },
-      "productCategories": {
-        "label": "Nos Produits",
-        "title": "Gamme Complète de Produits d'Huile de Palme",
-        "subtitle": "Des solutions d'huile de palme adaptées à tous vos besoins industriels et commerciaux.",
-        "items": [
-          {
-            "icon": "star",
-            "title": "CPO Premium Export",
-            "desc": "Huile de palme brute de qualité supérieure pour l'exportation. Acidité faible (< 2%), couleur claire. Idéale pour cosmétiques et industries premium.",
-            "specs": "Qualité Export | Capacité: 500+ tonnes/mois"
-          },
-          {
-            "icon": "settings",
-            "title": "PKO Standard",
-            "desc": "Huile de palmiste transformée aux normes internationales. Profil d'acides gras optimal pour applications industrielles et alimentaires.",
-            "specs": " Production: 200+ tonnes/mois"
-          },
-          {
-            "icon": "utensils",
-            "title": "CPO Foodgrade",
-            "desc": "Huile de palme adaptée à l'usage alimentaire. Traitement sanitaire certifié et conformité aux standards FSSC 22000.",
-            "specs": "Certification Alimentaire | Disponibilité: Sur demande"
-          }
-        ]
       },
       "values": {
         "label": "Ce qui nous guide",
         "title": "Nos valeurs fondamentales",
         "items": [
+          { "icon": "hexagon", "title": "Partenariat Durable", "desc": "Nous accompagnons nos fournisseurs avec un support technique pour améliorer leurs rendements. Ensemble, nous construisons une filière forte." },
           { "icon": "award", "title": "Qualité Premium", "desc": "Chaque goutte d'huile que nous transformons répond aux standards de qualité les plus rigoureux. Notre processus garantit une pureté et une excellence inégalées." },
-          { "icon": "gem", "title": "Prix Équitables", "desc": "Nous offrons des prix justes à nos agriculteurs fournisseurs avec un paiement rapide et transparent. Leur succès est notre succès." },
-          { "icon": "hexagon", "title": "Partenariat Durable", "desc": "Nous accompagnons nos fournisseurs avec un support technique pour améliorer leurs rendements. Ensemble, nous construisons une filière forte." }
+          { "icon": "gem", "title": "Prix Équitables", "desc": "Nous offrons des prix justes à nos agriculteurs fournisseurs avec un paiement rapide et transparent. Leur succès est notre succès." }
         ]
       },
       "certifications": {
@@ -139,7 +114,7 @@
           { "icon": "checkCircle", "title": "Qualité Premium", "desc": "CPO et PKO conformes aux standards internationaux les plus stricts" },
           { "icon": "recycle", "title": "Traitement Durable", "desc": "Fluides de traitement traités naturellement dans nos installations" },
           { "icon": "users", "title": "Partenariat Local", "desc": "Soutien direct à 1500+ producteurs de palme de la région" },
-          { "icon": "trophy", "title": "Certification CHPH", "desc": "Certification officielle de transformateur de palme - notre première certification majeure" },
+          { "icon": "trophy", "title": "Certification CHPH", "desc": "Certification officielle de producteur de palme - notre première certification majeure" },
           { "icon": "shieldCheck", "title": "Traçabilité Complète", "desc": "Système de traçabilité de bout en bout garantissant la qualité et l'authenticité de nos produits" }
         ]
       },
@@ -176,40 +151,40 @@
     },
     "about": { 
       "title": "À propos | Palme Ivoire",
-      "meta": "Découvrez l'histoire, la mission et l'équipe de Palme Ivoire — transformateur d'huile de palme ivoirien alliant savoir-faire malaisien et ancrage local depuis Guitry.",
+      "meta": "Découvrez l'histoire, la mission et l'équipe de Palme Ivoire — producteur d'huile de palme ivoirien alliant savoir-faire malaisien et ancrage local depuis Guitry.",
       "hero": {
         "eyebrow": "Notre Histoire",
-        "title": "PALME IVOIRE : Transformateur d'Excellence en Côte d'Ivoire",
-        "subtitle": "Depuis 2024, nous connectons les agriculteurs locaux aux marchés internationaux en transformant les régimes de palme en huiles premium."
+        "title": "PALME IVOIRE : Producteur d'Excellence en Côte d'Ivoire",
+        "subtitle": "Depuis 2021, nous connectons les agriculteurs locaux aux marchés internationaux en transformant les régimes de palme en huiles premium."
       },
       "mission": {
         "label": "Notre Mission",
         "title": "Transformer avec Excellence, Impacter Positivement",
-        "body": "PALME IVOIRE est née d'une vision claire : créer une chaîne de valeur du palmier qui bénéficie à tous. En rachetant directement les régimes de palme aux agriculteurs ivoiriens, en les transformant avec les standards les plus stricts, et en les exportant vers les marchés mondiaux, nous construisons une économie plus juste et plus soutenable."
+        "body": "PALME IVOIRE est née d'une vision claire : créer une chaîne de valeur du palmier qui bénéficie à tous. En rachetant directement les régimes de palme aux agriculteurs ivoiriens, en les transformant avec les standards les plus stricts, nous construisons une économie plus juste et plus soutenable."
       },
       "story": {
         "label": "Notre Parcours",
         "title": "D'une Ambition à une Réalité Industrielle",
         "highlights": [
           {
-            "year": "2024",
+            "year": "2021",
             "title": "La Fondation",
             "desc": "Création de PALME IVOIRE avec vision d'être le transformateur de référence en Côte d'Ivoire, en utilisant l'expertise malaisienne."
           },
           {
-            "year": "2024",
+            "year": "2022",
             "title": "Construction et Certification",
             "desc": "Installation d'une usine ultramoderne à Abidjan équipée de technologies de transformation dernier cri. Obtention des certifications CHPH et conformité aux standards internationaux."
           },
           {
             "year": "2025",
             "title": "Partenariats Stratégiques",
-            "desc": "Mise en place de contrats avec 1 500+ producteurs locaux. Premières exportations vers les marchés français, suisse et asiatiques."
+            "desc": "Mise en place de contrats avec 1 500+ producteurs locaux. Premières ventes vers les marchés français, suisse et asiatiques."
           },
           {
             "year": "2026",
             "title": "Croissance et Impact",
-            "desc": "Atteinte de 50 000+ tonnes transformées annuellement. Expansion du portefeuille de produits : CPO Premium, PKO Standard, CPO Foodgrade."
+            "desc": "Atteinte de 250 000+ tonnes transformées annuellement. Expansion du portefeuille de produits : CPO Premium, PKO Standard, CPO Foodgrade."
           }
         ]
       },
@@ -230,7 +205,7 @@
           {
             "icon": "testTube",
             "title": "Contrôle Qualité Rigoureux",
-            "desc": "Laboratoire de contrôle moderne avec tests à chaque étape. Traçabilité complète du régime de palme jusqu'au produit fini exporté."
+            "desc": "Laboratoire de contrôle moderne avec tests à chaque étape. Traçabilité complète du régime de palme jusqu'au produit fini commercialisé."
           },
           {
             "icon": "recycle",
@@ -241,7 +216,7 @@
       },
       "process": {
         "label": "Notre Processus",
-        "title": "Du Régime de Palme à l'Huile Exportée",
+        "title": "Du Régime de Palme à l'Huile Transformée",
         "steps": [
           {
             "num": "1",
@@ -271,13 +246,13 @@
             "num": "5",
             "icon": "dna",
             "title": "Purification",
-            "desc": "Filtration et centrifugation pour éliminer les impuretés. Ajustement des paramètres : acidité, couleur, odeur selon normes export."
+            "desc": "Filtration et centrifugation pour éliminer les impuretés. Ajustement des paramètres : acidité, couleur, odeur selon nos standards."
           },
           {
             "num": "6",
             "icon": "package",
-            "title": "Conditionnement et Export",
-            "desc": "Remplissage en citernes ou fûts selon les commandes. Tests finaux de conformité. Expédition sécurisée vers marchés mondiaux."
+            "title": "Conditionnement et Livraison",
+            "desc": "Remplissage en citernes ou fûts selon les commandes. Tests finaux de conformité. Livraison sécurisée."
           }
         ]
       },
@@ -287,8 +262,8 @@
         "stats": [
           { "num": "1500", "label": "Agriculteurs soutenus", "desc": "Revenus réguliers et prix justes pour les producteurs locaux" },
           { "num": "150", "label": "Emplois créés", "desc": "Postes directs et indirects dans la région d'Abidjan" },
-          { "num": "50000", "label": "Tonnes/an", "desc": "Capacité de transformation pour servir marchés mondiaux" },
-          { "num": "15", "label": "Pays clients", "desc": "Export vers cosmétique, agroalimentaire et industries chimiques" }
+          { "num": "250000", "label": "Tonnes/an", "desc": "Capacité de transformation pour servir marchés mondiaux" },
+          { "num": "15", "label": "Pays clients", "desc": "Ventes vers cosmétique, agroalimentaire et industries chimiques" }
         ]
       },
       "values": {
@@ -326,12 +301,12 @@
     },
     "services": { 
       "title": "Services | Palme Ivoire",
-      "meta": "Achat de régimes de palme, transformation CPO & PKO, exportation et accompagnement agriculteurs. Palme Ivoire couvre toute la chaîne de valeur de l'huile de palme en Côte d'Ivoire.",
+      "meta": "Achat de régimes de palme, transformation CPO & PKO, distribution et accompagnement agriculteurs. Palme Ivoire couvre toute la chaîne de valeur de l'huile de palme en Côte d'Ivoire.",
       "subtitle": "Découvrez nos services de production et de transformation d'huile de palme, notre engagement envers la durabilité et notre impact positif sur les communautés locales.",
       "hero": {
         "eyebrow": "Nos Services",
         "title": "Une Chaîne Complète de Transformation d'Huile de Palme",
-        "subtitle": "Du sourcing responsable des régimes de palme à l'exportation d'huiles premium certifiées."
+        "subtitle": "Du sourcing responsable des régimes de palme à la distribution d'huiles premium certifiées."
       },
       "mainServices": {
         "label": "Services Principaux",
@@ -354,8 +329,8 @@
           },
           {
             "icon": "ship",
-            "title": "Logistique et Export",
-            "desc": "Gestion complète de la logistique: conditionnement, transport, douanes et expédition sécurisée vers marchés mondiaux. Délais respectés, qualité garantie."
+            "title": "Logistique et Distribution",
+            "desc": "Gestion complète de la logistique: conditionnement, transport, douanes et livraison sécurisée. Délais respectés, qualité garantie."
           },
           {
             "icon": "handshake",
@@ -427,7 +402,7 @@
     },
     "products": {
       "title": "Produits | Palme Ivoire",
-      "meta": "CPO Premium Export, PKO Standard, oléine, stéarine et co-produits industriels. Produits d'huile de palme certifiés CHPH, traçables et conformes aux normes internationales.",
+      "meta": "CPO Premium, PKO Standard, oléine, stéarine et co-produits industriels. Produits d'huile de palme certifiés CHPH, traçables et conformes aux normes internationales.",
       "hero": {
         "eyebrow": "Nos Produits",
         "title": "Gamme Complète de Produits du Palmier",
@@ -746,14 +721,14 @@
           "name": "Usine de Guitry",
           "type": "Usine de transformation",
           "address": "Guitry, Région de la Nawa, Côte d'Ivoire",
-          "description": "Notre usine principale de transformation d'huile de palme. Équipée de technologies modernes malaisiennes, elle traite plus de 50 000 tonnes de régimes de palme par an.",
+          "description": "Notre usine principale de transformation d'huile de palme. Équipée de technologies modernes malaisiennes, elle traite plus de 250 000 tonnes de régimes de palme par an.",
           "image": "https://images.unsplash.com/photo-1513828583688-c52646db42da?w=800&q=80",
           "status": "active",
           "features": [
-            "Capacité: 50 000+ tonnes/an",
+            "Capacité: 250 000+ tonnes/an",
             "Technologie malaisienne",
             "Production CPO & PKO",
-            "Certifié qualité export"
+            "Certifié qualité premium"
           ],
           "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127066.36!2d-5.2!3d5.55!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNcKwMzMnMDAuMCJOIDXCsDEyJzAwLjAiVw!5e0!3m2!1sfr!2sci!4v1"
         },
@@ -793,15 +768,42 @@
         "subtitle": "Contactez-nous pour organiser une visite de nos installations.",
         "button": "Nous contacter"
       }
+    },
+    "notFound": {
+      "eyebrow": "Page introuvable",
+      "title": "Cette parcelle n'a pas encore été plantée…",
+      "subtitle": "La page que vous cherchez semble avoir disparu dans la plantation. Pas de panique, nous allons vous ramener sur le bon chemin.",
+      "redirect": "Redirection automatique dans {{seconds}}s",
+      "goHome": "Retour à l'accueil",
+      "goContact": "Nous contacter",
+      "explore": "Ou explorez nos pages"
     }
   },
-  "notFound": {
-    "eyebrow": "Page introuvable",
-    "title": "Cette parcelle n'a pas encore été plantée…",
-    "subtitle": "La page que vous cherchez semble avoir disparu dans la plantation. Pas de panique, nous allons vous ramener sur le bon chemin.",
-    "redirect": "Redirection automatique dans {{seconds}}s",
-    "goHome": "Retour à l'accueil",
-    "goContact": "Nous contacter",
-    "explore": "Ou explorez nos pages"
+  "_archived": {
+    "productCategories_home": {
+      "label": "Nos Produits",
+      "title": "Gamme Complète de Produits d'Huile de Palme",
+      "subtitle": "Des solutions d'huile de palme adaptées à tous vos besoins industriels et commerciaux.",
+      "items": [
+        {
+          "icon": "star",
+          "title": "CPO Premium",
+          "desc": "Huile de palme brute de qualité supérieure. Acidité faible (< 2%), couleur claire. Idéale pour cosmétiques et industries premium.",
+          "specs": "Qualité Premium | Capacité: 500+ tonnes/mois"
+        },
+        {
+          "icon": "settings",
+          "title": "PKO Standard",
+          "desc": "Huile de palmiste transformée aux normes internationales. Profil d'acides gras optimal pour applications industrielles et alimentaires.",
+          "specs": " Production: 200+ tonnes/mois"
+        },
+        {
+          "icon": "utensils",
+          "title": "CPO Foodgrade",
+          "desc": "Huile de palme adaptée à l'usage alimentaire. Traitement sanitaire certifié et conformité aux standards FSSC 22000.",
+          "specs": "Certification Alimentaire | Disponibilité: Sur demande"
+        }
+      ]
+    }
   }
 }
